@@ -20,6 +20,12 @@
             </div>
 
 
+            <ul v-if="errors.length > 0 ">
+            
+                <li :key="index" v-for="(error, index)  in errors"> {{  error }}</li>
+
+            </ul>
+
             <div class="flex flex-row">
 
                 <div class="w-1/2 text-center  py-3  rounded" :class="{ 'border-b-primary border-b-4 ': state.userType == 'business' }">
@@ -188,7 +194,7 @@
 
                         <div>
 
-                            <text-field v-model="state.confirm_password" label="Conferma password" type="password" name="confirm_password"></text-field>
+                            <text-field v-model="state.password_confirm" label="Conferma password" type="password" name="confirm_password"></text-field>
 
                         </div>
 
@@ -202,14 +208,14 @@
                     <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded">
 
                     <label for="link-checkbox" class="ml-2 text-sm">Accetto le <NuxtLink class="underline text-primary"
-                            to="/condizioni-d-uso">condizioni d'uso</NuxtLink> e la <NuxtLink class="underline text-primary"
-                            to="/privacy">politica sulla privacy</NuxtLink> di Glintzo</label>
+                            to="/login">condizioni d'uso</NuxtLink> e la <NuxtLink class="underline text-primary"
+                            to="/my-info">politica sulla privacy</NuxtLink> di Glintzo</label>
                 </div>
 
             </div>
 
             <div class="mt-5">
-                <button type="button"
+                <button type="button" @click="registerUser" :disable="isLoading"
                     class="inline-flex items-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Crea
                     il tuo account</button>
             </div>
@@ -220,7 +226,13 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue'
+import { remove } from '@vue/shared';
+import { reactive } from 'vue';
+
+
+
+const laravel = await useNuxtApp().$apiFetch('/'); 
+
 
 /**
  * 
@@ -250,9 +262,11 @@ const state = reactive({
     email: '',
     mobile_phone: '',
     password: '',
-    confirm_password: ''
-
+    password_confirm: ''
 });
+
+const isLoading = ref(false)
+const errors    = ref([]);
 
 
 /**
@@ -262,8 +276,115 @@ function setType(type) {
     state.userType = type;
 }
 
-function increment() {
-    state.count++
+
+/**
+ * 
+ */
+async function registerUser(){
+
+    await csrf();
+
+    try {
+
+        isLoading.value = true;
+
+        const post = await useNuxtApp().$apiFetch('/register', {
+
+            method: 'POST',
+
+            body : {
+                type: state.userType,
+                business_name: state.business_name,
+                first_name: state.first_name,
+                last_name : state.last_name,
+                fiscal_code: state.fiscal_code,
+                email: state.email, 
+                password: state.passoword, 
+                password_confirmation: state.password_confirm
+                
+            }
+        });
+
+        isLoading.value = false;
+
+    }catch(error){
+
+        console.log(error.data);
+
+        errors.value = Object.values(error.data.errors).flat();
+
+        isLoading.value = false;
+    }
+
+}
+
+
+/**
+ * 
+ */
+function csrf(){
+
+    return useNuxtApp().$apiFetch('/sanctum/csrf-cookie');
+
+}
+
+
+/**
+ * 
+ */
+async function login(){
+
+    await csrf();
+
+    try{
+
+        await useNuxtApp().$apiFetch('/login', {
+
+            method: 'POST',
+
+            body : {
+                email: state.email,
+            }
+
+        });
+
+
+        const user = await useNuxtApp().$apiFetch('/api/user');
+
+        const { setUser } = useAuth();
+
+        setUser(user.first_name);
+
+    }catch(error){
+
+    }
+}
+
+/**
+ *  
+ */
+async function logout(){
+
+    try {
+
+        await useNuxtApp().$apiFetch('/logout', {
+            method: 'POST'
+        });
+
+        
+
+
+    }catch(error){
+
+    }finally{
+
+        const { removeUser } = useAuth();
+
+        removeUser();
+
+        window.location.pathname = '/';
+    }
+
 }
 
 </script>

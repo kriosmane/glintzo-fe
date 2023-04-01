@@ -9,13 +9,11 @@
 
                 <div class="flex justify-center items-center h-screen px-10">
 
-
                     <div>
 
                         <img src="~/assets/images/logo_transparent.png" />
 
                     </div>
-                    
                     
                 </div>
 
