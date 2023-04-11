@@ -226,18 +226,16 @@
 </template>
 
 <script setup>
-import { remove } from '@vue/shared';
+
 import { reactive } from 'vue';
-
-
-
-const laravel = await useNuxtApp().$apiFetch('/'); 
-
-
+import Cookies from 'js-cookie'; 
 /**
  * 
  */
 const title = useState('title');
+
+
+console.log(Cookies.get('XSRF-TOKEN'));
 
 /**
  * 
@@ -286,6 +284,8 @@ async function registerUser(){
 
     try {
 
+        console.log(Cookies.get('XSRF-TOKEN'));
+
         isLoading.value = true;
 
         const post = await useNuxtApp().$apiFetch('/register', {
@@ -293,6 +293,7 @@ async function registerUser(){
             method: 'POST',
 
             body : {
+
                 type: state.userType,
                 business_name: state.business_name,
                 first_name: state.first_name,
@@ -308,8 +309,6 @@ async function registerUser(){
         isLoading.value = false;
 
     }catch(error){
-
-        console.log(error.data);
 
         errors.value = Object.values(error.data.errors).flat();
 
