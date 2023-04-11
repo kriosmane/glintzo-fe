@@ -12,6 +12,7 @@ export default defineNuxtPlugin(nuxtApp => {
 
         headers : {
             Accept: 'application/json',
+            'X-Requested-With': 'XMLHttpRequest',
             'X-XSRF-TOKEN': Cookies.get('XSRF-TOKEN'),
         }
     }));
