@@ -25,7 +25,7 @@ export default defineNuxtConfig({
       googleFonts: {
         families: {
         
-          'Maven+Pro': true,
+          'Poppins': true,
         }
       }
 })

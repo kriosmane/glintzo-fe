@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Maven Pro'],
+        sans: ['Poppins'],
       },
       colors: {
         primary : '#1683FE',
