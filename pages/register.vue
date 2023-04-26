@@ -327,7 +327,7 @@ async function register() {
 
     try {
 
-        await $apiFetch('/api/leads/register', {
+        const lead = await $apiFetch('/api/leads/register', {
 
             method: 'POST',
 
@@ -341,8 +341,12 @@ async function register() {
             }
         });
 
+
+        alert('Lead inserted');
+
     } catch (error) {
 
+        console.log(error);
 
     }
 
