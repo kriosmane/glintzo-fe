@@ -108,7 +108,7 @@
                                         <span class="flex flex-1">
                                             <span class="flex flex-col">
                                                 <span id="project-type-0-label"
-                                                    class="block text-sm font-medium text-gray-900">Torino</span>
+                                                    class="block text-sm font-medium text-gray-900">Roma</span>
                                             </span>
                                         </span>
 
