@@ -260,7 +260,7 @@
                                             <div class="flex items-center">
                                                 <input value="business" name="userType" type="radio"
                                                     v-model="state.userType"
-                                                    class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-600">
+                                                    class="h-4 w-4 border-[#02145A]  text-[#02145A]">
                                                 <label class="ml-3 block text-[14px] font-normal text-[#02145A]">É la
                                                     mia
                                                     professione</label>
@@ -268,7 +268,7 @@
                                             <div class="flex items-center">
                                                 <input value="personal" name="userType" type="radio"
                                                     v-model="state.userType"
-                                                    class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-600">
+                                                    class="h-4 w-4 border-[#02145A]  text-[#02145A]">
                                                 <label class="ml-3 block text-[14px] font-normal text-[#02145A]">É il
                                                     mio
                                                     hobby</label>
@@ -293,13 +293,13 @@
                                         <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
                                             <div class="flex items-center">
                                                 <input value="si" name="call" type="radio" v-model="state.call"
-                                                    class="h-4 w-4 border-gray-300 text-[#02145A]">
+                                                    class="h-4 w-4 border-[#02145A]  text-[#02145A]">
                                                 <label
                                                     class="ml-3 block  text-[14px] font-normal text-[#02145A]">Si</label>
                                             </div>
                                             <div class="flex items-center">
                                                 <input value="no" name="call" type="radio" v-model="state.call"
-                                                    class="h-4 w-4 border-gray-300 text-[#02145A]">
+                                                    class="h-4 w-4 border-[#02145A] text-[#02145A]">
                                                 <label
                                                     class="ml-3 block text-[14px] font-normal text-[#02145A]">No</label>
                                             </div>
