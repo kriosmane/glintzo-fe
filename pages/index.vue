@@ -3,29 +3,25 @@
 
         <main>
             <div class="relative isolate">
-                <svg class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
-                    aria-hidden="true">
-                    <defs>
-                        <pattern id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84" width="200" height="200" x="50%" y="-1"
-                            patternUnits="userSpaceOnUse">
-                            <path d="M.5 200V.5H200" fill="none" />
-                        </pattern>
-                    </defs>
-                    <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-                        <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
-                            stroke-width="0" />
-                    </svg>
-                    <rect width="100%" height="100%" stroke-width="0" fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" />
-                </svg>
+
 
                 <div class="overflow-hidden">
                     <div class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
                         <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                             <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                                <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">La piattaforma di
+                                <h1
+                                    class="text-4xl font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
+                                    La piattaforma di
                                     matching amica dei visual creator</h1>
-                                <p class="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">Fatta dai
-                                    creator per i creator.</p>
+                                <p
+                                    class="relative font-normal text-[#02145A]  mt-6 text-[25px] leading-[38px]  sm:max-w-md lg:max-w-none">
+                                    Mettiamo
+                                    in contatto <span class="font-bold">aziende</span> e <span
+                                        class="font-bold">privati</span> con i migliori <span
+                                        class="font-bold">fotografi</span> e <span class="font-bold">videomaker</span> sul
+                                    panorama
+                                    italiano in modo <span class="font-bold">semplice</span> e <span
+                                        class="font-bold">innovativo</span>..</p>
                                 <div class="mt-10 flex items-center gap-x-6">
                                     <NuxtLink to="/register"
                                         class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
@@ -88,6 +84,9 @@
                 </div>
             </div>
             <div class="bg-[#F8F9F9] pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
+
+
+
                 <div class="bg-gray-900 pb-20 sm:pb-24 xl:pb-0">
                     <div
                         class="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
@@ -107,8 +106,11 @@
                                     <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x="86" />
                                 </svg>
                                 <blockquote class="text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
-                                    <p>Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc
-                                        suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum
+                                    <p>Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a
+                                        enim
+                                        nunc
+                                        suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque
+                                        interdum
                                         eget tellus non nibh scelerisque bibendum.</p>
                                 </blockquote>
                                 <figcaption class="mt-8 text-base">
@@ -119,7 +121,11 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
+
+
 
             <div class="bg-white py-24">
 
@@ -127,7 +133,7 @@
 
                     <div class="text-center">
 
-                        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Come funziona</h1>
+                        <h1 class="text-4xl font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">Come funziona</h1>
 
                     </div>
 
@@ -144,9 +150,9 @@
                                 <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
                                     aria-hidden="true"></div>
                             </time>
-                            <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Crea il tuo profilo
+                            <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-[#02145A]">Crea il tuo profilo
                             </p>
-                            <p class="mt-1 text-base leading-7 text-gray-600">Nihil aut nam. Dignissimos a pariatur et quos
+                            <p class="mt-1 text-base leading-6  text-gray-600">Nihil aut nam. Dignissimos a pariatur et quos
                                 omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.</p>
                         </div>
                         <div>
@@ -159,9 +165,9 @@
                                 <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
                                     aria-hidden="true"></div>
                             </time>
-                            <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Rispondi alle
+                            <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-[#02145A]">Rispondi alle
                                 richieste</p>
-                            <p class="mt-1 text-base leading-7 text-gray-600">Provident quia ut esse. Vero vel eos
+                            <p class="mt-1 text-base leading-6 text-gray-600">Provident quia ut esse. Vero vel eos
                                 repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.</p>
                         </div>
                         <div>
@@ -174,9 +180,9 @@
                                 <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
                                     aria-hidden="true"></div>
                             </time>
-                            <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Finalizza il
+                            <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-[#02145A]">Finalizza il
                                 preventivo</p>
-                            <p class="mt-1 text-base leading-7 text-gray-600">Sunt perspiciatis incidunt. Non necessitatibus
+                            <p class="mt-1 text-base leading-6 text-gray-600">Sunt perspiciatis incidunt. Non necessitatibus
                                 aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.</p>
                         </div>
                         <div>
@@ -189,19 +195,19 @@
                                 <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
                                     aria-hidden="true"></div>
                             </time>
-                            <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Completa il lavoro
+                            <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-[#02145A]">Completa il lavoro
                             </p>
-                            <p class="mt-1 text-base leading-7 text-gray-600">Ut ipsa sint distinctio quod itaque nam qui.
+                            <p class="mt-1 text-base leading-6 text-gray-600">Ut ipsa sint distinctio quod itaque nam qui.
                                 Possimus aut unde id architecto voluptatem hic aut pariatur velit.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-[#F8F9F9]">
-                <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+            <div style="background: linear-gradient(to top, #DEE1FE 0.05%, rgba(222, 225, 254, 0) 99.95%);">
+                <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8 ">
                     <div class="mx-auto max-w-2xl text-center space-y-5">
-                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sei un visual creator e<br>
+                        <h2 class="font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px] ">Sei un visual creator e<br>
                             vuoi saperne di più?</h2>
                         <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">Clicca su "Registrati " e compila
                             il Form per accedere alla community di Glintzo.</p>
@@ -226,6 +232,8 @@
 </template>
 
 <script setup>
+
+
 
 definePageMeta({
 

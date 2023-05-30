@@ -1,6 +1,6 @@
 <template>
-    <footer class="bg-[#EFEFEF]">
-        <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8 space-y-5">
+    <footer class="bg-[#02145A]">
+        <div class="mx-auto text-[#FFFFFF] max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8 space-y-5">
 
             <div class="flex justify-center">
 
@@ -34,7 +34,7 @@
 
 
             </div>
-            <p class=" text-center text-xs leading-5 text-gray-500">&copy; 2020 Your Company, Inc. All rights
+            <p class=" text-center text-xs leading-5">&copy; 2020 Your Company, Inc. All rights
                 reserved.</p>
         </div>
     </footer>
