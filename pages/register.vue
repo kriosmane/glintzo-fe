@@ -1,8 +1,7 @@
 <template>
+    <div class="w-full lg:bg-gradient-to-r lg:from-[#DEE1FE] lg:to-white lg:to-50% ">
 
-    <div  class="w-full" style="background-image: linear-gradient(to right, #DEE1FE 0.05%, #FFFFFF 50%);">
-
-        <div class="max-w-8xl  mx-auto px-10 sm:py-4 sm:px-20 xl:px-40">
+        <div class="max-w-8xl  mx-auto px-10 sm:py-4 sm:px-20 xl:px-40 ">
 
             <div class="w-full flex flex-col lg:flex-row py-10 lg:py-32">
 
@@ -373,6 +372,12 @@
                             </div>
                         </div>
                     </form>
+                    
+                    <div class="flex items-center h-full justify-center" v-else>
+
+                        <h1 class="text-5xl text-pink text-center">HELLO</h1>
+
+                    </div>
 
                 </div>
 
