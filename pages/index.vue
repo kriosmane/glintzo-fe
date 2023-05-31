@@ -436,7 +436,7 @@ if (process.client) {
         scrub: 1,
         pinSpacing: true,
         start: "top top",
-        marker: true,
+        end:"+=100",
       },
     });
 
