@@ -14,6 +14,8 @@ font-size: 180px!important;
 line-height: 200px!important;
 }
 
+
+
 section {
   height: 100vh;
   text-align: center;
@@ -80,6 +82,18 @@ section {
 
 .section p {
   position: relative;
+}
+
+@media screen and (max-width: 1280px) {
+.box-container p{
+  font-size: 45px;
+  }
+
+  .text-illusion {
+font-size: 65px!important;
+line-height: 85px!important;
+}
+
 }
 </style>
 <template>
@@ -434,9 +448,10 @@ if (process.client) {
         trigger: section,
         pin: true,
         scrub: 1,
-        pinSpacing: true,
+        pinSpacing: false,
         start: "top top",
-        end:"+=100",
+        end:"100",
+        markers:true
       },
     });
 
