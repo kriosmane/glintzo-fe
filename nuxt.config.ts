@@ -15,6 +15,10 @@ export default defineNuxtConfig({
     buildModules: [
         '@nuxtjs/google-fonts'
     ],
+  build: {
+    extend() {},
+    transpile: ['gsap'],
+    },
     css: ['~/assets/css/main.css'],
     postcss: {
         plugins: {

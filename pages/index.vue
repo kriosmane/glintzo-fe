@@ -1,3 +1,29 @@
+<style>
+.box-container {
+  overflow: hidden;
+}
+
+section {
+  height: 100vh;
+  text-align: center;
+  line-height: 100vh;
+  background-color: #02145A;
+  color: white;
+  font-size: 2em;
+  position: relative;
+}
+
+.box-container p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 130px;
+}
+
+.section p {
+  position: relative;
+}
+</style>
 <template>
     <div class="bg-white">
 
@@ -83,6 +109,30 @@
                     </div>
                 </div>
             </div>
+      <!-- effect slide words -->
+      <div class="box-container ">
+        <section class="top">
+          <div class="img red bg-[#02145A]"></div>
+          <p>Qualità</p>
+        </section>
+        <section class="mid">
+          <div class="img orange bg-[#02145A]"></div>
+          <p>Professionalità</p>
+        </section>
+        <section class="bottom">
+          <div class="img yellow bg-[#02145A]"></div>
+          <p>Innovazione</p>
+        </section>
+        <section class="bottom">
+          <div class="img gree bg-[#02145A]"></div>
+          <p>Creatività</p>
+        </section>
+        <section class="bottom">
+          <div class="img blue bg-[#02145A]"></div>
+          <p>Fiducia</p>
+        </section>
+            </div>
+      <!-- end effect slide words -->
             <div class="bg-[#F8F9F9] pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
 
 
@@ -232,8 +282,35 @@
 </template>
 
 <script setup>
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 
+if (process.client) {
+  gsap.registerPlugin(ScrollTrigger);
+  const sections = gsap.utils.toArray("section");
 
+  sections.forEach((section, index) => {
+    const text = section.querySelector("p"),
+      color = section.querySelector(".img");
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: section,
+        pin: true,
+        scrub: 1,
+        pinSpacing: true,
+        start: "top top",
+        marker: true,
+      },
+    });
+
+    tl.from(text, { opacity: 0, y: 100, skewY: -4, rotationX: 0 });
+
+    if (index < sections.length - 1) {
+      tl.to(text, { opacity: 0, y: -100, ease: "power1.in", skewY: 0, rotationX: 60 });
+    }
+  });
+}
 
 definePageMeta({
 
