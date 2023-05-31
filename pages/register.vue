@@ -1,69 +1,71 @@
 <template>
-    <div class="w-full" style="background-image: linear-gradient(to right, #DEE1FE 0.05%, rgba(222, 225, 254, 0) 50%);">
-        <div class="relative isolate">
-            <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 ">
 
-                <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+    <div  class="w-full" style="background-image: linear-gradient(to right, #DEE1FE 0.05%, #FFFFFF 50%);">
 
-                    <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+        <div class="max-w-8xl  mx-auto px-10 sm:py-4 sm:px-20 xl:px-40">
 
-                        <h2 class="font-bold tracking-tight text-[#FB2283] text-[40px] leading-[60px]">
+            <div class="w-full flex flex-col lg:flex-row py-10 lg:py-32">
 
-                            <template v-if="!state.registered">
-                                Entra nella<br>
-                                community di<br> Glintzo
-                            </template>
+                <div class="lg:basis-1/2 pr-0 sm:pr-4">
 
-                            <template v-else>
+                    <h2 class="font-bold tracking-tight text-pink text-[40px] leading-[60px]">
 
-                                Benvenuto tra noi,<br> siamo felici di averti a bordo
+                        <template v-if="!state.registered">
+                            Entra nella<br>
+                            community di<br> Glintzo
+                        </template>
 
-                            </template>
+                        <template v-else>
 
+                            Benvenuto tra noi,<br> siamo felici di averti a bordo
 
-                        </h2>
-
-                        <p class="mt-6  font-bold text-[20px] leading-[30px] text-[#02145A]">
-
-                            <template v-if="!state.registered">
-                                Iscriviti e scopri come ottenere Sparkz<br> gratuiti da usare nella piattaforma
-                            </template>
-
-                            <template v-else>
-
-                                La tua iscrizione nella community di<br> Glintzo è avvenuta correttamente
-
-                            </template>
-
-                        </p>
+                        </template>
 
 
-                        <p class="text-base mt-4 leading-6 text-[#02145A]">
+                    </h2>
 
-                            <template v-if="!state.registered">
-                                Incontrare e conoscere i visual creator della
-                                nostra <br>community non solo è un <span class="font-bold">piacere</span> ma anche una<br>
-                                <span class="font-bold">necessità</span> per il nostro lavoro: il tuo
-                                feedback per noi è<br> molto importante.<br>
-                                Ti chiediamo quindi di indicarci se sei disponibile ad<br> essere contattato da uno dei
-                                co-founder
-                                di Glintzo e<br> approfondire il funzionamento della piattaforma.
-                            </template>
+                    <p class="mt-6  font-bold text-[20px] leading-[30px] text-dark-blue">
 
-                            <template v-else>
+                        <template v-if="!state.registered">
+                            Iscriviti e scopri come ottenere Sparkz<br> gratuiti da usare nella piattaforma
+                        </template>
 
-                                Ti abbiamo appena inviato un’<span class="font-bold">email di conferma</span><br>
-                                all’indirizzo da te indicato.<br>
-                                Provvederemo ad aggiornarti sulla piattaforma quanto prima
+                        <template v-else>
 
-                            </template>
-                        </p>
+                            La tua iscrizione nella community di<br> Glintzo è avvenuta correttamente
 
-                    </div>
+                        </template>
+
+                    </p>
+
+                    <p class="text-base mt-4 leading-6 text-dark-blue]">
+
+                        <template v-if="!state.registered">
+                            Incontrare e conoscere i visual creator della
+                            nostra <br>community non solo è un <span class="font-bold">piacere</span> ma anche una<br>
+                            <span class="font-bold">necessità</span> per il nostro lavoro: il tuo
+                            feedback per noi è<br> molto importante.<br>
+                            Ti chiediamo quindi di indicarci se sei disponibile ad<br> essere contattato da uno dei
+                            co-founder
+                            di Glintzo e<br> approfondire il funzionamento della piattaforma.
+                        </template>
+
+                        <template v-else>
+
+                            Ti abbiamo appena inviato un’<span class="font-bold">email di conferma</span><br>
+                            all’indirizzo da te indicato.<br>
+                            Provvederemo ad aggiornarti sulla piattaforma quanto prima
+
+                        </template>
+                    </p>
+
                 </div>
-                <div>
-                    <form  v-if="!state.registered" action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
-                        <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+
+
+                <div class="md:basis-1/2 mt-0 sm:mt-10 md:mt-0">
+
+                    <form v-if="!state.registered" action="#" method="POST" class="">
+                        <div class="">
                             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                                 <div>
                                     <text-field v-model="state.first_name" label="Nome" type="text"
@@ -223,7 +225,7 @@
                                         <legend class="text-[14px] font-medium leading-6 text-[#02145A]">Visual creator
                                         </legend>
 
-                                        <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
+                                        <div class="mt-4 grid  gap-y-6 grid-cols-3 gap-x-2 sm:gap-x-4">
 
                                             <!-- FOTOGRAFO -->
                                             <label
@@ -371,14 +373,15 @@
                             </div>
                         </div>
                     </form>
-                    <div v-else class="h-full w-full bg-[url('/assets/images/hello.png')]">
 
-                       
-
-                    </div>
                 </div>
+
+
             </div>
+
+
         </div>
+
     </div>
 </template>
 
