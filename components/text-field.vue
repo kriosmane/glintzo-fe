@@ -1,7 +1,7 @@
 <template>
 
     <div>
-        <label :for="name" class="block text-sm font-medium leading-6">{{ label }}</label>
+        <label :for="name" class="block text-sm font-medium leading-6 text-[#02145A]">{{ label }}</label>
 
         <div :class="prependIcon ? 'relative rounded-md shadow-sm' : '' " class="mt-2">
 
@@ -11,7 +11,7 @@
 
             </div>
 
-            <input :value="modelValue" @input="$emit('update:modelValue', $event.target.value)" :type="type" :name="name" :id="name" class="block w-full rounded-md border-0 py-2.5  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6" :class="prependIcon ? ' pl-10 ' : ''" :placeholder="placeholder" />
+            <input :required="required"  :value="modelValue" @input="$emit('update:modelValue', $event.target.value)" :type="type" :name="name" :id="name" class="block w-full rounded-md border-0 py-2.5  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6" :class="prependIcon ? ' pl-10 ' : ''" :placeholder="placeholder" />
 
         </div>
 
@@ -54,6 +54,12 @@
         prependIcon: {
             type: String, 
             default: null
+        },
+
+
+        required: {
+            type: Boolean, 
+            default: false
         }
     });
 

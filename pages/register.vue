@@ -2,322 +2,381 @@
     <div class="w-full" style="background-image: linear-gradient(to right, #DEE1FE 0.05%, rgba(222, 225, 254, 0) 50%);">
         <div class="relative isolate">
             <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 ">
+
                 <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+
                     <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
 
-                        <h2 class="font-bold tracking-tight text-[#FB2283] text-[40px] leading-[60px]">Entra nella<br>
-                            community di<br> Glintzo
+                        <h2 class="font-bold tracking-tight text-[#FB2283] text-[40px] leading-[60px]">
+
+                            <template v-if="!state.registered">
+                                Entra nella<br>
+                                community di<br> Glintzo
+                            </template>
+
+                            <template v-else>
+
+                                Benvenuto tra noi,<br> siamo felici di averti a bordo
+
+                            </template>
+
+
                         </h2>
+
                         <p class="mt-6  font-bold text-[20px] leading-[30px] text-[#02145A]">
-                            Iscriviti e scopri come ottenere Sparkz<br> gratuiti da usare nella piattaforma
+
+                            <template v-if="!state.registered">
+                                Iscriviti e scopri come ottenere Sparkz<br> gratuiti da usare nella piattaforma
+                            </template>
+
+                            <template v-else>
+
+                                La tua iscrizione nella community di<br> Glintzo è avvenuta correttamente
+
+                            </template>
+
                         </p>
-                        <p class="text-base mt-4 leading-6 text-[#02145A]">Incontrare e conoscere i visual creator della
-                            nostra <br>community non solo è un <span class="font-bold">piacere</span> ma anche una<br> <span
-                                class="font-bold">necessità</span> per il nostro lavoro: il tuo
-                            feedback per noi è<br> molto importante.<br>
-                            Ti chiediamo quindi di indicarci se sei disponibile ad<br> essere contattato da uno dei
-                            co-founder
-                            di Glintzo e<br> approfondire il funzionamento della piattaforma.
+
+
+                        <p class="text-base mt-4 leading-6 text-[#02145A]">
+
+                            <template v-if="!state.registered">
+                                Incontrare e conoscere i visual creator della
+                                nostra <br>community non solo è un <span class="font-bold">piacere</span> ma anche una<br>
+                                <span class="font-bold">necessità</span> per il nostro lavoro: il tuo
+                                feedback per noi è<br> molto importante.<br>
+                                Ti chiediamo quindi di indicarci se sei disponibile ad<br> essere contattato da uno dei
+                                co-founder
+                                di Glintzo e<br> approfondire il funzionamento della piattaforma.
+                            </template>
+
+                            <template v-else>
+
+                                Ti abbiamo appena inviato un’<span class="font-bold">email di conferma</span><br>
+                                all’indirizzo da te indicato.<br>
+                                Provvederemo ad aggiornarti sulla piattaforma quanto prima
+
+                            </template>
                         </p>
 
                     </div>
                 </div>
-                <form action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
-                    <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
-                        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                            <div>
-                                <text-field v-model="state.first_name" label="Nome" type="text"></text-field>
-                            </div>
-
-                            <div>
-                                <text-field v-model="state.last_name" label="Cognome" type="text"></text-field>
-                            </div>
-
-                            <div>
-
-                                <text-field v-model="state.email" label="Email" type="email" name="email"
-                                    :prepend-icon="mdiEmailOutline"></text-field>
-
-                            </div>
-
-                            <div>
-
-                                <text-field v-model="state.mobile_phone" label="Cellulare" type="text" name="phone-number"
-                                    :prepend-icon="mdiPhone" placeholder="+39 (555) 987-6543"></text-field>
-
-                            </div>
-
-                            <div>
-
-                            </div>
-
-                            <div class="sm:col-span-2">
-
-                                <fieldset>
-
-                                    <legend class="text-[14px] font-medium leading-6 text-[#02145A]">Area geografica di
-                                        lavoro
-                                    </legend>
-
-                                    <div class="mt-4 grid grid-cols-3 gap-x-2 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
-
-
-                                        <!-- MILANO -->
-                                        <label
-                                            class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
-
-                                            <div class="absolute">
-
-                                                <input type="radio" v-model="state.milano" class="sr-only"
-                                                    @click="state.milano = !state.milano">
-
-                                                <lazy-svg-check class="h-5 w-5 text-[#02145A] "
-                                                    :class="state.milano ? '' : 'invisible'"></lazy-svg-check>
-
-                                            </div>
-
-                                            <div class="flex flex-col">
-
-                                                <div class="text-center">
-
-                                                    <lazy-svg-milano class="w-[80px] h-[80px] inline"></lazy-svg-milano>
-
-                                                </div>
-
-                                                <span class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Milano</span>
-
-                                            </div>
-
-                                            <span class="pointer-events-none absolute -inset-px rounded-lg border"
-                                                aria-hidden="true"></span>
-
-                                        </label>
-
-
-                                        <!-- ROMA -->
-                                        <label
-                                            class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
-
-                                            <div class="absolute">
-
-                                                <input type="radio" v-model="state.roma" class="sr-only"
-                                                    @click="state.roma = !state.roma">
-
-                                                <lazy-svg-check class="h-5 w-5 text-[#02145A] "
-                                                    :class="state.roma ? '' : 'invisible'"></lazy-svg-check>
-
-                                            </div>
-
-                                            <div class="flex flex-col">
-
-                                                <div class="text-center">
-
-                                                    <lazy-svg-roma class="w-[80px] h-[80px] inline"></lazy-svg-roma>
-
-                                                </div>
-
-                                                <span class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Roma</span>
-
-                                            </div>
-
-                                            <span class="pointer-events-none absolute -inset-px rounded-lg border"
-                                                aria-hidden="true"></span>
-
-                                        </label>
-
-
-                                        <!-- TORINO -->
-                                        <label
-                                            class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
-
-                                            <div class="absolute">
-
-                                                <input type="radio" v-model="state.torino" class="sr-only"
-                                                    @click="state.torino = !state.torino">
-
-                                                <lazy-svg-check class="h-5 w-5 text-[#02145A] "
-                                                    :class="state.torino ? '' : 'invisible'"></lazy-svg-check>
-
-                                            </div>
-
-                                            <div class="flex flex-col">
-
-                                                <div class="text-center">
-
-                                                    <lazy-svg-torino class="w-[80px] h-[80px] inline"></lazy-svg-torino>
-
-                                                </div>
-
-                                                <span class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Torino</span>
-
-                                            </div>
-
-                                            <span class="pointer-events-none absolute -inset-px rounded-lg border"
-                                                aria-hidden="true"></span>
-
-                                        </label>
-
-                                        
-
-
-
-                                        
-
-
-
-                                    </div>
-                                </fieldset>
-                            </div>
-
-
-                            <div class="sm:col-span-2">
-
-                                <fieldset>
-
-                                    <legend class="text-[14px] font-medium leading-6 text-[#02145A]">Visual creator</legend>
-
-                                    <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
-
-                                        <!-- FOTOGRAFO -->
-                                        <label
-                                            class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
-
-                                            <div class="absolute">
-
-                                                <input type="radio" v-model="state.fotografo" class="sr-only"
-                                                    @click="state.fotografo = !state.fotografo">
-
-                                                <lazy-svg-check class="h-5 w-5 text-[#02145A] "
-                                                    :class="state.fotografo ? '' : 'invisible'"></lazy-svg-check>
-
-                                            </div>
-
-                                            <div class="flex flex-col">
-
-                                                <div class="text-center">
-
-                                                    <lazy-svg-fotografia class="w-[80px] h-[80px] inline"></lazy-svg-fotografia>
-
-                                                </div>
-
-                                                <span class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Fotografo</span>
-
-                                            </div>
-
-                                            <span class="pointer-events-none absolute -inset-px rounded-lg border"
-                                                aria-hidden="true"></span>
-
-                                        </label>
-
-
-                                         <!-- VIDEOMAKER -->
-                                         <label
-                                            class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
-
-                                            <div class="absolute">
-
-                                                <input type="radio" v-model="state.videomaker" class="sr-only"
-                                                    @click="state.videomaker = !state.videomaker">
-
-                                                <lazy-svg-check class="h-5 w-5 text-[#02145A] "
-                                                    :class="state.videomaker ? '' : 'invisible'"></lazy-svg-check>
-
-                                            </div>
-
-                                            <div class="flex flex-col">
-
-                                                <div class="text-center">
-
-                                                    <lazy-svg-videocamera class="w-[80px] h-[80px] inline"></lazy-svg-videocamera>
-
-                                                </div>
-
-                                                <span class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Videomaker</span>
-
-                                            </div>
-
-                                            <span class="pointer-events-none absolute -inset-px rounded-lg border"
-                                                aria-hidden="true"></span>
-
-                                        </label>
-
-                                    
-                                    </div>
-                                </fieldset>
-                            </div>
-
-
-                            <div class="sm:col-span-2">
-
+                <div>
+                    <form  v-if="!state.registered" action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+                        <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+                            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                                <div>
+                                    <text-field v-model="state.first_name" label="Nome" type="text"
+                                        placeholder="Inserisci il tuo nome"></text-field>
+                                </div>
 
                                 <div>
-                                    <label class="text-[14px] font-medium leading-6 text-[#02145A]">Svolgo questa attività
-                                        perchè</label>
+                                    <text-field v-model="state.last_name" label="Cognome" type="text"
+                                        placeholder="Inserisci il tuo cognome"></text-field>
+                                </div>
 
-                                    <fieldset class="mt-4">
+                                <div>
 
-                                        <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
-                                            <div class="flex items-center">
-                                                <input value="business" name="userType" type="radio"
-                                                    v-model="state.userType"
-                                                    class="h-4 w-4 border-[#02145A]  text-[#02145A]">
-                                                <label class="ml-3 block text-[14px] font-normal text-[#02145A]">É la
-                                                    mia
-                                                    professione</label>
-                                            </div>
-                                            <div class="flex items-center">
-                                                <input value="personal" name="userType" type="radio"
-                                                    v-model="state.userType"
-                                                    class="h-4 w-4 border-[#02145A]  text-[#02145A]">
-                                                <label class="ml-3 block text-[14px] font-normal text-[#02145A]">É il
-                                                    mio
-                                                    hobby</label>
-                                            </div>
+                                    <text-field v-model="state.email" label="Email" type="email" name="email"
+                                        :prepend-icon="mdiEmailOutline" placeholder="Inserisci la tua email"></text-field>
+
+                                </div>
+
+                                <div>
+
+                                    <text-field v-model="state.mobile_phone" label="Cellulare" type="text"
+                                        name="phone-number" :prepend-icon="mdiPhone"
+                                        placeholder="+39 (555) 987-6543"></text-field>
+
+                                </div>
+
+                                <div>
+
+                                </div>
+
+                                <div class="sm:col-span-2">
+
+                                    <fieldset>
+
+                                        <legend class="text-[14px] font-medium leading-6 text-[#02145A]">Area geografica di
+                                            lavoro
+                                        </legend>
+
+                                        <div class="mt-4 grid grid-cols-3 gap-x-2 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
+
+
+                                            <!-- MILANO -->
+                                            <label
+                                                class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
+
+                                                <div class="absolute">
+
+                                                    <input type="radio" v-model="state.milano" class="sr-only"
+                                                        @click="state.milano = !state.milano">
+
+                                                    <lazy-svg-check class="h-5 w-5 text-[#02145A] "
+                                                        :class="state.milano ? '' : 'invisible'"></lazy-svg-check>
+
+                                                </div>
+
+                                                <div class="flex flex-col">
+
+                                                    <div class="text-center">
+
+                                                        <lazy-svg-milano class="w-[80px] h-[80px] inline"></lazy-svg-milano>
+
+                                                    </div>
+
+                                                    <span
+                                                        class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Milano</span>
+
+                                                </div>
+
+                                                <span class="pointer-events-none absolute -inset-px rounded-lg border"
+                                                    aria-hidden="true"></span>
+
+                                            </label>
+
+
+                                            <!-- ROMA -->
+                                            <label
+                                                class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
+
+                                                <div class="absolute">
+
+                                                    <input type="radio" v-model="state.roma" class="sr-only"
+                                                        @click="state.roma = !state.roma">
+
+                                                    <lazy-svg-check class="h-5 w-5 text-[#02145A] "
+                                                        :class="state.roma ? '' : 'invisible'"></lazy-svg-check>
+
+                                                </div>
+
+                                                <div class="flex flex-col">
+
+                                                    <div class="text-center">
+
+                                                        <lazy-svg-roma class="w-[80px] h-[80px] inline"></lazy-svg-roma>
+
+                                                    </div>
+
+                                                    <span
+                                                        class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Roma</span>
+
+                                                </div>
+
+                                                <span class="pointer-events-none absolute -inset-px rounded-lg border"
+                                                    aria-hidden="true"></span>
+
+                                            </label>
+
+
+                                            <!-- TORINO -->
+                                            <label
+                                                class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
+
+                                                <div class="absolute">
+
+                                                    <input type="radio" v-model="state.torino" class="sr-only"
+                                                        @click="state.torino = !state.torino">
+
+                                                    <lazy-svg-check class="h-5 w-5 text-[#02145A] "
+                                                        :class="state.torino ? '' : 'invisible'"></lazy-svg-check>
+
+                                                </div>
+
+                                                <div class="flex flex-col">
+
+                                                    <div class="text-center">
+
+                                                        <lazy-svg-torino class="w-[80px] h-[80px] inline"></lazy-svg-torino>
+
+                                                    </div>
+
+                                                    <span
+                                                        class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Torino</span>
+
+                                                </div>
+
+                                                <span class="pointer-events-none absolute -inset-px rounded-lg border"
+                                                    aria-hidden="true"></span>
+
+                                            </label>
+
+
+
+
+
+
+
+
 
                                         </div>
                                     </fieldset>
                                 </div>
 
 
-                            </div>
+                                <div class="sm:col-span-2">
 
-                            <div class="sm:col-span-2">
+                                    <fieldset>
+
+                                        <legend class="text-[14px] font-medium leading-6 text-[#02145A]">Visual creator
+                                        </legend>
+
+                                        <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
+
+                                            <!-- FOTOGRAFO -->
+                                            <label
+                                                class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
+
+                                                <div class="absolute">
+
+                                                    <input type="radio" v-model="state.fotografo" class="sr-only"
+                                                        @click="state.fotografo = !state.fotografo">
+
+                                                    <lazy-svg-check class="h-5 w-5 text-[#02145A] "
+                                                        :class="state.fotografo ? '' : 'invisible'"></lazy-svg-check>
+
+                                                </div>
+
+                                                <div class="flex flex-col">
+
+                                                    <div class="text-center">
+
+                                                        <lazy-svg-fotografia
+                                                            class="w-[80px] h-[80px] inline"></lazy-svg-fotografia>
+
+                                                    </div>
+
+                                                    <span
+                                                        class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Fotografo</span>
+
+                                                </div>
+
+                                                <span class="pointer-events-none absolute -inset-px rounded-lg border"
+                                                    aria-hidden="true"></span>
+
+                                            </label>
 
 
-                                <div>
-                                    <label class="text-[14px] font-medium leading-6 text-[#02145A]">Sono disponibile per una
-                                        call</label>
+                                            <!-- VIDEOMAKER -->
+                                            <label
+                                                class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
 
-                                    <fieldset class="mt-4">
+                                                <div class="absolute">
 
-                                        <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
-                                            <div class="flex items-center">
-                                                <input value="si" name="call" type="radio" v-model="state.call"
-                                                    class="h-4 w-4 border-[#02145A]  text-[#02145A]">
-                                                <label
-                                                    class="ml-3 block  text-[14px] font-normal text-[#02145A]">Si</label>
-                                            </div>
-                                            <div class="flex items-center">
-                                                <input value="no" name="call" type="radio" v-model="state.call"
-                                                    class="h-4 w-4 border-[#02145A] text-[#02145A]">
-                                                <label
-                                                    class="ml-3 block text-[14px] font-normal text-[#02145A]">No</label>
-                                            </div>
+                                                    <input type="radio" v-model="state.videomaker" class="sr-only"
+                                                        @click="state.videomaker = !state.videomaker">
+
+                                                    <lazy-svg-check class="h-5 w-5 text-[#02145A] "
+                                                        :class="state.videomaker ? '' : 'invisible'"></lazy-svg-check>
+
+                                                </div>
+
+                                                <div class="flex flex-col">
+
+                                                    <div class="text-center">
+
+                                                        <lazy-svg-videocamera
+                                                            class="w-[80px] h-[80px] inline"></lazy-svg-videocamera>
+
+                                                    </div>
+
+                                                    <span
+                                                        class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Videomaker</span>
+
+                                                </div>
+
+                                                <span class="pointer-events-none absolute -inset-px rounded-lg border"
+                                                    aria-hidden="true"></span>
+
+                                            </label>
+
 
                                         </div>
                                     </fieldset>
                                 </div>
 
 
+                                <div class="sm:col-span-2">
+
+
+                                    <div>
+                                        <label class="text-[14px] font-medium leading-6 text-[#02145A]">Svolgo questa
+                                            attività
+                                            perchè</label>
+
+                                        <fieldset class="mt-4">
+
+                                            <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+                                                <div class="flex items-center">
+                                                    <input value="business" name="userType" type="radio"
+                                                        v-model="state.userType"
+                                                        class="h-4 w-4 border-[#02145A]  text-[#02145A]">
+                                                    <label class="ml-3 block text-[14px] font-normal text-[#02145A]">É la
+                                                        mia
+                                                        professione</label>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <input value="personal" name="userType" type="radio"
+                                                        v-model="state.userType"
+                                                        class="h-4 w-4 border-[#02145A]  text-[#02145A]">
+                                                    <label class="ml-3 block text-[14px] font-normal text-[#02145A]">É il
+                                                        mio
+                                                        hobby</label>
+                                                </div>
+
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="sm:col-span-2">
+
+
+                                    <div>
+                                        <label class="text-[14px] font-medium leading-6 text-[#02145A]">Sono disponibile per
+                                            una
+                                            call</label>
+
+                                        <fieldset class="mt-4">
+
+                                            <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+                                                <div class="flex items-center">
+                                                    <input value="si" name="call" type="radio" v-model="state.call"
+                                                        class="h-4 w-4 border-[#02145A]  text-[#02145A]">
+                                                    <label
+                                                        class="ml-3 block  text-[14px] font-normal text-[#02145A]">Si</label>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <input value="no" name="call" type="radio" v-model="state.call"
+                                                        class="h-4 w-4 border-[#02145A] text-[#02145A]">
+                                                    <label
+                                                        class="ml-3 block text-[14px] font-normal text-[#02145A]">No</label>
+                                                </div>
+
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="mt-8 flex justify-start">
+
+                                <btn @click="register">Invia</btn>
+
                             </div>
                         </div>
-                        <div class="mt-8 flex justify-start">
+                    </form>
+                    <div v-else class="h-full w-full bg-[url('/assets/images/hello.png')]">
 
-                            <btn @click="register">Invia</btn>
+                       
 
-                        </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
@@ -374,7 +433,12 @@ const state = reactive({
     /**
      * 
      */
-    call: ''
+    call: '',
+
+    /**
+     * 
+     */
+    registered: false,
 
 });
 
@@ -412,7 +476,7 @@ async function register() {
         });
 
 
-        alert('Lead inserted');
+        state.registered = true;
 
     } catch (error) {
 
