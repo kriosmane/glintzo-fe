@@ -11,16 +11,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins'],
+        sans: ["Poppins"],
       },
       colors: {
-        primary : '#1683FE',
-        secondary: '#FE9216'
-      }
+        primary: "#1683FE",
+        secondary: "#FE9216",
+        "dark-blue": "#02145A",
+        pink: "#FB2283"
+      },
+    },
+    maxWidth: {
+      "8xl": "90rem",
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-  ],
-}
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
+};
