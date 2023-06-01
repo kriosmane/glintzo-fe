@@ -1,6 +1,8 @@
 <template>
     <swiper :modules="modules" :mousewheel="true" :slides-per-view="1" :space-between="0" @swiper="onSwiper"
-        @slideChange="onSlideChange">
+        @slideChange="onSlideChange" :pagination="{
+            clickable: true,
+        }">
 
 
         <swiper-slide v-for="(slide, index) in slides" :key="index">
@@ -83,3 +85,17 @@ function onSlideChange() {
 
 }
 </script>
+
+
+<style>
+.swiper-pagination-bullet {
+    border-radius: 0px !important;
+    height: 5px;
+    width: 38px;
+    background: #E5DFFE;
+    border-radius: 8px;
+}
+.swiper-pagination-bullet-active {
+    background: #1E16FE !important;
+}
+</style>
