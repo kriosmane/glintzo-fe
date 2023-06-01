@@ -412,7 +412,6 @@ if (process.client) {
       trigger: ".trigger",
       scrub: true,
       pin: true,
-      markers: true,
     },
   });
 
