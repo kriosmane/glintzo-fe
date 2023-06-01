@@ -23,7 +23,8 @@ module.exports = {
         primary: "#1683FE",
         secondary: "#FE9216",
         "dark-blue": "#02145A",
-        pink: "#FB2283"
+        pink: "#FB2283",
+        "pink-light": "#FED9EA",
       },
       backgroundImage: {
         "slide-1" : "linear-gradient(270deg, rgba(34, 134, 251, 0.6) 0.13%, rgba(34, 134, 251, 0.4) 50.52%, rgba(34, 134, 251, 0.6) 100%)",
