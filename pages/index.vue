@@ -4,17 +4,37 @@
 }
 
 .text-illusion {
- background: white;
-  color: black!important;
+  background: white;
+  color: black !important;
   mix-blend-mode: screen;
-  font-family: 'Poppins';
-font-style: normal!important;
-font-weight: 700!important;
-font-size: 180px!important;
-line-height: 200px!important;
+  font-family: "Poppins";
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 180px !important;
+  line-height: 200px !important;
 }
 
+.trigger {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #02145a;
+}
+.panel.effect-section {
+  /*   display: flex; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
+.effect-section:not(.first) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#rotate {
+  text-align: center;
+}
 
 section {
   height: 100vh;
@@ -26,11 +46,13 @@ section {
   position: relative;
 }
 
-.box-container p {
+.box-container p,
+.trigger p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 130px;
+  margin: auto;
 }
 
 .panel {
@@ -85,15 +107,14 @@ section {
 }
 
 @media screen and (max-width: 1280px) {
-.box-container p{
-  font-size: 45px;
+  .trigger p {
+    font-size: 45px;
   }
 
   .text-illusion {
-font-size: 65px!important;
-line-height: 85px!important;
-}
-
+    font-size: 65px !important;
+    line-height: 85px !important;
+  }
 }
 </style>
 <template>
@@ -197,7 +218,7 @@ line-height: 85px!important;
         </div>
       </div>
       <!-- effect slide words -->
-      <div class="box-container">
+      <!--    <div class="box-container">
         <section class="top">
           <div class="img red bg-[#02145A]"></div>
           <p>Qualità</p>
@@ -218,16 +239,41 @@ line-height: 85px!important;
           <div class="img blue bg-[#02145A]"></div>
           <p>Fiducia</p>
         </section>
-      </div>
+      </div> -->
       <!-- end effect slide words -->
-
-      <div
-        class="panel red blue min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text.png')]"
-      >
-   
+      <div class="trigger">
+        <div class="first panel one effect-section">
+          <p></p>
+          <div class="scroll-down"></div>
+        </div>
+        <div class="panel two effect-section">
+          <p>Qualità</p>
+          <div></div>
+        </div>
+        <div class="panel three effect-section">
+          <p>Professionalità</p>
+          <div></div>
+        </div>
+        <div class="panel four effect-section">
+          <p>Innovazione</p>
+          <div></div>
+        </div>
+        <div class="panel five effect-section">
+          <p>Creatività</p>
+          <div></div>
+        </div>
+        <div class="panel six effect-section">
+          <p>Fiducia</p>
+          <div></div>
+        </div>
       </div>
-      <p class="panel orange min-h-screen min-w-full text-illusion bg-gray-700">CREATIVITY<br> IS <br>HUMAN
-</p>
+      <div
+        class="panel text-effect min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text.png')]"
+      ></div>
+      <p class="panel text-effect min-h-screen min-w-full text-illusion bg-gray-700">
+        CREATIVITY<br />
+        IS <br />HUMAN
+      </p>
 
       <div class="bg-[#F8F9F9] pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
         <div class="bg-gray-900 pb-20 sm:pb-24 xl:pb-0">
@@ -437,21 +483,51 @@ import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 
 if (process.client) {
   gsap.registerPlugin(ScrollTrigger);
-  const sections = gsap.utils.toArray("section");
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".trigger",
+      scrub: true,
+      pin: true,
+      markers: true,
+    },
+  });
+
+  tl.to(".one", {opacity: 0});
+
+tl.fromTo(".two", {autoAlpha: 0, y: 50,skewY:-4}, {skewY:0,duration: 1, autoAlpha: 1, y: 0});
+tl.fromTo(".two",  {duration: 1, autoAlpha: 1, y: 0}, {duration: 1, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 60});
+
+tl.fromTo(".three", {autoAlpha: 0, y: 50,skewY:-4}, {skewY:0,duration: 1, autoAlpha: 1, y: 0});
+tl.fromTo(".three",  {duration: 1, autoAlpha: 1, y: 0}, {duration: 1, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 60});
+
+tl.fromTo(".four", {autoAlpha: 0, y: 50,skewY:-4}, {skewY:0,duration: 1, autoAlpha: 1, y: 0});
+tl.fromTo(".four",  {duration: 1, autoAlpha: 1, y: 0}, {duration: 1, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 60});
+
+tl.fromTo(".five", {autoAlpha: 0, y: 50,skewY:-4}, {skewY:0,duration: 1, autoAlpha: 1, y: 0});
+tl.fromTo(".five",  {duration: 1, autoAlpha: 1, y: 0}, {duration: 1, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 60});
+
+tl.fromTo(".six", {autoAlpha: 0, y: 50,skewY:-4}, {duration: 1, autoAlpha: 1, y: 0,skewY:0});
+
+  //tl.from(".two",{ y: 100, skewY: -4, rotationX: 0}).to(".two",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
+/*   tl.to( ".three",{ y: 100, skewY: -4, rotationX: 0}).to(".three",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
+    tl.to( ".four",{ y: 100, skewY: -4, rotationX: 0}).to(".four",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
+    tl.to( ".five",{ y: 100, skewY: -4, rotationX: 0}).to(".five",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
+  tl.to(".five", {opacity: 0,});
+    tl.to( ".six",{ y: 100, skewY: -4, rotationX: 0}).to(".six",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
+  tl.to(".s", {opacity: 0,}); */
+  /*   const sections = gsap.utils.toArray("section");
 
   sections.forEach((section, index) => {
-    const text = section.querySelector("p"),
-      color = section.querySelector(".img");
+    const text = section.querySelector("p");
 
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: section,
-        pin: true,
-        scrub: 1,
-        pinSpacing: false,
-        start: "top top",
-        end:"100",
-        markers:true
+         scrub: 1,
+         markers: true, 
+        start: 'top top',
+            end: 'bottom top',
+         pin: true,
       },
     });
 
@@ -461,8 +537,8 @@ if (process.client) {
       tl.to(text, { opacity: 0, y: -100, ease: "power1.in", skewY: 0, rotationX: 60 });
     }
   });
-
-  let panels = gsap.utils.toArray(".panel");
+ */
+  let panels = gsap.utils.toArray(".panel.text-effect");
 
   panels.forEach((panel, i) => {
     ScrollTrigger.create({
