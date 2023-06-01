@@ -87,15 +87,15 @@ function onSlideChange() {
 </script>
 
 
-<style>
-.swiper-pagination-bullet {
+<style scoped>
+:deep(.swiper-pagination-bullet) {
     border-radius: 0px !important;
     height: 5px;
     width: 38px;
     background: #E5DFFE;
     border-radius: 8px;
 }
-.swiper-pagination-bullet-active {
+:deep(.swiper-pagination-bullet-active) {
     background: #1E16FE !important;
 }
 </style>
