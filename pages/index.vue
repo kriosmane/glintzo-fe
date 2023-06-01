@@ -418,16 +418,21 @@ if (process.client) {
   tl.to(".one", {opacity: 0});
 
 tl.fromTo(".two", {autoAlpha: 0, y: 50,skewY:-4}, {skewY:0,duration: 2.5, autoAlpha: 1, y: 0});
-tl.fromTo(".two",  { autoAlpha: 1, y: 0}, {duration: 2.5, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 60});
+tl.fromTo(".two",  { autoAlpha: 1, y: 0}, {duration: 2.5, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40});
+tl.fromTo(".two",  {duration: 2.5, autoAlpha: 0}, { autoAlpha: 0, delay:2} );
+
 
 tl.fromTo(".three", {autoAlpha: 0, y: 50,skewY:-4}, {skewY:0,duration: 2.5, autoAlpha: 1, y: 0});
-tl.fromTo(".three",  { autoAlpha: 1, y: 0}, {duration: 2.5, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 60});
+tl.fromTo(".three",  { autoAlpha: 1, y: 0}, {duration: 2.5, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40});
+tl.fromTo(".three",  {duration: 2.5, autoAlpha: 0}, { autoAlpha: 0, delay:2} );
 
 tl.fromTo(".four", {autoAlpha: 0, y: 50,skewY:-4}, {skewY:0,duration: 2.5, autoAlpha: 1, y: 0});
-tl.fromTo(".four",  { autoAlpha: 1, y: 0}, {duration: 2.5, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 60});
+tl.fromTo(".four",  { autoAlpha: 1, y: 0}, {duration: 2.5, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40});
+tl.fromTo(".four",  {duration: 2.5, autoAlpha: 0}, { autoAlpha: 0, delay:2} );
 
 tl.fromTo(".five", {autoAlpha: 0, y: 50,skewY:-4}, {skewY:0,duration: 2.5, autoAlpha: 1, y: 0});
-tl.fromTo(".five",  { autoAlpha: 1, y: 0}, {duration: 2.5, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 60});
+tl.fromTo(".five",  { autoAlpha: 1, y: 0}, {duration: 2.5, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40});
+tl.fromTo(".five",  {duration: 2.5, autoAlpha: 0}, { autoAlpha: 0, delay:2} );
 
 tl.fromTo(".six", {autoAlpha: 0, y: 50,skewY:-4}, {duration: 2.5, autoAlpha: 1, y: 0,skewY:0});
 
