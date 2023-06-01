@@ -7,18 +7,13 @@
   background: white;
   color: black !important;
   mix-blend-mode: screen;
-<<<<<<< HEAD
   font-family: "Poppins";
-=======
-  font-family: 'Poppins';
->>>>>>> 7a5ce29c72dbce4dad422c7aef707a1362b0aed9
   font-style: normal !important;
   font-weight: 700 !important;
   font-size: 180px !important;
   line-height: 200px !important;
 }
 
-<<<<<<< HEAD
 .trigger {
   position: relative;
   height: 100%;
@@ -41,8 +36,6 @@
   text-align: center;
 }
 
-=======
->>>>>>> 7a5ce29c72dbce4dad422c7aef707a1362b0aed9
 section {
   height: 100vh;
   text-align: center;
@@ -454,19 +447,11 @@ tl.fromTo(".six", {autoAlpha: 0, y: 50,skewY:-4}, {duration: 1, autoAlpha: 1, y:
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: section,
-<<<<<<< HEAD
          scrub: 1,
          markers: true, 
         start: 'top top',
             end: 'bottom top',
          pin: true,
-=======
-        pin: true,
-        scrub: 1,
-        pinSpacing: true,
-        start: "top top",
-        end: "+=100",
->>>>>>> 7a5ce29c72dbce4dad422c7aef707a1362b0aed9
       },
     });
 
