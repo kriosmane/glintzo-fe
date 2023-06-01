@@ -217,7 +217,6 @@ section {
         </section>
       </div> -->
       <!-- end effect slide words -->
-<<<<<<< HEAD
       <div class="trigger">
         <div class="first panel one effect-section">
           <p></p>
@@ -250,13 +249,6 @@ section {
       <p class="panel text-effect min-h-screen min-w-full text-illusion bg-gray-700">
         CREATIVITY<br />
         IS <br />HUMAN
-=======
-
-      <div class="panel red blue min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text.png')]">
-
-      </div>
-      <p class="panel orange min-h-screen min-w-full text-illusion bg-gray-700">CREATIVITY<br> IS <br>HUMAN
->>>>>>> 7a5ce29c72dbce4dad422c7aef707a1362b0aed9
       </p>
 
       <div class=" pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
