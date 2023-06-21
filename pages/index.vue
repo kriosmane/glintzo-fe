@@ -122,9 +122,10 @@ section {
     <main>
       <div class="relative isolate">
         <div class="overflow-hidden">
-          <div class="mx-auto max-w-8xl px-10 pb-32 pt-36 sm:pt-60 lg:px-40 lg:pt-32">
+          <div class="mx-auto max-w-8xl px-10 pb-32 pt-36 sm:pt-60 lg:px-40 lg:pt-4 2xl:pt-32">
             <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-              <div class="w-full max-w-xl  xl:max-w-2xl">
+
+              <div class="w-full lg:min-w-[600px] max-w-xl  xl:max-w-2xl">
                 <h1 class="text-4xl font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
                   La piattaforma di matching amica dei visual creator
                 </h1>
@@ -134,16 +135,18 @@ section {
                   <span class="font-bold">fotografi</span> e
                   <span class="font-bold">videomaker</span> sul panorama italiano in modo
                   <span class="font-bold">semplice</span> e
-                  <span class="font-bold">innovativo</span>..
+                  <span class="font-bold">innovativo</span>.
                 </p>
-                <div class="mt-10 flex items-center gap-x-6">
+                <div class="mt-8 flex items-center gap-x-6">
                   <NuxtLink to="/register"
-                    class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+                    class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                     Registrati
                   </NuxtLink>
                 </div>
               </div>
-              <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+
+              
+              <div class="mt-14 flex justify-end gap-8 md:-mt-44 lg:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                 <div
                   class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                   <div class="relative">

@@ -377,6 +377,8 @@
 
                         <h1 class="text-5xl text-pink text-center">HELLO</h1>
 
+                        <img src="~/assets/images/hello.png" />
+
                     </div>
 
                 </div>

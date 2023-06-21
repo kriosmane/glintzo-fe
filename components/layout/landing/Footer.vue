@@ -1,20 +1,21 @@
 <template>
     <footer class="bg-[#02145A]">
-        <div class="mx-auto text-[#FFFFFF] max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8 space-y-5">
+
+        <div class="mx-auto text-[#FFFFFF] max-w-7xl overflow-hidden px-6 pt-10 pb-4  lg:px-8 space-y-5">
 
             <div class="flex justify-center">
 
-                <p class="text-xl">www.glintzo.com | info@glintzo.it</p>
+                <p class="text-xl font-normal">www.glintzo.com | info@glintzo.it</p>
 
             </div>
-            <div class="flex justify-center">
+            <div class="flex justify-center font-normal">
 
-                <p class="text-base">© 2023 Glintzo. All rights reserved</p>
+                <p class="text-base font-normal">© 2023 Glintzo. All rights reserved</p>
 
             </div>
 
-            <div class="flex justify-center space-x-10">
-                <a href="#" class="text-gray-400 hover:text-gray-500">
+            <div class="flex justify-center space-x-5">
+                <a href="#" class="">
                     <span class="sr-only">Facebook</span>
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill-rule="evenodd"
@@ -22,7 +23,7 @@
                             clip-rule="evenodd" />
                     </svg>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-gray-500">
+                <a href="#" class="">
                     <span class="sr-only">Instagram</span>
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill-rule="evenodd"
@@ -31,11 +32,23 @@
                     </svg>
                 </a>
 
+            </div>
 
+            <div class="flex justify-center font-normal">
+
+                <div class="flex flex-row">
+
+                    <span class="mr-10">Privacy policy</span>
+
+                    <span>Cookie policy</span>
+
+
+                </div>
+
+               
 
             </div>
-            <p class=" text-center text-xs leading-5">&copy; 2020 Your Company, Inc. All rights
-                reserved.</p>
+          
         </div>
     </footer>
 </template>

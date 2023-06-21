@@ -39,13 +39,13 @@ const timeline = [
         title: 'Crea il tuo profilo', text: 'Metti in mostra il tuo talento creando il tuo profilo personalizzato, condividi le tue migliori opere e racconta la tua storia creativa.',
     },
     {
-        title: 'Crea il tuo profilo', text: ' Scopri le richieste dei clienti, fai conoscere il tuo portfolio e dimostra di avere il tocco giusto per soddisfare le esigenze del mercato.',
+        title: 'Rispondi alle richieste', text: ' Scopri le richieste dei clienti, fai conoscere il tuo portfolio e dimostra di avere il tocco giusto per soddisfare le esigenze del mercato.',
     },
     {
-        title: 'Crea il tuo profilo', text: ' Stabilisci il prezzo giusto per il tuo lavoro e crea un preventivo dettagliato per garantire la massima trasparenza e soddisfare i clienti.',
+        title: 'Finalizza il preventivo', text: ' Stabilisci il prezzo giusto per il tuo lavoro e crea un preventivo dettagliato per garantire la massima trasparenza e soddisfare i clienti.',
     },
     {
-        title: 'Crea il tuo profilo', text: 'Metti in pratica la tua creatività, completa il lavoro nel modo più professionale e rapido possibile e raccogli i frutti del tuo impegno!',
+        title: 'Completa il lavoro', text: 'Metti in pratica la tua creatività, completa il lavoro nel modo più professionale e rapido possibile e raccogli i frutti del tuo impegno!',
     },
 ];
 
