@@ -17,7 +17,7 @@
         <div class="h-full">
           <div
             :class="
-              ' h-full min-h-[501px]  sm:min-h-[340px] bg-slide-' + slide.id
+              ' h-full  min-h-[501px]  sm:min-h-[340px] bg-slide-' + slide.id
             "
             class="pt-0 xl:pb-0"
           >
@@ -25,7 +25,7 @@
               class="mx-auto flex max-w-8xl flex-col items-center gap-x-28 gap-y-10 px-10 sm:gap-y-8 lg:px-40 xl:flex-row xl:items-stretch"
             >
               <div class="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
-                <div class="relative h-full h-[258px] sm:h-auto">
+                <div class="relative h-full min-h-[258px] sm:min-h-auto">
                   <img
                     class="absolute inset-0 h-full w-full rounded-2xl object-cover shadow-2xl"
                     :src="slide.image"
