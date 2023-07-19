@@ -103,7 +103,7 @@
                                             lavoro
                                         </legend>
 
-                                        <div class="mt-4 grid grid-cols-3 gap-x-2 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
+                                        <div class="mt-4 grid grid-cols-2 gap-x-2 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
 
 
                                             <!-- MILANO -->
@@ -224,7 +224,7 @@
                                         <legend class="text-[14px] font-medium leading-6 text-[#02145A]">Visual creator
                                         </legend>
 
-                                        <div class="mt-4 grid  gap-y-6 grid-cols-3 gap-x-2 sm:gap-x-4">
+                                        <div class="mt-4 grid  gap-y-6 grid-cols-2 sm:grid-cols-3 gap-x-2 sm:gap-x-4">
 
                                             <!-- FOTOGRAFO -->
                                             <label
@@ -372,7 +372,7 @@
                             </div>
                         </div>
                     </form>
-                    
+
                     <div class="flex items-center h-full justify-center" v-else>
 
                         <h1 class="text-5xl text-pink text-center">HELLO</h1>
