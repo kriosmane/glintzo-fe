@@ -20,6 +20,7 @@
   min-height: 100vh;
   background-color: #02145a;
 }
+
 .panel.effect-section {
   /*   display: flex; */
   position: absolute;
@@ -145,7 +146,7 @@ section {
                 </div>
               </div>
 
-              
+
               <div class="mt-14 flex justify-end gap-8 md:-mt-44 lg:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                 <div
                   class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
@@ -240,14 +241,14 @@ section {
         </div>
       </div>
       <div
-        class="panel text-effect min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text.png')]"
-      ></div>
+        class="panel text-effect min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text.png')]">
+      </div>
       <p class="panel text-effect min-h-screen min-w-full text-illusion bg-gray-700">
         CREATIVITY<br />
         IS <br />HUMAN
       </p>
 
-      
+
       <LazyLayoutLandingSlider></LazyLayoutLandingSlider>
 
       <LazyLayoutLandingTimeline></LazyLayoutLandingTimeline>
@@ -276,7 +277,7 @@ section {
 
             <div class="mt-10 flex items-center justify-center gap-x-6">
               <NuxtLink to="/register"
-                class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+                class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                 Registrati
               </NuxtLink>
             </div>
@@ -303,34 +304,34 @@ if (process.client) {
     },
   });
 
-  tl.to(".one", {opacity: 0});
+  tl.to(".one", { opacity: 0 });
 
-tl.fromTo(".two", {autoAlpha: 0, y: 50,skewY:-4}, {skewY:0,duration: 2.5, autoAlpha: 1, y: 0});
-tl.fromTo(".two",  { autoAlpha: 1, y: 0}, {duration: 2.5, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40});
-tl.fromTo(".two",  {duration: 2.5, autoAlpha: 0}, { autoAlpha: 0, delay:2} );
+  tl.fromTo(".two", { autoAlpha: 0, y: 50, skewY: -4 }, { skewY: 0, duration: 2.5, autoAlpha: 1, y: 0 });
+  tl.fromTo(".two", { autoAlpha: 1, y: 0 }, { duration: 2.5, autoAlpha: 0, y: 0, opacity: 0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40 });
+  tl.fromTo(".two", { duration: 2.5, autoAlpha: 0 }, { autoAlpha: 0, delay: 2 });
 
 
-tl.fromTo(".three", {autoAlpha: 0, y: 50,skewY:-4}, {skewY:0,duration: 2.5, autoAlpha: 1, y: 0});
-tl.fromTo(".three",  { autoAlpha: 1, y: 0}, {duration: 2.5, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40});
-tl.fromTo(".three",  {duration: 2.5, autoAlpha: 0}, { autoAlpha: 0, delay:2} );
+  tl.fromTo(".three", { autoAlpha: 0, y: 50, skewY: -4 }, { skewY: 0, duration: 2.5, autoAlpha: 1, y: 0 });
+  tl.fromTo(".three", { autoAlpha: 1, y: 0 }, { duration: 2.5, autoAlpha: 0, y: 0, opacity: 0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40 });
+  tl.fromTo(".three", { duration: 2.5, autoAlpha: 0 }, { autoAlpha: 0, delay: 2 });
 
-tl.fromTo(".four", {autoAlpha: 0, y: 50,skewY:-4}, {skewY:0,duration: 2.5, autoAlpha: 1, y: 0});
-tl.fromTo(".four",  { autoAlpha: 1, y: 0}, {duration: 2.5, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40});
-tl.fromTo(".four",  {duration: 2.5, autoAlpha: 0}, { autoAlpha: 0, delay:2} );
+  tl.fromTo(".four", { autoAlpha: 0, y: 50, skewY: -4 }, { skewY: 0, duration: 2.5, autoAlpha: 1, y: 0 });
+  tl.fromTo(".four", { autoAlpha: 1, y: 0 }, { duration: 2.5, autoAlpha: 0, y: 0, opacity: 0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40 });
+  tl.fromTo(".four", { duration: 2.5, autoAlpha: 0 }, { autoAlpha: 0, delay: 2 });
 
-tl.fromTo(".five", {autoAlpha: 0, y: 50,skewY:-4}, {skewY:0,duration: 2.5, autoAlpha: 1, y: 0});
-tl.fromTo(".five",  { autoAlpha: 1, y: 0}, {duration: 2.5, autoAlpha: 0, y: 0, opacity:0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40});
-tl.fromTo(".five",  {duration: 2.5, autoAlpha: 0}, { autoAlpha: 0, delay:2} );
+  tl.fromTo(".five", { autoAlpha: 0, y: 50, skewY: -4 }, { skewY: 0, duration: 2.5, autoAlpha: 1, y: 0 });
+  tl.fromTo(".five", { autoAlpha: 1, y: 0 }, { duration: 2.5, autoAlpha: 0, y: 0, opacity: 0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40 });
+  tl.fromTo(".five", { duration: 2.5, autoAlpha: 0 }, { autoAlpha: 0, delay: 2 });
 
-tl.fromTo(".six", {autoAlpha: 0, y: 50,skewY:-4}, {duration: 2.5, autoAlpha: 1, y: 0,skewY:0});
+  tl.fromTo(".six", { autoAlpha: 0, y: 50, skewY: -4 }, { duration: 2.5, autoAlpha: 1, y: 0, skewY: 0 });
 
   //tl.from(".two",{ y: 100, skewY: -4, rotationX: 0}).to(".two",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
-/*   tl.to( ".three",{ y: 100, skewY: -4, rotationX: 0}).to(".three",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
-    tl.to( ".four",{ y: 100, skewY: -4, rotationX: 0}).to(".four",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
-    tl.to( ".five",{ y: 100, skewY: -4, rotationX: 0}).to(".five",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
-  tl.to(".five", {opacity: 0,});
-    tl.to( ".six",{ y: 100, skewY: -4, rotationX: 0}).to(".six",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
-  tl.to(".s", {opacity: 0,}); */
+  /*   tl.to( ".three",{ y: 100, skewY: -4, rotationX: 0}).to(".three",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
+      tl.to( ".four",{ y: 100, skewY: -4, rotationX: 0}).to(".four",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
+      tl.to( ".five",{ y: 100, skewY: -4, rotationX: 0}).to(".five",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
+    tl.to(".five", {opacity: 0,});
+      tl.to( ".six",{ y: 100, skewY: -4, rotationX: 0}).to(".six",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
+    tl.to(".s", {opacity: 0,}); */
   /*   const sections = gsap.utils.toArray("section");
 
   sections.forEach((section, index) => {
