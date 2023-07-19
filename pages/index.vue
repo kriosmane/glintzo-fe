@@ -278,7 +278,7 @@ overflow:initial!important;
       <div
         class="panel text-effect min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text.png')]"
       ></div>
-      <p class="panel text-effect min-h-screen min-w-full text-illusion bg-gray-700">
+      <p class="panel text-effect min-h-screen min-w-full text-illusion sm:bg-gray-700">
         CREATIVITY<br />
         IS <br />HUMAN
       </p>

@@ -1,5 +1,5 @@
 <template>
-<div class="sm:pb-24 sm:pt-32 xl:pb-32 overflow-hidden">
+<div class="sm:pb-24  pt-24 sm:pt-32 xl:pb-32 overflow-hidden">
     <swiper   :speed="1500" class="overflow-initial" :modules="modules" :mousewheel="true" :slides-per-view="1" :space-between="0" @swiper="onSwiper"
         @slideChange="onSlideChange" :pagination="{
             clickable: true,
@@ -16,13 +16,13 @@
                         class="mx-auto flex max-w-8xl flex-col items-center gap-x-28 gap-y-10 px-10 sm:gap-y-8 lg:px-40 xl:flex-row xl:items-stretch">
 
                         <div class="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
-                            <div class="relative  h-full ">
+                            <div class="relative  h-full  min-h-[258px] sm:min-h-auto">
                                 <img class="absolute inset-0 h-full w-full rounded-2xl  object-cover shadow-2xl"
                                     :src="slide.image" />
                             </div>
                         </div>
 
-                        <div class="w-full max-w-2xl xl:max-w-none xl:flex-auto pt-12 pb-20 space-y-8">
+                        <div class="w-full max-w-2xl xl:max-w-none xl:flex-auto  sm:pt-12 pb-20 sm:space-y-8">
 
                             <h2 class="text-dark-blue font-bold text-[30px]">{{ slide.title }} </h2>
 
