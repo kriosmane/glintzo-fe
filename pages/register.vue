@@ -5,11 +5,11 @@
 
             <div class="w-full flex flex-col lg:flex-row py-10 md:py-10 2xl:py-32 relative">
 
-                <div id="sticky" class="lg:basis-1/2 pr-0 sm:pr-4 sticky top-0">
+                <div class="lg:basis-1/2 pr-0 sm:pr-4">
 
                     <h2 class="font-bold tracking-tight text-pink text-[40px] leading-[60px]">
 
-                        <template v-if="!state.registered">
+                        <template v-if="!state.registered"> 
                             Entra nella<br>
                             community di<br> Glintzo
                         </template>
