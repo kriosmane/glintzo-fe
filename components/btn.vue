@@ -1,11 +1,10 @@
 <template>
+    <button :disabled="disabled" :type="type" :class="buttonClass"
+        class=" items-center rounded-[4px] px-5 py-3 font-semibold shadow-sm ">
 
-    <button :disabled="disabled" :type="type" :class="buttonClass" class="inline-flex items-center rounded-md px-3 py-2 font-semibold shadow-sm ">
-        
         <slot></slot>
 
     </button>
-
 </template>
 
 <script setup>
@@ -44,7 +43,7 @@ const props = defineProps({
      * 
      */
     color: {
-        type: String, 
+        type: String,
         default: 'text-white'
     },
 
@@ -76,7 +75,7 @@ const props = defineProps({
      * 
      */
     disabled: {
-        type: Boolean, 
+        type: Boolean,
         default: false
     }
 

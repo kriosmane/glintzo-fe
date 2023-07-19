@@ -367,7 +367,7 @@
                             </div>
                             <div class="mt-8 flex justify-start">
 
-                                <btn @click="register">Invia</btn>
+                                <btn bg-color="bg-[#1E16FE] w-[100px]" @click="register">Invia</btn>
 
                             </div>
                         </div>
