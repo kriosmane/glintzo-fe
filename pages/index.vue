@@ -47,6 +47,10 @@ section {
   position: relative;
 }
 
+.h-auto-imp{
+  height:auto!important;
+}
+
 .box-container p,
 .trigger p {
   font-family: "Poppins";
