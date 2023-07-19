@@ -1,6 +1,6 @@
 <template>
 <div class="sm:pb-24 sm:pt-32 xl:pb-32 overflow-hidden">
-    <swiper class="overflow-initial" :modules="modules" :mousewheel="true" :slides-per-view="1" :space-between="0" @swiper="onSwiper"
+    <swiper   :speed="1500" class="overflow-initial" :modules="modules" :mousewheel="true" :slides-per-view="1" :space-between="0" @swiper="onSwiper"
         @slideChange="onSlideChange" :pagination="{
             clickable: true,
         }">
@@ -10,7 +10,7 @@
 
             <div class="">
 
-                <div :class="'bg-slide-' + slide.id" class="pb-20 sm:pb-24 pt-0 xl:pb-0">
+                <div :class="' flex items-center min-h-[501px]  sm:min-h-[340px] bg-slide-' + slide.id" class=" pt-0 xl:pb-0">
 
                     <div
                         class="mx-auto flex max-w-8xl flex-col items-center gap-x-28 gap-y-10 px-10 sm:gap-y-8 lg:px-40 xl:flex-row xl:items-stretch">
