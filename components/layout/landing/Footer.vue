@@ -38,17 +38,21 @@
 
                 <div class="flex flex-row">
 
-                    <span class="mr-10">Privacy policy</span>
+                    <span class="mr-10">
+                        <NuxtLink to="/privacy-policy">Privacy policy</NuxtLink>
+                    </span>
 
-                    <span>Cookie policy</span>
+                    <span>
+                        <NuxtLink to="/cookie-policy">Cookie policy</NuxtLink>
+                    </span>
 
 
                 </div>
 
-               
+
 
             </div>
-          
+
         </div>
     </footer>
 </template>
