@@ -1,11 +1,11 @@
 <template>
-    <div class="w-full lg:bg-gradient-to-r lg:from-[#DEE1FE] lg:to-white lg:to-50% ">
+    <div class="w-full h-full lg:bg-gradient-to-r lg:from-[#DEE1FE] lg:to-white lg:to-50% ">
 
         <div class="max-w-8xl  mx-auto px-10 sm:py-4 sm:px-20 xl:px-40 ">
 
-            <div class="w-full flex flex-col lg:flex-row py-10 lg:py-32">
+            <div class="w-full flex flex-col lg:flex-row py-10 md:py-10 2xl:py-32 relative">
 
-                <div class="lg:basis-1/2 pr-0 sm:pr-4">
+                <div id="sticky" class="lg:basis-1/2 pr-0 sm:pr-4 sticky top-0">
 
                     <h2 class="font-bold tracking-tight text-pink text-[40px] leading-[60px]">
 
@@ -37,7 +37,7 @@
 
                     </p>
 
-                    <p class="text-base mt-4 leading-6 text-dark-blue]">
+                    <p class="text-base mt-4 leading-6 text-dark-blue">
 
                         <template v-if="!state.registered">
                             Incontrare e conoscere i visual creator della
@@ -226,9 +226,6 @@
 
                     <div class="flex items-center h-full justify-center" v-else>
 
-                        <h1 class="text-5xl text-pink text-center">HELLO</h1>
-
-                        <img src="~/assets/images/hello.png" />
 
                     </div>
 

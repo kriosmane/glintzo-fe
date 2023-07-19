@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-[#02145A]">
+    <footer class="bg-[#02145A] ">
 
         <div class="mx-auto text-[#FFFFFF] max-w-7xl overflow-hidden px-6 pt-10 pb-4  lg:px-8 space-y-5">
 
