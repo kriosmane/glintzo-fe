@@ -105,112 +105,20 @@
 
                                         <div class="mt-4 grid grid-cols-2 gap-x-2 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
 
-
                                             <!-- MILANO -->
-                                            <label
-                                                class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
-
-                                                <div class="absolute">
-
-                                                    <input type="radio" v-model="state.milano" class="sr-only"
-                                                        @click="state.milano = !state.milano">
-
-                                                    <lazy-svg-check class="h-5 w-5 text-[#02145A] "
-                                                        :class="state.milano ? '' : 'invisible'"></lazy-svg-check>
-
-                                                </div>
-
-                                                <div class="flex flex-col">
-
-                                                    <div class="text-center">
-
-                                                        <lazy-svg-milano class="w-[80px] h-[80px] inline"></lazy-svg-milano>
-
-                                                    </div>
-
-                                                    <span
-                                                        class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Milano</span>
-
-                                                </div>
-
-                                                <span class="pointer-events-none absolute -inset-px rounded-lg border"
-                                                    aria-hidden="true"></span>
-
-                                            </label>
-
+                                            <label-card v-model="state.milano" title="Milano">
+                                                <lazy-svg-milano class="w-[80px] h-[80px] inline"></lazy-svg-milano>
+                                            </label-card>
 
                                             <!-- ROMA -->
-                                            <label
-                                                class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
-
-                                                <div class="absolute">
-
-                                                    <input type="radio" v-model="state.roma" class="sr-only"
-                                                        @click="state.roma = !state.roma">
-
-                                                    <lazy-svg-check class="h-5 w-5 text-[#02145A] "
-                                                        :class="state.roma ? '' : 'invisible'"></lazy-svg-check>
-
-                                                </div>
-
-                                                <div class="flex flex-col">
-
-                                                    <div class="text-center">
-
-                                                        <lazy-svg-roma class="w-[80px] h-[80px] inline"></lazy-svg-roma>
-
-                                                    </div>
-
-                                                    <span
-                                                        class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Roma</span>
-
-                                                </div>
-
-                                                <span class="pointer-events-none absolute -inset-px rounded-lg border"
-                                                    aria-hidden="true"></span>
-
-                                            </label>
-
+                                            <label-card v-model="state.roma" title="Roma">
+                                                <lazy-svg-roma class="w-[80px] h-[80px] inline"></lazy-svg-roma>
+                                            </label-card>
 
                                             <!-- TORINO -->
-                                            <label
-                                                class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
-
-                                                <div class="absolute">
-
-                                                    <input type="radio" v-model="state.torino" class="sr-only"
-                                                        @click="state.torino = !state.torino">
-
-                                                    <lazy-svg-check class="h-5 w-5 text-[#02145A] "
-                                                        :class="state.torino ? '' : 'invisible'"></lazy-svg-check>
-
-                                                </div>
-
-                                                <div class="flex flex-col">
-
-                                                    <div class="text-center">
-
-                                                        <lazy-svg-torino class="w-[80px] h-[80px] inline"></lazy-svg-torino>
-
-                                                    </div>
-
-                                                    <span
-                                                        class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Torino</span>
-
-                                                </div>
-
-                                                <span class="pointer-events-none absolute -inset-px rounded-lg border"
-                                                    aria-hidden="true"></span>
-
-                                            </label>
-
-
-
-
-
-
-
-
+                                            <label-card v-model="state.torino" title="Torino">
+                                                <lazy-svg-torino class="w-[80px] h-[80px] inline"></lazy-svg-torino>
+                                            </label-card>
 
                                         </div>
                                     </fieldset>
@@ -227,72 +135,15 @@
                                         <div class="mt-4 grid  gap-y-6 grid-cols-2 sm:grid-cols-3 gap-x-2 sm:gap-x-4">
 
                                             <!-- FOTOGRAFO -->
-                                            <label
-                                                class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
-
-                                                <div class="absolute">
-
-                                                    <input type="radio" v-model="state.fotografo" class="sr-only"
-                                                        @click="state.fotografo = !state.fotografo">
-
-                                                    <lazy-svg-check class="h-5 w-5 text-[#02145A] "
-                                                        :class="state.fotografo ? '' : 'invisible'"></lazy-svg-check>
-
-                                                </div>
-
-                                                <div class="flex flex-col">
-
-                                                    <div class="text-center">
-
-                                                        <lazy-svg-fotografia
-                                                            class="w-[80px] h-[80px] inline"></lazy-svg-fotografia>
-
-                                                    </div>
-
-                                                    <span
-                                                        class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Fotografo</span>
-
-                                                </div>
-
-                                                <span class="pointer-events-none absolute -inset-px rounded-lg border"
-                                                    aria-hidden="true"></span>
-
-                                            </label>
-
+                                            <label-card v-model="state.fotografo" title="Fotografo">
+                                                <lazy-svg-fotografia class="w-[80px] h-[80px] inline"></lazy-svg-fotografia>
+                                            </label-card>
 
                                             <!-- VIDEOMAKER -->
-                                            <label
-                                                class="relative flex flex-col   cursor-pointer rounded-lg bg-white p-4 shadow-sm focus:outline-none">
-
-                                                <div class="absolute">
-
-                                                    <input type="radio" v-model="state.videomaker" class="sr-only"
-                                                        @click="state.videomaker = !state.videomaker">
-
-                                                    <lazy-svg-check class="h-5 w-5 text-[#02145A] "
-                                                        :class="state.videomaker ? '' : 'invisible'"></lazy-svg-check>
-
-                                                </div>
-
-                                                <div class="flex flex-col">
-
-                                                    <div class="text-center">
-
-                                                        <lazy-svg-videocamera
-                                                            class="w-[80px] h-[80px] inline"></lazy-svg-videocamera>
-
-                                                    </div>
-
-                                                    <span
-                                                        class="block text-sm font-normal text-[14px] text-[#02145A] text-center">Videomaker</span>
-
-                                                </div>
-
-                                                <span class="pointer-events-none absolute -inset-px rounded-lg border"
-                                                    aria-hidden="true"></span>
-
-                                            </label>
-
+                                            <label-card v-model="state.videomaker" title="Fotografo">
+                                                <lazy-svg-videocamera
+                                                    class="w-[80px] h-[80px] inline"></lazy-svg-videocamera>
+                                            </label-card>
 
                                         </div>
                                     </fieldset>
