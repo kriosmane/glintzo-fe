@@ -144,7 +144,7 @@ overflow:initial!important;
                   La piattaforma di matching amica dei visual creator
                 </h1>
                 <p
-                  class="relative font-normal text-[#02145A] mt-6 text-[25px] leading-[38px] sm:max-w-md lg:max-w-none"
+                  class="relative font-normal text-[#02145A] mt-4 text-[25px] leading-[38px] sm:max-w-md lg:max-w-none"
                 >
                   Mettiamo in contatto <span class="font-bold">aziende</span> e
                   <span class="font-bold">privati</span> con i migliori
@@ -156,7 +156,7 @@ overflow:initial!important;
                 <div class="mt-8 flex items-center gap-x-6">
                   <NuxtLink
                     to="/register"
-                    class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                    class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-base font-bold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                   >
                     Registrati
                   </NuxtLink>
@@ -320,7 +320,7 @@ overflow:initial!important;
             <div class="mt-10 flex items-center justify-center gap-x-6">
               <NuxtLink
                 to="/register"
-                class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-base font-bold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               >
                 Registrati
               </NuxtLink>
