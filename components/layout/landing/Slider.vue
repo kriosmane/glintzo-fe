@@ -4,7 +4,10 @@
       :speed="1500"
       class="overflow-initial"
       :modules="modules"
-      :mousewheel="true"
+      :mousewheel="{
+        forceToAxis: false,
+        releaseOnEdges: true,
+      }"
       :slides-per-view="1"
       :space-between="0"
       @swiper="onSwiper"
