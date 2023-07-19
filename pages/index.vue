@@ -343,7 +343,7 @@ if (process.client) {
       trigger: ".trigger",
       scrub: true,
       pin: true,
-      end: "+=" + window.innerHeight * 20, // modificare questo numero per la velocità
+      end: "+=" + window.innerHeight * 15, // modificare questo numero per la velocità
     },
   });
 
