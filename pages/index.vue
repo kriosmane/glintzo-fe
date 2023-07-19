@@ -96,7 +96,11 @@ section {
 
 .bg {
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
+}
+
+.overflow-initial{
+overflow:initial!important;
 }
 
 #red {
@@ -123,14 +127,21 @@ section {
     <main>
       <div class="relative isolate">
         <div class="overflow-hidden">
-          <div class="mx-auto max-w-8xl px-10 pb-32 pt-36 sm:pt-60 lg:px-40 lg:pt-4 2xl:pt-32">
-            <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-
-              <div class="w-full lg:min-w-[600px] max-w-xl  xl:max-w-2xl">
-                <h1 class="text-4xl font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
+          <div
+            class="mx-auto max-w-8xl px-10 pb-32 pt-36 sm:pt-60 lg:px-40 lg:pt-4 2xl:pt-32"
+          >
+            <div
+              class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
+            >
+              <div class="w-full lg:min-w-[600px] max-w-xl xl:max-w-2xl">
+                <h1
+                  class="text-4xl font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]"
+                >
                   La piattaforma di matching amica dei visual creator
                 </h1>
-                <p class="relative font-normal text-[#02145A] mt-6 text-[25px] leading-[38px] sm:max-w-md lg:max-w-none">
+                <p
+                  class="relative font-normal text-[#02145A] mt-6 text-[25px] leading-[38px] sm:max-w-md lg:max-w-none"
+                >
                   Mettiamo in contatto <span class="font-bold">aziende</span> e
                   <span class="font-bold">privati</span> con i migliori
                   <span class="font-bold">fotografi</span> e
@@ -139,50 +150,74 @@ section {
                   <span class="font-bold">innovativo</span>.
                 </p>
                 <div class="mt-8 flex items-center gap-x-6">
-                  <NuxtLink to="/register"
-                    class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+                  <NuxtLink
+                    to="/register"
+                    class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                  >
                     Registrati
                   </NuxtLink>
                 </div>
               </div>
 
-
-              <div class="mt-14 flex justify-end gap-8 md:-mt-44 lg:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+              <div
+                class="mt-14 flex justify-end gap-8 md:-mt-44 lg:justify-start sm:pl-20 lg:mt-0 lg:pl-0"
+              >
                 <div
-                  class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+                  class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80"
+                >
                   <div class="relative">
                     <img
                       src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                      alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
-                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+                      alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                    ></div>
                   </div>
                 </div>
                 <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                   <div class="relative">
                     <img
                       src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                      alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
-                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+                      alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                    ></div>
                   </div>
                   <div class="relative">
                     <img
                       src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
-                      alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
-                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+                      alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                    ></div>
                   </div>
                 </div>
                 <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <div class="relative">
                     <img
                       src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
-                      alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
-                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+                      alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                    ></div>
                   </div>
                   <div class="relative">
                     <img
                       src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                      alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
-                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+                      alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -241,28 +276,31 @@ section {
         </div>
       </div>
       <div
-        class="panel text-effect min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text.png')]">
-      </div>
+        class="panel text-effect min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text.png')]"
+      ></div>
       <p class="panel text-effect min-h-screen min-w-full text-illusion bg-gray-700">
         CREATIVITY<br />
         IS <br />HUMAN
       </p>
 
-
       <LazyLayoutLandingSlider></LazyLayoutLandingSlider>
 
       <LazyLayoutLandingTimeline></LazyLayoutLandingTimeline>
 
-      <div style="
-              background: linear-gradient(
-                to top,
-                #dee1fe 0.05%,
-                rgba(222, 225, 254, 0) 99.95%
-              );
-            ">
+      <div
+        style="
+          background: linear-gradient(
+            to top,
+            #dee1fe 0.05%,
+            rgba(222, 225, 254, 0) 99.95%
+          );
+        "
+      >
         <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
           <div class="mx-auto max-w-2xl text-center space-y-5">
-            <h2 class="font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
+            <h2
+              class="font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]"
+            >
               Sei un visual creator e<br />
               vuoi saperne di più?
             </h2>
@@ -276,8 +314,10 @@ section {
             </p>
 
             <div class="mt-10 flex items-center justify-center gap-x-6">
-              <NuxtLink to="/register"
-                class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+              <NuxtLink
+                to="/register"
+                class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+              >
                 Registrati
               </NuxtLink>
             </div>
@@ -292,8 +332,6 @@ section {
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 
-
-
 if (process.client) {
   gsap.registerPlugin(ScrollTrigger);
   const tl = gsap.timeline({
@@ -306,24 +344,95 @@ if (process.client) {
 
   tl.to(".one", { opacity: 0 });
 
-  tl.fromTo(".two", { autoAlpha: 0, y: 50, skewY: -4 }, { skewY: 0, duration: 2.5, autoAlpha: 1, y: 0 });
-  tl.fromTo(".two", { autoAlpha: 1, y: 0 }, { duration: 2.5, autoAlpha: 0, y: 0, opacity: 0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40 });
+  tl.fromTo(
+    ".two",
+    { autoAlpha: 0, y: 50, skewY: -4 },
+    { skewY: 0, duration: 2.5, autoAlpha: 1, y: 0 }
+  );
+  tl.fromTo(
+    ".two",
+    { autoAlpha: 1, y: 0 },
+    {
+      duration: 2.5,
+      autoAlpha: 0,
+      y: 0,
+      opacity: 0,
+      y: -100,
+      ease: "power1.in",
+      skewY: 0,
+      rotationX: 40,
+    }
+  );
   tl.fromTo(".two", { duration: 2.5, autoAlpha: 0 }, { autoAlpha: 0, delay: 2 });
 
-
-  tl.fromTo(".three", { autoAlpha: 0, y: 50, skewY: -4 }, { skewY: 0, duration: 2.5, autoAlpha: 1, y: 0 });
-  tl.fromTo(".three", { autoAlpha: 1, y: 0 }, { duration: 2.5, autoAlpha: 0, y: 0, opacity: 0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40 });
+  tl.fromTo(
+    ".three",
+    { autoAlpha: 0, y: 50, skewY: -4 },
+    { skewY: 0, duration: 2.5, autoAlpha: 1, y: 0 }
+  );
+  tl.fromTo(
+    ".three",
+    { autoAlpha: 1, y: 0 },
+    {
+      duration: 2.5,
+      autoAlpha: 0,
+      y: 0,
+      opacity: 0,
+      y: -100,
+      ease: "power1.in",
+      skewY: 0,
+      rotationX: 40,
+    }
+  );
   tl.fromTo(".three", { duration: 2.5, autoAlpha: 0 }, { autoAlpha: 0, delay: 2 });
 
-  tl.fromTo(".four", { autoAlpha: 0, y: 50, skewY: -4 }, { skewY: 0, duration: 2.5, autoAlpha: 1, y: 0 });
-  tl.fromTo(".four", { autoAlpha: 1, y: 0 }, { duration: 2.5, autoAlpha: 0, y: 0, opacity: 0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40 });
+  tl.fromTo(
+    ".four",
+    { autoAlpha: 0, y: 50, skewY: -4 },
+    { skewY: 0, duration: 2.5, autoAlpha: 1, y: 0 }
+  );
+  tl.fromTo(
+    ".four",
+    { autoAlpha: 1, y: 0 },
+    {
+      duration: 2.5,
+      autoAlpha: 0,
+      y: 0,
+      opacity: 0,
+      y: -100,
+      ease: "power1.in",
+      skewY: 0,
+      rotationX: 40,
+    }
+  );
   tl.fromTo(".four", { duration: 2.5, autoAlpha: 0 }, { autoAlpha: 0, delay: 2 });
 
-  tl.fromTo(".five", { autoAlpha: 0, y: 50, skewY: -4 }, { skewY: 0, duration: 2.5, autoAlpha: 1, y: 0 });
-  tl.fromTo(".five", { autoAlpha: 1, y: 0 }, { duration: 2.5, autoAlpha: 0, y: 0, opacity: 0, y: -100, ease: "power1.in", skewY: 0, rotationX: 40 });
+  tl.fromTo(
+    ".five",
+    { autoAlpha: 0, y: 50, skewY: -4 },
+    { skewY: 0, duration: 2.5, autoAlpha: 1, y: 0 }
+  );
+  tl.fromTo(
+    ".five",
+    { autoAlpha: 1, y: 0 },
+    {
+      duration: 2.5,
+      autoAlpha: 0,
+      y: 0,
+      opacity: 0,
+      y: -100,
+      ease: "power1.in",
+      skewY: 0,
+      rotationX: 40,
+    }
+  );
   tl.fromTo(".five", { duration: 2.5, autoAlpha: 0 }, { autoAlpha: 0, delay: 2 });
 
-  tl.fromTo(".six", { autoAlpha: 0, y: 50, skewY: -4 }, { duration: 2.5, autoAlpha: 1, y: 0, skewY: 0 });
+  tl.fromTo(
+    ".six",
+    { autoAlpha: 0, y: 50, skewY: -4 },
+    { duration: 2.5, autoAlpha: 1, y: 0, skewY: 0 }
+  );
 
   //tl.from(".two",{ y: 100, skewY: -4, rotationX: 0}).to(".two",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
   /*   tl.to( ".three",{ y: 100, skewY: -4, rotationX: 0}).to(".three",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
