@@ -135,19 +135,13 @@ section {
     <main>
       <div class="relative isolate">
         <div class="overflow-hidden">
-          <div
-            class="pb-32 ps-10 sm:ps-20 xl:ps-40 pt-10 w-full max-w-8xl ms-auto 2xl:mx-auto ps-10 sm:ps-20 xl:ps-40"
-          >
+          <div class="pb-32 ps-10 sm:ps-20 xl:ps-40 pt-10 w-full max-w-8xl ms-auto 2xl:mx-auto ps-10 sm:ps-20 xl:ps-40">
             <div class="lg:flex items-center">
               <div class="lg:mb-28 flex-1 max-w-[600px] me-5">
-                <h1
-                  class="text-4xl font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]"
-                >
+                <h1 class="text-4xl font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
                   La piattaforma di matching amica dei visual creator
                 </h1>
-                <p
-                  class="relative font-normal text-[#02145A] mt-4 text-[25px] leading-[38px] sm:max-w-md lg:max-w-none"
-                >
+                <p class="relative font-normal text-[#02145A] mt-4 text-[25px] leading-[38px] sm:max-w-md lg:max-w-none">
                   Mettiamo in contatto <span class="font-bold">aziende</span> e
                   <span class="font-bold">privati</span> con i migliori
                   <span class="font-bold">fotografi</span> e
@@ -156,79 +150,55 @@ section {
                   <span class="font-bold">innovativo</span>
                 </p>
                 <div class="mt-8 flex items-center gap-x-6">
-                  <NuxtLink
-                    to="/register"
-                    class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-base font-bold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-                  >
+                  <NuxtLink to="/register"
+                    class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-base font-bold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                     Registrati
                   </NuxtLink>
                 </div>
               </div>
               <!-- per krios  se vuoi che le immagini mobile prendano sempre tutto lo schermo rimuovi il  max-w-[780px] io ho inserito questo perchè da 768 cominciano ad essere giganti-->
-              <div
-                class="w-full lg:hidden flex mt-5 ms-[-140px] max-w-[780px] custom-img-mobile-container"
-              >
+              <div class="w-full lg:hidden flex mt-5 ms-[-140px] max-w-[780px] custom-img-mobile-container">
                 <div class="flex flex-col me-5">
                   <img
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt=""
-                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px] mb-5"
-                  />
+                    alt="" class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px] mb-5" />
                   <img
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt=""
-                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]"
-                  />
+                    alt="" class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
                 </div>
                 <div class="flex flex-col mt-[25%]">
                   <img
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt=""
-                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px] mb-5"
-                  />
+                    alt="" class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px] mb-5" />
                   <img
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt=""
-                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]"
-                  />
+                    alt="" class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
                 </div>
               </div>
               <div class="flex flex-1 lg:me-[-200px] hidden lg:flex">
                 <div class="flex flex-col items-center justify-center me-5">
                   <img
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt=""
-                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]"
-                  />
+                    alt="" class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
                 </div>
                 <div class="flex flex-col items-center justify-center me-5">
                   <img
                     src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt=""
-                    class="rounded-lg mb-5 lg:min-h-[280px] object-cover lg:min-w-[250px]"
-                  />
+                    alt="" class="rounded-lg mb-5 lg:min-h-[280px] object-cover lg:min-w-[250px]" />
                   <img
                     src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
-                    alt=""
-                    class="rounded-lg lg:min-h-[280px] object-cover lg:min-w-[250px]"
-                  />
+                    alt="" class="rounded-lg lg:min-h-[280px] object-cover lg:min-w-[250px]" />
                 </div>
                 <div class="flex flex-col items-center justify-center">
                   <img
                     src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
-                    alt=""
-                    class="rounded-lg mb-5 lg:min-h-[280px] object-cover lg:min-w-[250px]"
-                  />
+                    alt="" class="rounded-lg mb-5 lg:min-h-[280px] object-cover lg:min-w-[250px]" />
                   <img
                     src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
-                    alt=""
-                    class="rounded-lg mb-5 lg:min-h-[280px] object-cover lg:min-w-[250px]"
-                  />
+                    alt="" class="rounded-lg mb-5 lg:min-h-[280px] object-cover lg:min-w-[250px]" />
                   <img
                     src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt=""
-                    class="rounded-lg lg:min-h-[280px] object-cover lg:min-w-[250px]"
-                  />
+                    alt="" class="rounded-lg lg:min-h-[280px] object-cover lg:min-w-[250px]" />
                 </div>
               </div>
 
@@ -349,8 +319,8 @@ section {
         </div>
       </div>
       <div
-        class="panel text-effect min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text.png')]"
-      ></div>
+        class="panel text-effect min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text.png')]">
+      </div>
       <p class="panel text-effect min-h-screen min-w-full text-illusion">
         CREATIVITY<br />
         IS <br />HUMAN
@@ -360,37 +330,29 @@ section {
 
       <LazyLayoutLandingTimeline></LazyLayoutLandingTimeline>
 
-      <div
-        style="
+      <div style="
           background: linear-gradient(
             to top,
             #dee1fe 0.05%,
             rgba(222, 225, 254, 0) 99.95%
           );
-        "
-      >
+        ">
         <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
           <div class="mx-auto max-w-2xl text-center space-y-5">
-            <h2
-              class="font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]"
-            >
+            <h2 class="font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
               Sei un visual creator e<br />
               vuoi saperne di più?
             </h2>
             <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
-              Clicca su "Registrati " e compila il Form per accedere alla community di
-              Glintzo.
-            </p>
-            <h2 class="text-xl font-bold tracking-tight text-gray-900">Cosa aspetti?</h2>
-            <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
-              Diventa uno dei primi creator!
+              Clicca su "Registrati " e compila il Form per accedere alla community<br> di
+              Glintzo e diventa uno dei primi creator!
             </p>
 
+
+
             <div class="mt-10 flex items-center justify-center gap-x-6">
-              <NuxtLink
-                to="/register"
-                class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-base font-bold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-              >
+              <NuxtLink to="/register"
+                class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-base font-bold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                 Registrati
               </NuxtLink>
             </div>
