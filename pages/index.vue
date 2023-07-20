@@ -47,8 +47,8 @@ section {
   position: relative;
 }
 
-.h-auto-imp{
-  height:auto!important;
+.h-auto-imp {
+  height: auto !important;
 }
 
 .box-container p,
@@ -103,8 +103,8 @@ section {
   background-position: top;
 }
 
-.overflow-initial{
-overflow:initial!important;
+.overflow-initial {
+  overflow: initial !important;
 }
 
 #red {
@@ -132,12 +132,12 @@ overflow:initial!important;
       <div class="relative isolate">
         <div class="overflow-hidden">
           <div
-            class="mx-auto max-w-8xl px-10 pb-32 pt-36 sm:pt-60 lg:px-40 lg:pt-4 2xl:pt-32"
+            class="  pb-32  ps-10  sm:ps-20 xl:ps-40  pt-10 w-full max-w-8xl ms-auto 2xl:mx-auto  ps-10  sm:ps-20 xl:ps-40"
           >
             <div
-              class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
+              class=" lg:flex items-center "
             >
-              <div class="w-full lg:min-w-[600px] max-w-xl xl:max-w-2xl">
+              <div class="lg:mb-28 flex-1 max-w-[600px] me-5">
                 <h1
                   class="text-4xl font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]"
                 >
@@ -151,7 +151,7 @@ overflow:initial!important;
                   <span class="font-bold">fotografi</span> e
                   <span class="font-bold">videomaker</span> sul panorama italiano in modo
                   <span class="font-bold">semplice</span> e
-                  <span class="font-bold">innovativo</span>.
+                  <span class="font-bold">innovativo</span>
                 </p>
                 <div class="mt-8 flex items-center gap-x-6">
                   <NuxtLink
@@ -163,7 +163,46 @@ overflow:initial!important;
                 </div>
               </div>
 
-              <div
+              <div class="flex flex-1 lg:me-[-200px]">
+                <div class=" flex  flex-col items-center justify-center me-5">
+                  <img
+                      src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                    alt=""
+                    class="rounded-lg object-cover lg:min-h-[280px]  lg:min-w-[250px]  "
+                  />
+                </div>
+                <div class=" flex flex-col items-center justify-center me-5">
+                  <img
+                      src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                    alt=""
+                    class="rounded-lg mb-5  lg:min-h-[280px]  object-cover  lg:min-w-[250px] "
+                  />
+                  <img
+                      src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
+                    alt=""
+                    class="rounded-lg  lg:min-h-[280px] object-cover  lg:min-w-[250px] "
+                  />
+                </div>
+                <div class=" flex  flex-col items-center justify-center">
+                  <img
+                      src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
+                    alt=""
+                    class="rounded-lg mb-5  lg:min-h-[280px] object-cover  lg:min-w-[250px] "
+                  />
+                  <img
+                      src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
+                    alt=""
+                    class="rounded-lg mb-5  lg:min-h-[280px]  object-cover  lg:min-w-[250px] "
+                  />
+                  <img
+                      src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                    alt=""
+                    class="rounded-lg  lg:min-h-[280px]  object-cover  lg:min-w-[250px] "
+                  />
+                </div>
+              </div>
+
+              <!--  <div
                 class="mt-14 flex justify-end gap-8 md:-mt-44 lg:justify-start sm:pl-20 lg:mt-0 lg:pl-0"
               >
                 <div
@@ -224,7 +263,7 @@ overflow:initial!important;
                     ></div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -282,7 +321,7 @@ overflow:initial!important;
       <div
         class="panel text-effect min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text.png')]"
       ></div>
-      <p class="panel text-effect min-h-screen min-w-full text-illusion sm:bg-gray-700">
+      <p class="panel text-effect min-h-screen min-w-full text-illusion">
         CREATIVITY<br />
         IS <br />HUMAN
       </p>

@@ -20,7 +20,7 @@
           <div :class=" ' px-10 py-4   lg:py-0 lg:px-0 h-full block lg:flex items-center   min-h-[340px] bg-slide-' + slide.id">
          <img class="lg:max-w-[344px] relative  top-[-45px] lg:top-0 mb-[-30px] lg:mb-0 w-full lg:w-auto h-[200px] lg:h-[115%] rounded-2xl object-cover shadow-2xl lg:ms-[16.6%] lg:me-[8.3%] " :src="slide.image" />
           <div class=" lg:pe-[8.3%] my-5  ">
-            <h2 class="text-dark-blue font-bold text-[30px]">{{ slide.title }}</h2>
+            <h2 class="text-dark-blue font-bold text-[30px] mb-5">{{ slide.title }}</h2>
                <blockquote
                   class="text-lg font-normal leading-[27px] text-black sm:text-lg sm:leading-[27px]"
                 >
