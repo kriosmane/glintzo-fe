@@ -104,6 +104,10 @@ label.city.active .border {
                       </label-card>
                     </div>
                   </fieldset>
+
+                  <span class="text-xs text-red-500" const submitClicked=ref(false)
+                    v-if="state.milano == false && state.roma == false && state.torino == false && submitClicked == true">Scegli
+                    un area geografica</span>
                 </div>
 
                 <div class="sm:col-span-2">
@@ -125,6 +129,10 @@ label.city.active .border {
                         <lazy-svg-videocamera class="w-[80px] h-[80px] inline"></lazy-svg-videocamera>
                       </label-card>
                     </div>
+                    <span class="text-xs text-red-500" const submitClicked=ref(false)
+                      v-if="state.fotografo == false && state.videomaker == false && submitClicked == true">Che tipo
+                      di
+                      creator sei?</span>
                   </fieldset>
                 </div>
 
@@ -299,6 +307,8 @@ const rules = computed(() => {
 
 const v$ = useVuelidate(rules, state);
 
+const submitClicked = ref(false)
+
 
 
 /**
@@ -313,7 +323,11 @@ function csrf() {
  */
 async function register() {
 
+
+
   v$.value.$validate();
+
+  submitClicked.value = true;
 
 
   await csrf();
