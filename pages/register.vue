@@ -182,7 +182,11 @@ label.city.active .border {
             </div>
           </form>
 
-          <div class="flex items-center h-full justify-center" v-else></div>
+          <div class="flex items-center h-full justify-center" v-else>
+
+            <img src="~/assets/images/hello.png" />
+
+          </div>
         </div>
       </div>
     </div>
