@@ -3,7 +3,7 @@
     <div class="max-w-8xl mx-auto px-10 sm:py-4 sm:px-20 xl:px-40">
       <div class="w-full flex flex-col lg:flex-row py-10 md:py-10 2xl:py-32 relative">
         <div class="lg:basis-1/2 pr-0 sm:pr-4">
-          <div class="sticky top-60">
+          <div class="lg:sticky lg:top-60">
             <h2
               class="font-bold tracking-tight text-pink text-[40px] leading-[60px]"
             >
