@@ -37,6 +37,11 @@
   text-align: center;
 }
 
+
+.custom-img-mobile-container{
+      width: calc(100% + 100px);
+}
+
 section {
   height: 100vh;
   text-align: center;
@@ -132,11 +137,9 @@ section {
       <div class="relative isolate">
         <div class="overflow-hidden">
           <div
-            class="  pb-32  ps-10  sm:ps-20 xl:ps-40  pt-10 w-full max-w-8xl ms-auto 2xl:mx-auto  ps-10  sm:ps-20 xl:ps-40"
+            class="pb-32 ps-10 sm:ps-20 xl:ps-40 pt-10 w-full max-w-8xl ms-auto 2xl:mx-auto ps-10 sm:ps-20 xl:ps-40"
           >
-            <div
-              class=" lg:flex items-center "
-            >
+            <div class="lg:flex items-center">
               <div class="lg:mb-28 flex-1 max-w-[600px] me-5">
                 <h1
                   class="text-4xl font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]"
@@ -163,41 +166,66 @@ section {
                 </div>
               </div>
 
-              <div class="flex flex-1 lg:me-[-200px]">
-                <div class=" flex  flex-col items-center justify-center me-5">
+              <div class="w-full lg:hidden flex mt-5 ms-[-140px] max-w-[780px] custom-img-mobile-container">
+                <div class="flex flex-col me-5">
                   <img
-                      src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                     alt=""
-                    class="rounded-lg object-cover lg:min-h-[280px]  lg:min-w-[250px]  "
+                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px] mb-5"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                    alt=""
+                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]"
                   />
                 </div>
-                <div class=" flex flex-col items-center justify-center me-5">
-                  <img
-                      src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                <div class="flex flex-col mt-[25%]">
+                    <img
+                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                     alt=""
-                    class="rounded-lg mb-5  lg:min-h-[280px]  object-cover  lg:min-w-[250px] "
+                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px] mb-5"
                   />
                   <img
-                      src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
+                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                     alt=""
-                    class="rounded-lg  lg:min-h-[280px] object-cover  lg:min-w-[250px] "
+                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]"
+                  /></div>
+              </div>
+              <div class="flex flex-1 lg:me-[-200px] hidden lg:flex">
+                <div class="flex flex-col items-center justify-center me-5">
+                  <img
+                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                    alt=""
+                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]"
                   />
                 </div>
-                <div class=" flex  flex-col items-center justify-center">
+                <div class="flex flex-col items-center justify-center me-5">
                   <img
-                      src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
+                    src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                     alt=""
-                    class="rounded-lg mb-5  lg:min-h-[280px] object-cover  lg:min-w-[250px] "
+                    class="rounded-lg mb-5 lg:min-h-[280px] object-cover lg:min-w-[250px]"
                   />
                   <img
-                      src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
+                    src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
                     alt=""
-                    class="rounded-lg mb-5  lg:min-h-[280px]  object-cover  lg:min-w-[250px] "
+                    class="rounded-lg lg:min-h-[280px] object-cover lg:min-w-[250px]"
+                  />
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
+                    alt=""
+                    class="rounded-lg mb-5 lg:min-h-[280px] object-cover lg:min-w-[250px]"
                   />
                   <img
-                      src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                    src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
                     alt=""
-                    class="rounded-lg  lg:min-h-[280px]  object-cover  lg:min-w-[250px] "
+                    class="rounded-lg mb-5 lg:min-h-[280px] object-cover lg:min-w-[250px]"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                    alt=""
+                    class="rounded-lg lg:min-h-[280px] object-cover lg:min-w-[250px]"
                   />
                 </div>
               </div>
