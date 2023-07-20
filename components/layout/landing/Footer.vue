@@ -5,12 +5,12 @@
 
             <div class="flex justify-center">
 
-                <p class="text-xl font-normal">www.glintzo.com | info@glintzo.it</p>
+                <p class="text-sm sm:text-base font-normal">www.glintzo.com | info@glintzo.it</p>
 
             </div>
             <div class="flex justify-center font-normal">
 
-                <p class="text-base font-normal">© 2023 Glintzo. All rights reserved</p>
+                <p class="text-xs sm:text-sm  font-normal">© 2023 Glintzo. All rights reserved</p>
 
             </div>
 
@@ -38,11 +38,11 @@
 
                 <div class="flex flex-row">
 
-                    <span class="mr-10">
+                    <span class="mr-10 text-xs sm:text-sm">
                         <NuxtLink to="/privacy-policy">Privacy policy</NuxtLink>
                     </span>
 
-                    <span>
+                    <span class="text-xs  sm:text-sm">
                         <NuxtLink to="/cookie-policy">Cookie policy</NuxtLink>
                     </span>
 
