@@ -4,7 +4,7 @@ label.city.active .border {
 }
 </style>
 <template>
-  <div class="w-full h-full lg:bg-gradient-to-r lg:from-[#DEE1FE] lg:to-white lg:to-50%">
+  <div class="w-full h-full min-h-screen lg:bg-gradient-to-r lg:from-[#DEE1FE] lg:to-white lg:to-50%">
     <div class="max-w-8xl mx-auto px-10 sm:py-4 sm:px-20 xl:px-40">
       <div class="w-full flex flex-col lg:flex-row py-10 md:py-10 2xl:py-32 relative">
         <div class="lg:basis-1/2 pr-0 sm:pr-4">
@@ -47,7 +47,7 @@ label.city.active .border {
               </template>
 
               <template v-else>
-                Ti abbiamo appena inviato un’<span class="font-bold">email di conferma</span><br />
+                Ti abbiamo appena inviato un’ <span class="font-bold">email di conferma</span><br />
                 all’indirizzo da te indicato.<br />
                 Provvederemo ad aggiornarti sulla piattaforma quanto prima
               </template>
@@ -185,14 +185,31 @@ label.city.active .border {
                 </div>
               </div>
               <div class="mt-8 flex justify-start">
-                <btn bg-color="bg-[#1E16FE] w-[100px]" @click="register">Invia</btn>
+                <btn :disabled="buttonDisabled" bg-color="bg-[#1E16FE] w-[100px]" @click="register">Invia</btn>
+              </div>
+
+            </div>
+
+            <div class="rounded-md bg-red-50 p-4 mt-4" v-if="errorMessage.length > 0">
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <svg class="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="ml-3">
+                  <h3 class="text-sm font-medium text-red-800">{{ errorMessage }}</h3>
+
+                </div>
               </div>
             </div>
           </form>
 
           <div class="flex items-center h-full justify-center" v-else>
 
-            <img src="~/assets/images/hello.png" />
+            <img src="~/assets/images/hello_white.png" />
 
           </div>
         </div>
@@ -309,6 +326,11 @@ const v$ = useVuelidate(rules, state);
 
 const submitClicked = ref(false)
 
+const errorMessage = ref('');
+
+const buttonDisabled = ref(false);
+
+
 
 
 /**
@@ -323,31 +345,55 @@ function csrf() {
  */
 async function register() {
 
+  submitClicked.value = true;
 
+  errorMessage.value = '';
+
+  buttonDisabled.value = true;
 
   v$.value.$validate();
 
-  submitClicked.value = true;
+  if (!v$.value.$error) {
+
+    await csrf();
+
+    try {
+
+      const lead = await $apiFetch("/api/leads/register", {
+
+        method: "POST",
+
+        body: {
+          type: state.userType,
+          first_name: state.first_name,
+          last_name: state.last_name,
+          email: state.email,
+          mobile_phone: state.mobile_phone,
+        },
+      });
 
 
-  await csrf();
+      state.registered = true;
 
-  try {
-    const lead = await $apiFetch("/api/leads/register", {
-      method: "POST",
+      buttonDisabled.value = false;
 
-      body: {
-        type: state.userType,
-        first_name: state.first_name,
-        last_name: state.last_name,
-        email: state.email,
-        mobile_phone: state.mobile_phone,
-      },
-    });
+    } catch (error) {
 
-    state.registered = true;
-  } catch (error) {
-    console.log(error);
+      console.log("ERROR", error.response._data.message);
+
+      errorMessage.value = error.response._data.message;
+
+      state.registered = false;
+
+      buttonDisabled.value = false;
+
+    }
   }
+
+
+
+
+
+
 }
 </script>

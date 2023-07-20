@@ -49,13 +49,7 @@ const bool = ref(props.modelValue);
 /**
  */
 const setValue = () => {
-
-    console.log("ciai");
-
     bool.value = !bool.value;
-
-    console.log(bool.value);
-
     emit('update:modelValue', bool.value);
 }
 
