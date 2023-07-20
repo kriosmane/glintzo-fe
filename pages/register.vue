@@ -1,9 +1,6 @@
 <style>
-
-
-
-label.city.active .border{
-    border:1px solid #02145A;
+label.city.active .border {
+  border: 1px solid #02145A;
 }
 </style>
 <template>
@@ -12,9 +9,7 @@ label.city.active .border{
       <div class="w-full flex flex-col lg:flex-row py-10 md:py-10 2xl:py-32 relative">
         <div class="lg:basis-1/2 pr-0 sm:pr-4">
           <div class="lg:sticky lg:top-60">
-            <h2
-              class="font-bold tracking-tight text-pink text-[40px] leading-[60px]"
-            >
+            <h2 class="font-bold tracking-tight text-pink text-[40px] leading-[60px]">
               <template v-if="!state.registered">
                 Entra nella<br />
                 community di<br />
@@ -52,9 +47,7 @@ label.city.active .border{
               </template>
 
               <template v-else>
-                Ti abbiamo appena inviato un’<span class="font-bold"
-                  >email di conferma</span
-                ><br />
+                Ti abbiamo appena inviato un’<span class="font-bold">email di conferma</span><br />
                 all’indirizzo da te indicato.<br />
                 Provvederemo ad aggiornarti sulla piattaforma quanto prima
               </template>
@@ -67,43 +60,23 @@ label.city.active .border{
             <div class="">
               <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div>
-                  <text-field
-                    v-model="state.first_name"
-                    label="Nome"
-                    type="text"
-                    placeholder="Inserisci il tuo nome"
-                  ></text-field>
+                  <text-field :validator="v$.first_name" v-model="state.first_name" label="Nome" type="text"
+                    placeholder="Inserisci il tuo nome"></text-field>
                 </div>
 
                 <div>
-                  <text-field
-                    v-model="state.last_name"
-                    label="Cognome"
-                    type="text"
-                    placeholder="Inserisci il tuo cognome"
-                  ></text-field>
+                  <text-field :validator="v$.last_name" v-model="state.last_name" label="Cognome" type="text"
+                    placeholder="Inserisci il tuo cognome"></text-field>
                 </div>
 
                 <div>
-                  <text-field
-                    v-model="state.email"
-                    label="Email"
-                    type="email"
-                    name="email"
-                    :prepend-icon="mdiEmailOutline"
-                    placeholder="Inserisci la tua email"
-                  ></text-field>
+                  <text-field :validator="v$.email" v-model="state.email" label="Email" type="email" name="email"
+                    :prepend-icon="mdiEmailOutline" placeholder="Inserisci la tua email"></text-field>
                 </div>
 
                 <div>
-                  <text-field
-                    v-model="state.mobile_phone"
-                    label="Cellulare"
-                    type="text"
-                    name="phone-number"
-                    :prepend-icon="mdiPhone"
-                    placeholder="+39 (555) 987-6543"
-                  ></text-field>
+                  <text-field :validator="v$.mobile_phone" v-model="state.mobile_phone" label="Cellulare" type="text"
+                    name="phone-number" :prepend-icon="mdiPhone" placeholder="+39 (555) 987-6543"></text-field>
                 </div>
 
                 <div hidden lg:flex></div>
@@ -114,27 +87,20 @@ label.city.active .border{
                       Area geografica di lavoro
                     </legend>
 
-                    <div
-                      class="mt-4 grid grid-cols-2 gap-x-3 gap-y-6 sm:grid-cols-3 sm:gap-x-5"
-                    >
+                    <div class="mt-4 grid grid-cols-2 gap-x-3 gap-y-6 sm:grid-cols-3 sm:gap-x-5">
                       <!-- MILANO -->
-                      <label-card v-model="state.milano" title="Milano"  :class="state.milano ? 'city active' : 'city'">
-                        <lazy-svg-milano
-                       
-                          class="w-[80px] h-[80px] inline  "
-                        ></lazy-svg-milano>
+                      <label-card v-model="state.milano" title="Milano" :class="state.milano ? 'city active' : 'city'">
+                        <lazy-svg-milano class="w-[80px] h-[80px] inline  "></lazy-svg-milano>
                       </label-card>
 
                       <!-- ROMA -->
-                      <label-card v-model="state.roma" title="Roma" :class="state.roma ?'city active' : 'city'">
+                      <label-card v-model="state.roma" title="Roma" :class="state.roma ? 'city active' : 'city'">
                         <lazy-svg-roma class="w-[80px] h-[80px] inline "></lazy-svg-roma>
                       </label-card>
 
                       <!-- TORINO -->
-                      <label-card v-model="state.torino" title="Torino" :class="state.torino ? 'city active' : 'city'"> 
-                        <lazy-svg-torino
-                          class="w-[80px] h-[80px] inline"
-                        ></lazy-svg-torino>
+                      <label-card v-model="state.torino" title="Torino" :class="state.torino ? 'city active' : 'city'">
+                        <lazy-svg-torino class="w-[80px] h-[80px] inline"></lazy-svg-torino>
                       </label-card>
                     </div>
                   </fieldset>
@@ -146,21 +112,17 @@ label.city.active .border{
                       Visual creator
                     </legend>
 
-                    <div
-                      class="mt-4 grid gap-y-6 grid-cols-2 sm:grid-cols-3 gap-x-3 sm:gap-x-5"
-                    >
+                    <div class="mt-4 grid gap-y-6 grid-cols-2 sm:grid-cols-3 gap-x-3 sm:gap-x-5">
                       <!-- FOTOGRAFO -->
-                      <label-card v-model="state.fotografo" title="Fotografo"  :class="state.fotografo ? 'city active' : 'city'">
-                        <lazy-svg-fotografia
-                          class="w-[80px] h-[80px] inline"
-                        ></lazy-svg-fotografia>
+                      <label-card v-model="state.fotografo" title="Fotografo"
+                        :class="state.fotografo ? 'city active' : 'city'">
+                        <lazy-svg-fotografia class="w-[80px] h-[80px] inline"></lazy-svg-fotografia>
                       </label-card>
 
                       <!-- VIDEOMAKER -->
-                      <label-card v-model="state.videomaker" title="Fotografo"  :class="state.videomaker ? 'city active' : 'city'">
-                        <lazy-svg-videocamera
-                          class="w-[80px] h-[80px] inline"
-                        ></lazy-svg-videocamera>
+                      <label-card v-model="state.videomaker" title="Fotografo"
+                        :class="state.videomaker ? 'city active' : 'city'">
+                        <lazy-svg-videocamera class="w-[80px] h-[80px] inline"></lazy-svg-videocamera>
                       </label-card>
                     </div>
                   </fieldset>
@@ -168,78 +130,48 @@ label.city.active .border{
 
                 <div class="sm:col-span-2">
                   <div>
-                    <label class="text-[14px] font-medium leading-6 text-[#02145A]"
-                      >Svolgo questa attività perchè</label
-                    >
+                    <label class="text-[14px] font-medium leading-6 text-[#02145A]">Svolgo questa attività perchè</label>
 
                     <fieldset class="mt-4">
-                      <div
-                        class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0"
-                      >
+                      <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
                         <div class="flex items-center">
-                          <input
-                            value="business"
-                            name="userType"
-                            type="radio"
-                            v-model="state.userType"
-                            class="h-4 w-4 border-[#02145A] text-[#02145A]"
-                          />
-                          <label class="ml-3 block text-[14px] font-normal text-[#02145A]"
-                            >É la mia professione</label
-                          >
+                          <input value="business" name="userType" type="radio" v-model="state.userType"
+                            @change="v$.userType.$touch" class="h-4 w-4 border-[#02145A] text-[#02145A]" />
+                          <label class="ml-3 block text-[14px] font-normal text-[#02145A]">É la mia professione</label>
                         </div>
                         <div class="flex items-center">
-                          <input
-                            value="personal"
-                            name="userType"
-                            type="radio"
-                            v-model="state.userType"
-                            class="h-4 w-4 border-[#02145A] text-[#02145A]"
-                          />
-                          <label class="ml-3 block text-[14px] font-normal text-[#02145A]"
-                            >É il mio hobby</label
-                          >
+                          <input value="personal" name="userType" type="radio" v-model="state.userType"
+                            @change="v$.userType.$touch" class="h-4 w-4 border-[#02145A] text-[#02145A]" />
+                          <label class="ml-3 block text-[14px] font-normal text-[#02145A]">É il mio hobby</label>
                         </div>
                       </div>
                     </fieldset>
+                    <span class="text-xs text-red-500" v-if="v$.userType.$error">{{
+                      v$.userType.$errors[0].$message
+                    }}</span>
                   </div>
                 </div>
 
                 <div class="sm:col-span-2">
                   <div>
-                    <label class="text-[14px] font-medium leading-6 text-[#02145A]"
-                      >Sono disponibile per una call</label
-                    >
+                    <label class="text-[14px] font-medium leading-6 text-[#02145A]">Sono disponibile per una call</label>
 
                     <fieldset class="mt-4">
-                      <div
-                        class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0"
-                      >
+                      <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
                         <div class="flex items-center">
-                          <input
-                            value="si"
-                            name="call"
-                            type="radio"
-                            v-model="state.call"
-                            class="h-4 w-4 border-[#02145A] text-[#02145A]"
-                          />
-                          <label class="ml-3 block text-[14px] font-normal text-[#02145A]"
-                            >Si</label
-                          >
+                          <input value="si" name="call" type="radio" v-model="state.call" @change="v$.call.$touch"
+                            class="h-4 w-4 border-[#02145A] text-[#02145A]" />
+                          <label class="ml-3 block text-[14px] font-normal text-[#02145A]">Si</label>
                         </div>
                         <div class="flex items-center">
-                          <input
-                            value="no"
-                            name="call"
-                            type="radio"
-                            v-model="state.call"
-                            class="h-4 w-4 border-[#02145A] text-[#02145A]"
-                          />
-                          <label class="ml-3 block text-[14px] font-normal text-[#02145A]"
-                            >No</label
-                          >
+                          <input value="no" name="call" type="radio" v-model="state.call" @change="v$.call.$touch"
+                            class="h-4 w-4 border-[#02145A] text-[#02145A]" />
+                          <label class="ml-3 block text-[14px] font-normal text-[#02145A]">No</label>
                         </div>
                       </div>
+                      <span class="text-xs text-red-500" v-if="v$.call.$error">{{
+                        v$.call.$errors[0].$message
+                      }}</span>
                     </fieldset>
                   </div>
                 </div>
@@ -260,6 +192,11 @@ label.city.active .border{
 <script setup>
 import { mdiPhone } from "@mdi/js";
 import { mdiEmailOutline } from "@mdi/js";
+
+
+import { required, email, helpers } from '@vuelidate/validators';
+import { useVuelidate } from '@vuelidate/core';
+
 
 definePageMeta({
   layout: "landing",
@@ -312,6 +249,54 @@ const state = reactive({
 
 const { $apiFetch } = useNuxtApp();
 
+/*
+const rules = computed(() => {
+
+  return {
+    first_name: { required },
+    last_name: { required },
+    email: { required, email },
+    mobile_phone: { required },
+
+  };
+});
+*/
+
+const rules = computed(() => {
+  return {
+    first_name: {
+      required: helpers.withMessage('Campo obbligatorio', required),
+    },
+    last_name: {
+      required: helpers.withMessage('Campo obbligatorio', required),
+    },
+
+    email: {
+      required: helpers.withMessage('Campo obbligatorio', required),
+      email: helpers.withMessage('Email non valida', email),
+    },
+
+    mobile_phone: {
+      required: helpers.withMessage('Campo obbligatorio', required),
+    },
+
+    userType: {
+      required: helpers.withMessage('Campo obbligatorio', required),
+    },
+
+    call: {
+      required: helpers.withMessage('Campo obbligatorio', required),
+    },
+
+  };
+});
+
+
+
+const v$ = useVuelidate(rules, state);
+
+
+
 /**
  *
  */
@@ -323,6 +308,10 @@ function csrf() {
  *
  */
 async function register() {
+
+  v$.value.$validate();
+
+
   await csrf();
 
   try {
