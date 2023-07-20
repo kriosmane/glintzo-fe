@@ -1,3 +1,11 @@
+<style>
+
+
+
+label.city.active .border{
+    border:1px solid #02145A;
+}
+</style>
 <template>
   <div class="w-full h-full lg:bg-gradient-to-r lg:from-[#DEE1FE] lg:to-white lg:to-50%">
     <div class="max-w-8xl mx-auto px-10 sm:py-4 sm:px-20 xl:px-40">
@@ -110,19 +118,20 @@
                       class="mt-4 grid grid-cols-2 gap-x-3 gap-y-6 sm:grid-cols-3 sm:gap-x-5"
                     >
                       <!-- MILANO -->
-                      <label-card v-model="state.milano" title="Milano">
+                      <label-card v-model="state.milano" title="Milano"  :class="state.milano ? 'city active' : 'city'">
                         <lazy-svg-milano
-                          class="w-[80px] h-[80px] inline"
+                       
+                          class="w-[80px] h-[80px] inline  "
                         ></lazy-svg-milano>
                       </label-card>
 
                       <!-- ROMA -->
-                      <label-card v-model="state.roma" title="Roma">
-                        <lazy-svg-roma class="w-[80px] h-[80px] inline"></lazy-svg-roma>
+                      <label-card v-model="state.roma" title="Roma" :class="state.roma ?'city active' : 'city'">
+                        <lazy-svg-roma class="w-[80px] h-[80px] inline "></lazy-svg-roma>
                       </label-card>
 
                       <!-- TORINO -->
-                      <label-card v-model="state.torino" title="Torino">
+                      <label-card v-model="state.torino" title="Torino" :class="state.torino ? 'city active' : 'city'"> 
                         <lazy-svg-torino
                           class="w-[80px] h-[80px] inline"
                         ></lazy-svg-torino>
@@ -141,14 +150,14 @@
                       class="mt-4 grid gap-y-6 grid-cols-2 sm:grid-cols-3 gap-x-3 sm:gap-x-5"
                     >
                       <!-- FOTOGRAFO -->
-                      <label-card v-model="state.fotografo" title="Fotografo">
+                      <label-card v-model="state.fotografo" title="Fotografo"  :class="state.fotografo ? 'city active' : 'city'">
                         <lazy-svg-fotografia
                           class="w-[80px] h-[80px] inline"
                         ></lazy-svg-fotografia>
                       </label-card>
 
                       <!-- VIDEOMAKER -->
-                      <label-card v-model="state.videomaker" title="Fotografo">
+                      <label-card v-model="state.videomaker" title="Fotografo"  :class="state.videomaker ? 'city active' : 'city'">
                         <lazy-svg-videocamera
                           class="w-[80px] h-[80px] inline"
                         ></lazy-svg-videocamera>
