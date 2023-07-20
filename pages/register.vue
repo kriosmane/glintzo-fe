@@ -62,7 +62,7 @@ label.city.active .border{
           </div>
         </div>
 
-        <div class="md:basis-1/2 mt-0 sm:mt-10 md:mt-0">
+        <div class="md:basis-1/2 mt-6 sm:mt-10 md:mt-0">
           <form v-if="!state.registered" action="#" method="POST" class="">
             <div class="">
               <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -106,7 +106,7 @@ label.city.active .border{
                   ></text-field>
                 </div>
 
-                <div></div>
+                <div hidden lg:flex></div>
 
                 <div class="sm:col-span-2">
                   <fieldset>
