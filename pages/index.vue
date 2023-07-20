@@ -37,9 +37,8 @@
   text-align: center;
 }
 
-
-.custom-img-mobile-container{
-      width: calc(100% + 100px);
+.custom-img-mobile-container {
+  width: calc(100% + 100px);
 }
 
 section {
@@ -165,8 +164,10 @@ section {
                   </NuxtLink>
                 </div>
               </div>
-
-              <div class="w-full lg:hidden flex mt-5 ms-[-140px] max-w-[780px] custom-img-mobile-container">
+              <!-- per krios  se vuoi che le immagini mobile prendano sempre tutto lo schermo rimuovi il  max-w-[780px] io ho inserito questo perchè da 768 cominciano ad essere giganti-->
+              <div
+                class="w-full lg:hidden flex mt-5 ms-[-140px] max-w-[780px] custom-img-mobile-container"
+              >
                 <div class="flex flex-col me-5">
                   <img
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
@@ -180,7 +181,7 @@ section {
                   />
                 </div>
                 <div class="flex flex-col mt-[25%]">
-                    <img
+                  <img
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                     alt=""
                     class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px] mb-5"
@@ -189,7 +190,8 @@ section {
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                     alt=""
                     class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]"
-                  /></div>
+                  />
+                </div>
               </div>
               <div class="flex flex-1 lg:me-[-200px] hidden lg:flex">
                 <div class="flex flex-col items-center justify-center me-5">
