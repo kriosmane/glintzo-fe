@@ -330,6 +330,8 @@ const errorMessage = ref('');
 
 const buttonDisabled = ref(false);
 
+const csrfRetrieved = ref(false);
+
 
 
 
@@ -355,7 +357,16 @@ async function register() {
 
   if (!v$.value.$error) {
 
-    await csrf();
+    if (csrfRetrieved.value == false) {
+
+      await csrf();
+
+      csrfRetrieved.value = true;
+
+    }
+
+
+
 
     try {
 
