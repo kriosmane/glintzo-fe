@@ -390,6 +390,8 @@ async function register() {
     }
   }
 
+  buttonDisabled.value = false;
+
 
 
 
