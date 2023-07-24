@@ -14,6 +14,12 @@
   line-height: 200px !important;
 }
 
+
+.custom-height{
+  height:100vh;
+  min-height:800px;
+}
+
 .trigger {
   position: relative;
   height: 100%;
@@ -131,15 +137,15 @@ section {
 }
 </style>
 <template>
-  <div class="bg-white">
+  <div class="lg:bg-gradient-to-r lg:from-[#DEE1FE] lg:to-white lg:to-50">
     <main>
       <div class="relative isolate">
-        <div class="overflow-hidden">
+        <div class="overflow-hidden custom-height">
           <div
-            class="pb-32 ps-10 sm:ps-20 xl:ps-40 pt-10 w-full max-w-8xl ms-auto 2xl:mx-auto ps-10 sm:ps-20 xl:ps-40"
+            class="h-full pb-32 ps-10 sm:ps-20 xl:ps-40 pt-10 w-full max-w-8xl ms-auto 2xl:mx-auto ps-10 sm:ps-20 xl:ps-40"
           >
             <div class="lg:flex items-center">
-              <div class="lg:mb-28 flex-1 max-w-[600px] me-5">
+              <div class=" flex-1 max-w-[600px] me-5">
                 <h1
                   class="text-4xl font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]"
                 >
