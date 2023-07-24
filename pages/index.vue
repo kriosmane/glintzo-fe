@@ -321,7 +321,7 @@ section {
         </div>
       </div>
       <div
-        class="panel text-effect min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text.png')]">
+        class="panel text-effect min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text-2.png')]">
       </div>
       <p class="panel text-effect min-h-screen min-w-full text-illusion">
         CREATIVITY<br />
