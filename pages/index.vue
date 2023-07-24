@@ -342,7 +342,7 @@ section {
         <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
           <div class="mx-auto max-w-2xl text-center space-y-5">
             <h2
-              class="text-[35px] leading-[normal] text-center sm:text-left  font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
+              class="text-[35px] leading-[normal] text-center   font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
               Sei un visual creator e<br />
               vuoi saperne di più?
             </h2>
