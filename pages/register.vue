@@ -9,7 +9,8 @@ label.city.active .border {
       <div class="w-full flex flex-col lg:flex-row py-10 md:py-10 2xl:py-32 relative">
         <div class="lg:basis-1/2 pr-0 sm:pr-4">
           <div class="lg:sticky lg:top-60">
-            <h2 class="font-bold tracking-tight text-pink text-[40px] leading-[60px]">
+            <h2
+              class="text-[35px] leading-[normal]   font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
               <template v-if="!state.registered">
                 Entra nella<br />
                 community di<br />
@@ -22,7 +23,7 @@ label.city.active .border {
               </template>
             </h2>
 
-            <p class="mt-6 font-bold text-[20px] leading-[30px] text-dark-blue">
+            <p class="mt-6 font-bold text-[20px] leading-[38px] text-dark-blue">
               <template v-if="!state.registered">
                 Iscriviti e scopri come ottenere Sparkz<br />
                 gratuiti da usare nella piattaforma

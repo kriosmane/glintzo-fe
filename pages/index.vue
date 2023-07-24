@@ -135,13 +135,15 @@ section {
     <main>
       <div class="relative isolate">
         <div class="overflow-hidden">
-          <div class="pb-32 ps-10 sm:ps-20 xl:ps-40 pt-10 w-full max-w-8xl ms-auto 2xl:mx-auto ps-10 sm:ps-20 xl:ps-40">
+          <div class="pb-32 ps-10 sm:ps-20 xl:ps-40 pt-10 w-full max-w-8xl ms-auto 2xl:mx-auto ">
             <div class="lg:flex items-center">
               <div class="lg:mb-28 flex-1 max-w-[600px] me-5">
-                <h1 class="text-4xl font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
+                <h1
+                  class="text-[35px] leading-[normal] text-center sm:text-left  font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
                   La piattaforma di matching amica dei visual creator
                 </h1>
-                <p class="relative font-normal text-[#02145A] mt-4 text-[25px] leading-[38px] sm:max-w-md lg:max-w-none">
+                <p
+                  class="relative font-normal text-center sm:text-left text-[#02145A] mt-4 text-[25px] leading-[38px] sm:max-w-md lg:max-w-none">
                   Mettiamo in contatto <span class="font-bold">aziende</span> e
                   <span class="font-bold">privati</span> con i migliori
                   <span class="font-bold">fotografi</span> e
@@ -149,7 +151,7 @@ section {
                   <span class="font-bold">semplice</span> e
                   <span class="font-bold">innovativo</span>
                 </p>
-                <div class="mt-8 flex items-center gap-x-6">
+                <div class="mt-8  flex justify-center sm:justify-start items-center gap-x-6">
                   <NuxtLink to="/register"
                     class="rounded-md w-[140px] text-center uppercase bg-[#1E16FE] px-3.5 py-2.5 text-base font-bold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                     Registrati
@@ -339,7 +341,8 @@ section {
         ">
         <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
           <div class="mx-auto max-w-2xl text-center space-y-5">
-            <h2 class="font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
+            <h2
+              class="text-[35px] leading-[normal] text-center sm:text-left  font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
               Sei un visual creator e<br />
               vuoi saperne di più?
             </h2>
