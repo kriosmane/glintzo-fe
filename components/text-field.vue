@@ -11,11 +11,15 @@
             </div>
 
             <input :required="required" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)"
-                :type="type" :name="name" :id="name"
-                class="block w-full rounded-md border-0 py-2.5  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  focus:ring-dark-blue sm:text-sm sm:leading-6"
-                :class="prependIcon ? ' pl-10 ' : ''" :placeholder="placeholder" />
-
+                :type="type" :name="name" :id="name" @change="validator.$touch" @blur="validator.$touch" :class="inputClass"
+                :placeholder="placeholder" />
         </div>
+
+
+        <span class="text-xs text-red-500" v-if="validator.$error">{{
+            validator.$errors[0].$message
+        }}</span>
+
 
     </div>
 </template>
@@ -27,11 +31,17 @@ import SvgIcon from '@jamescoyle/vue-icon'
 /**
  * 
  */
-defineProps({
+const props = defineProps({
 
     modelValue: String,
 
     label: String,
+
+    validator: {
+        type: Object,
+        default: () => ({})
+    },
+
 
     modelModifiers: { default: () => ({}) },
     /**
@@ -65,4 +75,20 @@ defineProps({
 });
 
 defineEmits(['update:modelValue']);
+
+
+const inputClass = computed(() => {
+
+    return {
+        'block w-full rounded-md border-0 py-2.5 shadow-sm ring-1 ring-inset  sm:text-sm sm:leading-6': true,
+        'pl-10': props.prependIcon,
+        'ring-gray-300  placeholder:text-gray-400 focus:ring-dark-blue': !props.validator.$error,
+        'ring-red-500 focus:ring-red-500': props.validator.$error
+    }
+});
+
+const test = () => {
+    console.log('test');
+}
+
 </script>

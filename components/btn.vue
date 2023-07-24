@@ -1,6 +1,6 @@
 <template>
     <button :disabled="disabled" :type="type" :class="buttonClass"
-        class=" items-center rounded-[4px] px-5 py-3 font-semibold shadow-sm ">
+        class=" items-center rounded-[4px] px-5 py-3 font-semibold shadow-sm disabled:opacity-50 disabled:cursor-not-allowed">
 
         <slot></slot>
 
