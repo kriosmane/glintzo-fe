@@ -143,7 +143,7 @@ section {
         <div class="overflow-hidden   lg:min-h-[600px] lg:h-[calc(100vh-80px)]">
           <div class="h-full sm:pb-32 lg:pb-0 ps-10 sm:ps-20 xl:ps-40  sm:pt-10  lg:pt-0 w-full max-w-8xl ms-auto 2xl:mx-auto ">
             <div class="lg:flex items-center h-full">
-              <div class=" flex-1 max-w-[600px] me-5">
+              <div class=" flex-1 max-w-[600px] me-5 mt-20 lg:mt-0">
                 <h1
                   class="text-[35px] leading-[normal] text-center sm:text-left  font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
                   La piattaforma di matching amica dei visual creator
