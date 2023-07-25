@@ -7,8 +7,8 @@ label.city.active .border {
   <div class="w-full h-full min-h-screen lg:bg-gradient-to-r lg:from-[#DEE1FE] lg:to-white lg:to-50%">
     <div class="max-w-8xl mx-auto px-10 sm:py-4 sm:px-20 xl:px-40">
       <div class="w-full flex flex-col lg:flex-row py-10 md:py-10 2xl:py-32 relative">
-        <div class="lg:basis-1/2 pr-0 sm:pr-4">
-          <div class="lg:sticky lg:top-60">
+        <div class="lg:basis-1/2 pr-0 sm:pr-4 lg:h-screen lg:flex lg:items-center lg:sticky  lg:top-0 lg:mt-[-130px] 2xl:mt-[-228px]">
+          <div class="lg:relative  ">
             <h2
               class="text-[35px] leading-[normal]   font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
               <template v-if="!state.registered">
