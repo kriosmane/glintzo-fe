@@ -1,5 +1,19 @@
+<style>
+.swiper-pagination {
+  position: absolute !important;
+  bottom: -40px !important;
+  top:initial!important;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .swiper-pagination {
+    display: block;
+  }
+}
+</style>
 <template>
-  <div class="sm:pb-24 pt-24 sm:pt-32 xl:pb-32 overflow-hidden">
+  <div class="pb-24 pt-24 sm:pt-32 xl:pb-32 overflow-hidden">
     <swiper
       :speed="1500"
       class="overflow-initial"
@@ -8,28 +22,34 @@
         forceToAxis: false,
         releaseOnEdges: true,
       }"
+      :pagination="{ clickable: true }"
       :slides-per-view="1"
       :space-between="0"
       @swiper="onSwiper"
       @slideChange="onSlideChange"
-      :pagination="{
-        clickable: true,
-      }"
     >
       <swiper-slide class="h-auto-imp" v-for="(slide, index) in slides" :key="index">
-          <div :class=" ' px-10 py-4   lg:py-0 lg:px-0 h-full block lg:flex items-center   min-h-[340px] bg-slide-' + slide.id">
-         <img class="lg:max-w-[344px] relative  top-[-45px] lg:top-0 mb-[-30px] lg:mb-0 w-full lg:w-auto h-[200px] lg:h-[115%] rounded-2xl object-cover shadow-2xl lg:ms-[16.6%] lg:me-[8.3%] " :src="slide.image" />
-          <div class=" lg:pe-[8.3%] my-5  ">
+        <div
+          :class="
+            ' px-10 py-4   lg:py-0 lg:px-0 h-full block lg:flex items-center   min-h-[340px] bg-slide-' +
+            slide.id
+          "
+        >
+          <img
+            class="lg:max-w-[344px] relative top-[-45px] lg:top-0 mb-[-30px] lg:mb-0 w-full lg:w-auto h-[200px] lg:h-[115%] rounded-2xl object-cover shadow-2xl lg:ms-[16.6%] lg:me-[8.3%]"
+            :src="slide.image"
+          />
+          <div class="lg:pe-[8.3%] my-5">
             <h2 class="text-dark-blue font-bold text-[30px] mb-5">{{ slide.title }}</h2>
-               <blockquote
-                  class="text-lg font-normal leading-[27px] text-black sm:text-lg sm:leading-[27px]"
-                >
-                  <p>
-                    {{ slide.text }}
-                  </p>
-                </blockquote>
+            <blockquote
+              class="text-lg font-normal leading-[27px] text-black sm:text-lg sm:leading-[27px]"
+            >
+              <p>
+                {{ slide.text }}
+              </p>
+            </blockquote>
           </div>
-             <!-- 
+          <!-- 
             <div
               class="mx-auto flex max-w-8xl flex-col items-center gap-x-28 gap-y-10 px-10 sm:gap-y-8 lg:px-40 xl:flex-row xl:items-stretch"
             >
@@ -56,7 +76,6 @@
                 </blockquote>
               </div>
             </div> -->
-      
         </div>
       </swiper-slide>
     </swiper>
@@ -69,7 +88,7 @@ import { Mousewheel, Pagination } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
-
+import "swiper/css/pagination";
 import image_1 from "~/assets/images/slide_1.png";
 import image_2 from "~/assets/images/slide_2.png";
 import image_3 from "~/assets/images/slide_3.png";
