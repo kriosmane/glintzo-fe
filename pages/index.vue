@@ -165,7 +165,7 @@ section {
                 </div>
               </div>
               <!-- per krios  se vuoi che le immagini mobile prendano sempre tutto lo schermo rimuovi il  max-w-[780px] io ho inserito questo perchè da 768 cominciano ad essere giganti-->
-              <div class="w-full lg:hidden flex mt-32  custom-img-mobile-container">
+              <div class="w-full lg:hidden flex mt-32  custom-img-mobile-container mb-20">
                 <div class="flex flex-col me-5 justify-center ms-[-140px]">
                   <img
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
