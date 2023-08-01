@@ -15,9 +15,9 @@
 }
 
 
-.custom-height{
-  height:100vh;
-  min-height:800px;
+.custom-height {
+  height: 100vh;
+  min-height: 800px;
 }
 
 .trigger {
@@ -141,7 +141,8 @@ section {
     <main>
       <div class="relative isolate">
         <div class="overflow-hidden   lg:min-h-[600px] lg:h-[calc(100vh-80px)]">
-          <div class="h-full sm:pb-32 lg:pb-0 ps-10 sm:ps-20 xl:ps-40  sm:pt-10  lg:pt-0 w-full max-w-8xl ms-auto 2xl:mx-auto ">
+          <div
+            class="h-full sm:pb-32 lg:pb-0 ps-10 sm:ps-20 xl:ps-40  sm:pt-10  lg:pt-0 w-full max-w-8xl ms-auto 2xl:mx-auto ">
             <div class="lg:flex items-center h-full">
               <div class=" flex-1 max-w-[600px] me-5 mt-20 lg:mt-0">
                 <h1
@@ -179,7 +180,7 @@ section {
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                     alt="" class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
                 </div>
-                  <div class="flex flex-col ms-5 justify-center  ">
+                <div class="flex flex-col ms-5 justify-center  ">
                   <img
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                     alt="" class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
@@ -385,7 +386,7 @@ if (process.client) {
       trigger: ".trigger",
       scrub: true,
       pin: true,
-      end: "+=" + window.innerHeight * 15, // modificare questo numero per la velocità
+      end: "+=" + window.innerHeight * 5, // modificare questo numero per la velocità
     },
   });
 
