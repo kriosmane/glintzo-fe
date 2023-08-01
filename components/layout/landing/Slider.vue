@@ -13,7 +13,7 @@
 }
 </style>
 <template>
-  <div class="pb-24 pt-24 sm:pt-32 xl:pb-32 overflow-hidden">
+  <div class="pb-24 pt-24 sm:pt-32 xl:pb-32 overflow-hidden bg-white">
     <swiper
       :speed="1500"
       class="overflow-initial"
