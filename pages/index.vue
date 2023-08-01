@@ -188,28 +188,23 @@ section {
               </div>
               <div class="flex flex-1 lg:me-[-200px] hidden lg:flex h-full">
                 <div class="flex flex-col items-center justify-center me-5">
-                  <img
-                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt="" class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
+                  <img src="~/assets/images/hero_1.png"
+                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
+
                 </div>
                 <div class="flex flex-col items-center justify-center me-5">
-                  <img
-                    src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt="" class="rounded-lg mb-5 lg:min-h-[280px] object-cover lg:min-w-[250px]" />
-                  <img
-                    src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
-                    alt="" class="rounded-lg lg:min-h-[280px] object-cover lg:min-w-[250px]" />
+                  <img src="~/assets/images/hero_1.png"
+                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
+                  <img src="~/assets/images/hero_2.png"
+                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                  <img
-                    src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
-                    alt="" class="rounded-lg mb-5 lg:min-h-[280px] object-cover lg:min-w-[250px]" />
-                  <img
-                    src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
-                    alt="" class="rounded-lg mb-5 lg:min-h-[280px] object-cover lg:min-w-[250px]" />
-                  <img
-                    src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt="" class="rounded-lg lg:min-h-[280px] object-cover lg:min-w-[250px]" />
+                  <img src="~/assets/images/hero_1.png"
+                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
+                  <img src="~/assets/images/hero_2.png"
+                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
+                  <img src="~/assets/images/hero_3.png"
+                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
                 </div>
               </div>
 
