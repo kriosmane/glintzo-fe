@@ -57,7 +57,7 @@ label.city.active .border {
         </div>
 
         <div class="md:basis-1/2 mt-6 sm:mt-10 md:mt-0">
-          <form v-if="!state.registered" action="#" method="POST" class="max-h-[70vh] overflow-auto">
+          <form v-if="!state.registered" action="#" method="POST" class="max-h-[70vh] overflow-auto pe-8">
             <div class="">
               <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div>
