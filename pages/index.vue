@@ -34,15 +34,14 @@
   height: 100%;
 }
 
-.box-container p, .trigger .panel.panel-mobile p{
+.box-container p,
+.trigger .panel.panel-mobile p {}
 
-}
-
-.panel.panel-mobile{
-  display:none;
+.panel.panel-mobile {
+  display: none;
   flex-direction: column;
-    justify-content: center;
-min-height:100vh;
+  justify-content: center;
+  min-height: 100vh;
 
 }
 
@@ -180,136 +179,42 @@ section {
               <!-- per krios  se vuoi che le immagini mobile prendano sempre tutto lo schermo rimuovi il  max-w-[780px] io ho inserito questo perchè da 768 cominciano ad essere giganti-->
               <div class="w-full lg:hidden flex mt-28  custom-img-mobile-container mb-20">
                 <div class="flex flex-col me-5 justify-center ms-[-140px]">
-                  <img
-                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt="" class="rounded-lg object-cover lg:min-h-[30%] lg:min-w-[250px]" />
+                  <img src="~/assets/images/hero_1.png" alt=""
+                    class="rounded-lg object-cover lg:min-h-[30%] lg:min-w-[250px]" />
                 </div>
                 <div class="flex flex-col ">
-                  <img
-                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt="" class="rounded-lg object-cover lg:min-h-[30%] lg:min-w-[250px] mb-5" />
-                  <img
-                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt="" class="rounded-lg object-cover lg:min-h-[30%] lg:min-w-[250px]" />
+                  <img src="~/assets/images/hero_2.png" alt=""
+                    class="rounded-lg object-cover lg:min-h-[30%] lg:min-w-[250px] mb-5" />
+                  <img src="~/assets/images/hero_3.png" alt=""
+                    class="rounded-lg object-cover lg:min-h-[30%] lg:min-w-[250px]" />
                 </div>
                 <div class="flex flex-col ms-5 justify-center  ">
-                  <img
-                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt="" class="rounded-lg object-cover lg:min-h-[30%] lg:min-w-[250px]" />
+                  <img src="~/assets/images/hero_3.png" alt=""
+                    class="rounded-lg object-cover lg:min-h-[30%] lg:min-w-[250px]" />
                 </div>
               </div>
-              <div class="flex flex-1  hidden lg:flex h-full py-10 relative right-[-12vw]   xl:right-[-12vw] 2xl:right-[-18vw]">
+              <div
+                class="flex flex-1  hidden lg:flex h-full py-10 relative right-[-12vw]   xl:right-[-12vw] 2xl:right-[-18vw]">
                 <div class="flex flex-col items-center justify-center px-3 ">
-                  <img src="~/assets/images/hero_1.png"
-                    class="rounded-lg object-cover w-full  min-h[33%] " />
+                  <img src="~/assets/images/hero_1.png" class="rounded-lg object-cover w-full  min-h[33%] " />
 
                 </div>
                 <div class="flex flex-col items-center justify-center px-3">
-                  <img src="~/assets/images/hero_1.png"
-                    class="rounded-lg object-cover  w-full  min-h[33%]  mb-3" />
-                  <img src="~/assets/images/hero_2.png"
-                    class="rounded-lg object-cover w-full   min-h[33%]" />
+                  <img src="~/assets/images/hero_2.png" class="rounded-lg object-cover  w-full   min-h[33%]  mb-3" />
+                  <img src="~/assets/images/hero_3.png" class="rounded-lg object-cover  w-full   min-h[33%]" />
                 </div>
                 <div class="flex flex-col items-center justify-center px-3">
-                  <img src="~/assets/images/hero_1.png"
-                    class="rounded-lg object-cover  w-full mb-3  min-h[33%]" />
-                  <img src="~/assets/images/hero_2.png"
-                    class="rounded-lg object-cover    w-full mb-3  min-h[33%]" />
-                  <img src="~/assets/images/hero_3.png"
-                    class="rounded-lg object-cover    w-full  min-h[33%]" />
+                  <img src="~/assets/images/hero_1.png" class="rounded-lg object-cover  w-full mb-3  min-h[33%]" />
+                  <img src="~/assets/images/hero_2.png" class="rounded-lg object-cover   w-full mb-3  min-h[33%]" />
+                  <img src="~/assets/images/hero_3.png" class="rounded-lg object-cover   w-full  min-h[33%]" />
                 </div>
               </div>
 
-              <!--  <div
-                class="mt-14 flex justify-end gap-8 md:-mt-44 lg:justify-start sm:pl-20 lg:mt-0 lg:pl-0"
-              >
-                <div
-                  class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80"
-                >
-                  <div class="relative">
-                    <img
-                      src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                      alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                    />
-                    <div
-                      class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
-                    ></div>
-                  </div>
-                </div>
-                <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
-                  <div class="relative">
-                    <img
-                      src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                      alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                    />
-                    <div
-                      class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
-                    ></div>
-                  </div>
-                  <div class="relative">
-                    <img
-                      src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
-                      alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                    />
-                    <div
-                      class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
-                    ></div>
-                  </div>
-                </div>
-                <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
-                  <div class="relative">
-                    <img
-                      src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
-                      alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                    />
-                    <div
-                      class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
-                    ></div>
-                  </div>
-                  <div class="relative">
-                    <img
-                      src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                      alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                    />
-                    <div
-                      class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
-                    ></div>
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
         </div>
       </div>
-      <!-- effect slide words -->
-      <!--    <div class="box-container">
-        <section class="top">
-          <div class="img red bg-[#02145A]"></div>
-          <p>Qualità</p>
-        </section>
-        <section class="mid">
-          <div class="img orange bg-[#02145A]"></div>
-          <p>Professionalità</p>
-        </section>
-        <section class="bottom">
-          <div class="img yellow bg-[#02145A]"></div>
-          <p>Innovazione</p>
-        </section>
-        <section class="bottom">
-          <div class="img gree bg-[#02145A]"></div>
-          <p>Creatività</p>
-        </section>
-        <section class="bottom">
-          <div class="img blue bg-[#02145A]"></div>
-          <p>Fiducia</p>
-        </section>
-      </div> -->
-      <!-- end effect slide words -->
+
       <div class="trigger">
         <div class="first panel one effect-section">
           <p></p>
@@ -335,15 +240,15 @@ section {
           <p>Fiducia</p>
           <div></div>
         </div>
-         <div class="panel panel-mobile ">
-            <p>Qualità</p>
-            <p>Professionalità</p>
-            <p>Innovazione</p>
-            <p>Creatività</p>
-            <p>Fiducia</p>
+        <div class="panel panel-mobile ">
+          <p>Qualità</p>
+          <p>Professionalità</p>
+          <p>Innovazione</p>
+          <p>Creatività</p>
+          <p>Fiducia</p>
           <div></div>
         </div>
-        
+
       </div>
       <div
         class="panel text-effect min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text-2.png')]">
@@ -403,26 +308,26 @@ if (process.client) {
       scrub: true,
       pin: true,
       end: "+=" + window.innerHeight * 5, // modificare questo numero per la velocità
-        onLeave: function (self) {
+      onLeave: function (self) {
         let start = self.start;
         self.scroll(self.start);
         self.disable();
         self.animation.progress(1);
         ScrollTrigger.refresh();
         window.scrollTo(0, start);
-   
+
       }
     },
   });
 
- function resetTrigger(){
-gsap.to(
-   [".effect-section"],
-    { display: "none", opacity: 0,  });
+  function resetTrigger() {
+    gsap.to(
+      [".effect-section"],
+      { display: "none", opacity: 0, });
 
-    gsap.to(".panel-mobile",{opacity:1,display:"flex"});
+    gsap.to(".panel-mobile", { opacity: 1, display: "flex" });
   }
- 
+
   tl.to(".one", { opacity: 0 });
 
   tl.fromTo(
@@ -514,7 +419,7 @@ gsap.to(
     { autoAlpha: 0, y: 50, skewY: -4 },
     { duration: 2.5, autoAlpha: 1, y: 0, skewY: 0 }
   );
-  
+
 
 
   //tl.from(".two",{ y: 100, skewY: -4, rotationX: 0}).to(".two",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
@@ -556,9 +461,9 @@ gsap.to(
       pin: i === panels.length - 1 ? false : true,
       //end:"bottom 100",
       pinSpacing: false,
-       onEnter: function (self) {
+      onEnter: function (self) {
         resetTrigger();
-       }
+      }
     });
   });
 }

@@ -2,7 +2,7 @@
 .swiper-pagination {
   position: absolute !important;
   bottom: -40px !important;
-  top:initial!important;
+  top: initial !important;
   display: none;
 }
 
@@ -14,68 +14,26 @@
 </style>
 <template>
   <div class="pb-24 pt-24 sm:pt-32 xl:pb-32 overflow-hidden bg-white">
-    <swiper
-      :speed="1500"
-      class="overflow-initial"
-      :modules="modules"
-      :mousewheel="{
-        forceToAxis: false,
-        releaseOnEdges: true,
-      }"
-      :pagination="{ clickable: true }"
-      :slides-per-view="1"
-      :space-between="0"
-      @swiper="onSwiper"
-      @slideChange="onSlideChange"
-    >
+    <swiper :speed="1500" class="overflow-initial" :modules="modules" :mousewheel="{
+      forceToAxis: false,
+      releaseOnEdges: false,
+    }" :pagination="{ clickable: true }" :slides-per-view="1" :space-between="0" @swiper="onSwiper"
+      @slideChange="onSlideChange">
       <swiper-slide class="h-auto-imp" v-for="(slide, index) in slides" :key="index">
-        <div
-          :class="
-            ' px-10 py-4   lg:py-0 lg:px-0 h-full block lg:flex items-center   min-h-[340px] bg-slide-' +
-            slide.id
-          "
-        >
+        <div :class="' px-10 py-4   lg:py-0 lg:px-0 h-full block lg:flex items-center   min-h-[340px] bg-slide-' +
+          slide.id
+          ">
           <img
             class="lg:max-w-[344px] relative top-[-45px] lg:top-0 mb-[-30px] lg:mb-0 w-full lg:w-auto h-[200px] lg:h-[115%] rounded-2xl object-cover shadow-2xl lg:ms-[16.6%] lg:me-[8.3%]"
-            :src="slide.image"
-          />
+            :src="slide.image" />
           <div class="lg:pe-[8.3%] my-5">
             <h2 class="text-dark-blue font-bold text-[30px] mb-5">{{ slide.title }}</h2>
-            <blockquote
-              class="text-lg font-normal leading-[27px] text-black sm:text-lg sm:leading-[27px]"
-            >
+            <blockquote class="text-lg font-normal leading-[27px] text-black sm:text-lg sm:leading-[27px]">
               <p>
                 {{ slide.text }}
               </p>
             </blockquote>
           </div>
-          <!-- 
-            <div
-              class="mx-auto flex max-w-8xl flex-col items-center gap-x-28 gap-y-10 px-10 sm:gap-y-8 lg:px-40 xl:flex-row xl:items-stretch"
-            >
-              <div class="-mt-14 w-full max-w-2xl xl:-mb-8 md:w-96 sm:flex-none">
-                <div class="relative h-full min-h-[258px] max-h-[258px] md:min-h-auto md:max-h-auto">
-                  <img
-                    class="absolute inset-0 h-full w-full rounded-2xl object-cover shadow-2xl xl:min-h-[450px]"
-                    :src="slide.image"
-                  />
-                </div>
-              </div>
-
-              <div
-                class="w-full max-w-2xl sm:max-w-none sm:flex-auto sm:pt-12 pb-20 sm:space-y-8"
-              >
-                <h2 class="text-dark-blue font-bold text-[30px]">{{ slide.title }}</h2>
-
-                <blockquote
-                  class="text-lg font-normal leading-[27px] text-black sm:text-lg sm:leading-[27px]"
-                >
-                  <p>
-                    {{ slide.text }}
-                  </p>
-                </blockquote>
-              </div>
-            </div> -->
         </div>
       </swiper-slide>
     </swiper>
@@ -130,12 +88,12 @@ const slides = [
 /**
  *
  */
-function onSwiper(swiper) {}
+function onSwiper(swiper) { }
 
 /**
  *
  */
-function onSlideChange() {}
+function onSlideChange() { }
 </script>
 
 <style scoped>
@@ -146,6 +104,7 @@ function onSlideChange() {}
   background: #e5dffe;
   border-radius: 8px;
 }
+
 :deep(.swiper-pagination-bullet-active) {
   background: #1e16fe !important;
 }
