@@ -1,5 +1,6 @@
 <template>
-    <header ref="headRef" class="bg-dark-blue transition-opacity duration-300 ease-in-out min-h-[78px] flex items-center">
+    <header ref="headRef"
+        class="bg-dark-blue sticky top-0 z-[9999]  transition-opacity duration-300 ease-in-out min-h-[78px] flex items-center">
         <nav class="w-full max-w-8xl mx-auto py-4 px-10 sm:py-4 sm:px-20 xl:px-40 ">
             <div class="flex">
                 <a href="/">
