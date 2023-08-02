@@ -1,5 +1,5 @@
 <template>
-    <header ref="headRef"
+    <header ref="headRef" :class="headerClass"
         class="bg-dark-blue sticky top-0 z-[9999]  transition-opacity duration-300 ease-in-out min-h-[78px] flex items-center">
         <nav class="w-full max-w-8xl mx-auto py-4 px-10 sm:py-4 sm:px-20 xl:px-40 ">
             <div class="flex">
@@ -21,6 +21,13 @@ import { onMounted } from "@vue/runtime-core";
 
 const route = useRoute();
 const headRef = ref(null);
+
+
+const headerClass = computed(() => {
+    if (route.name === 'register') {
+        return 'bg-dark-blue sticky top-0 z-[9999]  transition-opacity duration-300 ease-in-out min-h-[78px] flex items-center opacity-100';
+    }
+});
 
 onMounted(() => {
     var prev = window.pageYOffset;

@@ -276,7 +276,7 @@ section {
               Sei un visual creator e<br />
               vuoi saperne di più?
             </h2>
-            <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
+            <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-[#02145A]">
               Clicca su "Registrati " e compila il Form per accedere alla community<br> di
               Glintzo e diventa uno dei primi creator!
             </p>
