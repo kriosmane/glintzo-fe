@@ -170,41 +170,41 @@ section {
                 <div class="flex flex-col me-5 justify-center ms-[-140px]">
                   <img
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt="" class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
+                    alt="" class="rounded-lg object-cover lg:min-h-[30%] lg:min-w-[250px]" />
                 </div>
                 <div class="flex flex-col ">
                   <img
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt="" class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px] mb-5" />
+                    alt="" class="rounded-lg object-cover lg:min-h-[30%] lg:min-w-[250px] mb-5" />
                   <img
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt="" class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
+                    alt="" class="rounded-lg object-cover lg:min-h-[30%] lg:min-w-[250px]" />
                 </div>
                 <div class="flex flex-col ms-5 justify-center  ">
                   <img
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt="" class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
+                    alt="" class="rounded-lg object-cover lg:min-h-[30%] lg:min-w-[250px]" />
                 </div>
               </div>
-              <div class="flex flex-1 lg:me-[-200px] hidden lg:flex h-full">
-                <div class="flex flex-col items-center justify-center me-5">
+              <div class="flex flex-1  hidden lg:flex h-full py-10 relative right-[-12vw]   xl:right-[-12vw] 2xl:right-[-18vw]">
+                <div class="flex flex-col items-center justify-center px-3 ">
                   <img src="~/assets/images/hero_1.png"
-                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
+                    class="rounded-lg object-cover w-full  min-h[33%] " />
 
                 </div>
-                <div class="flex flex-col items-center justify-center me-5">
+                <div class="flex flex-col items-center justify-center px-3">
                   <img src="~/assets/images/hero_1.png"
-                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
+                    class="rounded-lg object-cover  w-full  min-h[33%]  mb-3" />
                   <img src="~/assets/images/hero_2.png"
-                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
+                    class="rounded-lg object-cover w-full   min-h[33%]" />
                 </div>
-                <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col items-center justify-center px-3">
                   <img src="~/assets/images/hero_1.png"
-                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
+                    class="rounded-lg object-cover  w-full mb-3  min-h[33%]" />
                   <img src="~/assets/images/hero_2.png"
-                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
+                    class="rounded-lg object-cover    w-full mb-3  min-h[33%]" />
                   <img src="~/assets/images/hero_3.png"
-                    class="rounded-lg object-cover lg:min-h-[280px] lg:min-w-[250px]" />
+                    class="rounded-lg object-cover    w-full  min-h[33%]" />
                 </div>
               </div>
 
