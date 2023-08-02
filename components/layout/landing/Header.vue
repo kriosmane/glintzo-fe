@@ -35,20 +35,27 @@ onMounted(() => {
 
         if (route.name !== 'register') {
 
-            var curr = window.pageYOffset;
-            if (prev > curr) {
-                headRef.value.classList.remove("opacity-0");
-                headRef.value.classList.add("opacity-100", "sticky", "top-0", "z-40");
+            var curr = window.scrollY;
 
-            } else {
-                headRef.value.classList.remove("opacity-100", "sticky", "top-0", "z-40");
-                headRef.value.classList.add("opacity-0");
+            if (curr > 40) {
 
+
+
+                if (prev > curr) {
+                    headRef.value.classList.remove("opacity-0");
+                    headRef.value.classList.add("opacity-100", "sticky", "top-0", "z-40");
+
+                } else {
+                    headRef.value.classList.remove("opacity-100", "sticky", "top-0", "z-40");
+                    headRef.value.classList.add("opacity-0");
+
+                }
+                if (curr === 0) {
+
+                }
+                prev = curr;
             }
-            if (curr === 0) {
 
-            }
-            prev = curr;
         }
 
 
