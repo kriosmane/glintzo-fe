@@ -34,6 +34,18 @@
   height: 100%;
 }
 
+.box-container p, .trigger .panel.panel-mobile p{
+
+}
+
+.panel.panel-mobile{
+  display:none;
+  flex-direction: column;
+    justify-content: center;
+min-height:100vh;
+
+}
+
 .effect-section:not(.first) {
   opacity: 0;
   visibility: hidden;
@@ -323,6 +335,15 @@ section {
           <p>Fiducia</p>
           <div></div>
         </div>
+         <div class="panel panel-mobile ">
+            <p>Qualità</p>
+            <p>Professionalità</p>
+            <p>Innovazione</p>
+            <p>Creatività</p>
+            <p>Fiducia</p>
+          <div></div>
+        </div>
+        
       </div>
       <div
         class="panel text-effect min-h-screen min-w-full bg bg-[#02145A] bg-[url('assets/images/background-text-2.png')]">
@@ -382,9 +403,26 @@ if (process.client) {
       scrub: true,
       pin: true,
       end: "+=" + window.innerHeight * 5, // modificare questo numero per la velocità
+        onLeave: function (self) {
+        let start = self.start;
+        self.scroll(self.start);
+        self.disable();
+        self.animation.progress(1);
+        ScrollTrigger.refresh();
+        window.scrollTo(0, start);
+   
+      }
     },
   });
 
+ function resetTrigger(){
+gsap.to(
+   [".effect-section"],
+    { display: "none", opacity: 0,  });
+
+    gsap.to(".panel-mobile",{opacity:1,display:"flex"});
+  }
+ 
   tl.to(".one", { opacity: 0 });
 
   tl.fromTo(
@@ -476,6 +514,8 @@ if (process.client) {
     { autoAlpha: 0, y: 50, skewY: -4 },
     { duration: 2.5, autoAlpha: 1, y: 0, skewY: 0 }
   );
+  
+
 
   //tl.from(".two",{ y: 100, skewY: -4, rotationX: 0}).to(".two",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
   /*   tl.to( ".three",{ y: 100, skewY: -4, rotationX: 0}).to(".three",{ autoAlpha: 1, y: -100, ease: "power1.in", skewY: 0, rotationX: 60, opacity:0},"<");
@@ -516,6 +556,9 @@ if (process.client) {
       pin: i === panels.length - 1 ? false : true,
       //end:"bottom 100",
       pinSpacing: false,
+       onEnter: function (self) {
+        resetTrigger();
+       }
     });
   });
 }
