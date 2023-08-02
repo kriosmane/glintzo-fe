@@ -4,14 +4,19 @@ label.city.active .border {
 }
 
 [type='checkbox']:checked {
-    background-image: url("assets/images/checked.png");
+  background-image: url("assets/images/checked.png");
+}
+
+[type='radio']:checked {
+  background-image: url("assets/images/radio_selected.png");
 }
 </style>
 <template>
   <div class="w-full h-full min-h-screen lg:bg-gradient-to-r lg:from-[#DEE1FE] lg:to-white lg:to-50%">
     <div class="max-w-8xl mx-auto px-10 sm:py-4 sm:px-20 xl:px-40">
       <div class="w-full flex flex-col lg:flex-row py-10 md:py-10 2xl:py-32 relative">
-        <div class="lg:basis-1/2 pr-0 sm:pr-4 lg:h-screen lg:flex lg:items-center lg:sticky  lg:top-0 lg:mt-[-130px] 2xl:mt-[-228px]">
+        <div
+          class="lg:basis-1/2 pr-0 sm:pr-4 lg:h-screen lg:flex lg:items-center lg:sticky  lg:top-0 lg:mt-[-130px] 2xl:mt-[-228px]">
           <div class="lg:relative  ">
             <h2
               class="text-[35px] leading-[normal]   font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
@@ -94,17 +99,20 @@ label.city.active .border {
 
                     <div class="mt-4 grid grid-cols-2 gap-x-3 gap-y-6 sm:grid-cols-3 sm:gap-x-5">
                       <!-- MILANO -->
-                      <label-card v-model="state.milano" title="Milano" :class="state.milano ? 'city active  mx-1' : 'city mx-1'">
+                      <label-card v-model="state.milano" title="Milano"
+                        :class="state.milano ? 'city active  mx-1' : 'city mx-1'">
                         <lazy-svg-milano class="w-[80px] h-[80px] inline  "></lazy-svg-milano>
                       </label-card>
 
                       <!-- ROMA -->
-                      <label-card v-model="state.roma" title="Roma" :class="state.roma ? 'city active mx-1' : 'city mx-1'">
+                      <label-card v-model="state.roma" title="Roma"
+                        :class="state.roma ? 'city active mx-1' : 'city mx-1'">
                         <lazy-svg-roma class="w-[80px] h-[80px] inline "></lazy-svg-roma>
                       </label-card>
 
                       <!-- TORINO -->
-                      <label-card v-model="state.torino" title="Torino" :class="state.torino ? 'city active mx-1' : 'city mx-1'">
+                      <label-card v-model="state.torino" title="Torino"
+                        :class="state.torino ? 'city active mx-1' : 'city mx-1'">
                         <lazy-svg-torino class="w-[80px] h-[80px] inline"></lazy-svg-torino>
                       </label-card>
                     </div>
@@ -149,12 +157,14 @@ label.city.active .border {
                       <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
                         <div class="flex items-center">
                           <input value="business" name="userType" type="radio" v-model="state.userType"
-                            @change="v$.userType.$touch" class="h-4 w-4 border-[#02145A] text-[#02145A]" />
+                            @change="v$.userType.$touch"
+                            class="h-4 w-4 focus:ring-0 focus:ring-offset-0 border-[#02145A] text-[#02145A]" />
                           <label class="ml-3 block text-[14px] font-normal text-[#02145A]">É la mia professione</label>
                         </div>
                         <div class="flex items-center">
                           <input value="personal" name="userType" type="radio" v-model="state.userType"
-                            @change="v$.userType.$touch" class="h-4 w-4 border-[#02145A] text-[#02145A]" />
+                            @change="v$.userType.$touch"
+                            class="h-4 w-4 focus:ring-0 focus:ring-offset-0 border-[#02145A] text-[#02145A]" />
                           <label class="ml-3 block text-[14px] font-normal text-[#02145A]">É il mio hobby</label>
                         </div>
                       </div>
@@ -173,12 +183,12 @@ label.city.active .border {
                       <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
                         <div class="flex items-center">
                           <input value="si" name="call" type="radio" v-model="state.call" @change="v$.call.$touch"
-                            class="h-4 w-4 border-[#02145A] text-[#02145A]" />
+                            class="h-4 w-4 border-[#02145A] text-[#02145A] focus:ring-0 focus:ring-offset-0" />
                           <label class="ml-3 block text-[14px] font-normal text-[#02145A]">Si</label>
                         </div>
                         <div class="flex items-center">
                           <input value="no" name="call" type="radio" v-model="state.call" @change="v$.call.$touch"
-                            class="h-4 w-4 border-[#02145A] text-[#02145A]" />
+                            class="h-4 w-4 border-[#02145A] text-[#02145A] focus:ring-0 focus:ring-offset-0" />
                           <label class="ml-3 block text-[14px] font-normal text-[#02145A]">No</label>
                         </div>
                       </div>
