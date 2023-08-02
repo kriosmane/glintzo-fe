@@ -2,6 +2,10 @@
 label.city.active .border {
   border: 1px solid #02145A;
 }
+
+[type='checkbox']:checked {
+    background-image: url("assets/images/checked.png");
+}
 </style>
 <template>
   <div class="w-full h-full min-h-screen lg:bg-gradient-to-r lg:from-[#DEE1FE] lg:to-white lg:to-50%">
