@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white py-24">
+    <div class="py-12 lg:py-24">
         <div class="mx-auto max-w-8xl px-10 lg:px-40 space-y-20">
             <div class="text-center">
                 <h1 class="text-4xl font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
@@ -16,7 +16,7 @@
                         <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none text-pink-light" aria-hidden="true">
                             <circle cx="2" cy="2" r="2" fill="currentColor" />
                         </svg>
-                        <span class="text-black text-base">{{ index+1 }}</span>
+                        <span class="text-black text-base">{{ index + 1 }}</span>
                         <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-pink-light sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
                             aria-hidden="true"></div>
                     </time>

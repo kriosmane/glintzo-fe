@@ -14,10 +14,8 @@
 </style>
 <template>
   <div class="pb-24 pt-24 sm:pt-32 xl:pb-32 overflow-hidden bg-white">
-    <swiper :speed="1500" class="overflow-initial" :modules="modules" :mousewheel="{
-      forceToAxis: false,
-      releaseOnEdges: false,
-    }" :pagination="{ clickable: true }" :slides-per-view="1" :space-between="0" @swiper="onSwiper"
+    <swiper :speed="1500" class="overflow-initial" :modules="modules" :mousewheel="mousewheelOptions"
+      :pagination="paginationOptions" :slides-per-view="1" :space-between="0" @swiper="onSwiper"
       @slideChange="onSlideChange">
       <swiper-slide class="h-auto-imp" v-for="(slide, index) in slides" :key="index">
         <div :class="' px-10 py-4   lg:py-0 lg:px-0 h-full block lg:flex items-center   min-h-[340px] bg-slide-' +
@@ -84,6 +82,18 @@ const slides = [
       "Non è mai stato così facile salvaguardare i tuoi interessi come su Glintzo. Non dovrai più preoccuparti di come promuovere i tuoi lavori e di gestire le tue vendite. Glintzo lo farà per te, permettendoti di concentrarti sul tuo talento e di guadgnare senza alcuna preoccupazione.",
   },
 ];
+
+/**
+ * 
+ */
+const mousewheelOptions = ref({
+  forceToAxis: false,
+  releaseOnEdges: true,
+});
+
+const paginationOptions = ref({
+  clickable: true,
+});
 
 /**
  *

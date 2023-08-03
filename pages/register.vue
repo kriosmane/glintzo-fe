@@ -66,7 +66,8 @@ label.city.active .border {
         </div>
 
         <div class="md:basis-1/2 mt-6 sm:mt-10 md:mt-0">
-          <form v-if="!state.registered" action="#" method="POST" class="lg:max-h-[70vh] overflow-auto lg:px-8">
+          <form v-if="!state.registered" id="form" ref="form" action="#" method="POST"
+            class="lg:max-h-[70vh] overflow-auto lg:px-8">
             <div class="">
               <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div>
@@ -293,18 +294,7 @@ const state = reactive({
 
 const { $apiFetch } = useNuxtApp();
 
-/*
-const rules = computed(() => {
 
-  return {
-    first_name: { required },
-    last_name: { required },
-    email: { required, email },
-    mobile_phone: { required },
-
-  };
-});
-*/
 
 const rules = computed(() => {
   return {
@@ -347,6 +337,7 @@ const buttonDisabled = ref(false);
 
 const csrfRetrieved = ref(false);
 
+const form = ref(null);
 
 
 
@@ -405,13 +396,19 @@ async function register() {
 
     } catch (error) {
 
-      console.log("ERROR", error.response._data.message);
 
       errorMessage.value = error.response._data.message;
 
       state.registered = false;
 
       buttonDisabled.value = false;
+
+      /*
+      var element = document.querySelector('#form');
+
+      element.scrollTop = element.scrollHeight;
+      */
+
 
     }
   }

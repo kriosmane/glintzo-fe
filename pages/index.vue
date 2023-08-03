@@ -260,23 +260,21 @@ section {
 
       <LazyLayoutLandingSlider></LazyLayoutLandingSlider>
 
-      <LazyLayoutLandingTimeline></LazyLayoutLandingTimeline>
 
-      <div style="
-          background: linear-gradient(
-            to top,
-            #dee1fe 0.05%,
-            rgba(222, 225, 254, 0) 99.95%
-          );
-        ">
+
+      <div class="bg-gradient-to-t from-[#DEE1FE] to-white to-50%">
+
+        <LazyLayoutLandingTimeline></LazyLayoutLandingTimeline>
+
+
         <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div class="mx-auto max-w-2xl text-center space-y-5">
+          <div class="mx-auto max-w-2xl text-center ">
             <h2
               class="text-[35px] leading-[normal] text-center   font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
               Sei un visual creator e<br />
               vuoi saperne di più?
             </h2>
-            <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-[#02145A]">
+            <p class="mx-auto mt-4 max-w-xl text-lg leading-8 text-[#02145A]">
               Clicca su "Registrati " e compila il Form per accedere alla community<br> di
               Glintzo e diventa uno dei primi creator!
             </p>
