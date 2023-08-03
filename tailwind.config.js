@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -38,5 +40,20 @@ module.exports = {
       "8xl": "90rem",
     },
   },
-  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/forms"), 
+    require("@tailwindcss/typography"),
+    plugin(function({ addUtilities }) {
+      addUtilities({
+        '.no-scrollbar::-webkit-scrollbar': {
+          'display': 'none',
+        },
+        '.no-scrollbar': {
+          '-ms-overflow-style': 'none',
+          'scrollbar-width': 'none',
+        },
+       
+      })
+    })
+  ],
 };
