@@ -138,7 +138,7 @@ label.city.active .border {
                       </label-card>
 
                       <!-- VIDEOMAKER -->
-                      <label-card v-model="state.videomaker" title="Fotografo"
+                      <label-card v-model="state.videomaker" title="Videomaker"
                         :class="state.videomaker ? 'city active mx-1' : 'city mx-1'">
                         <lazy-svg-videocamera class="w-[80px] h-[80px] inline"></lazy-svg-videocamera>
                       </label-card>
