@@ -16,7 +16,7 @@
   <div class="pb-24 pt-24 sm:pt-32 xl:pb-32 overflow-hidden bg-white">
     <swiper :speed="1500" class="overflow-initial" :modules="modules" :mousewheel="mousewheelOptions"
       :pagination="paginationOptions" :slides-per-view="1" :space-between="0" @swiper="onSwiper"
-      @slideChange="onSlideChange">
+      @slideChange="onSlideChange" @reachEnd="reachEnd">
       <swiper-slide class="h-auto-imp" v-for="(slide, index) in slides" :key="index">
         <div :class="' px-10 py-4   lg:py-0 lg:px-0 h-full block lg:flex items-center   min-h-[340px] bg-slide-' +
           slide.id
@@ -89,6 +89,7 @@ const slides = [
 const mousewheelOptions = ref({
   forceToAxis: false,
   releaseOnEdges: true,
+  thresholdTime: 1000
 });
 
 const paginationOptions = ref({
@@ -103,7 +104,22 @@ function onSwiper(swiper) { }
 /**
  *
  */
-function onSlideChange() { }
+function onSlideChange(swiper) {
+
+  setTimeout(function () {
+    //swiper.params.mousewheel.releaseOnEdges = false;
+    mousewheelOptions.value.releaseOnEdges = false;
+  }, 500);
+
+}
+
+function reachEnd() {
+  setTimeout(function () {
+    console.log("reachEnd");
+    mousewheelOptions.value.releaseOnEdges = true;
+  }, 1000);
+}
+
 </script>
 
 <style scoped>
