@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     public: {
 
       BASE_URL: process.env.BASE_URL,
+      environment: process.env.APP_ENV,
       google_analytics_id: process.env.GOOGLE_ANALYTICS_ID
 
     }
