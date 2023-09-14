@@ -24,7 +24,8 @@ const headRef = ref(null);
 
 
 const headerClass = computed(() => {
-    if (route.name === 'register') {
+
+    if (route.name !== 'index') {
         return 'bg-dark-blue sticky top-0 z-[9999]  transition-opacity duration-300 ease-in-out min-h-[78px] flex items-center opacity-100';
     }
 });
@@ -33,7 +34,7 @@ onMounted(() => {
     var prev = window.pageYOffset;
     window.addEventListener("scroll", () => {
 
-        if (route.name !== 'register') {
+        if (route.name == 'index') {
 
             var curr = window.scrollY;
 
