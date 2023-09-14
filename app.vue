@@ -19,9 +19,6 @@ useHead({
             id: "Cookiebot",
             "data-cbid": "904a8c3b-7ad0-4c82-ba50-fa2f1d5015be",
             "data-blockingmode": "auto",
-
-
-
         },
     ]
 })
