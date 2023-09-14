@@ -16,7 +16,7 @@
   <div class="pb-24 pt-24 sm:pt-32 xl:pb-32 overflow-hidden bg-white">
     <swiper :speed="1500" class="overflow-initial" :modules="modules" :mousewheel="mousewheelOptions"
       :pagination="paginationOptions" :slides-per-view="1" :space-between="0" @swiper="onSwiper"
-      @slideChange="onSlideChange" @reachEnd="reachEnd">
+      @slideChange="onSlideChange" @reachEnd="reachEdge" @toEdge="reachEdge">
       <swiper-slide class="h-auto-imp" v-for="(slide, index) in slides" :key="index">
         <div :class="' px-10 py-4   lg:py-0 lg:px-0 h-full block lg:flex items-center   min-h-[340px] bg-slide-' +
           slide.id
@@ -41,6 +41,7 @@
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Mousewheel, Pagination } from "swiper";
+
 
 // Import Swiper styles
 import "swiper/css";
@@ -107,18 +108,21 @@ function onSwiper(swiper) { }
 function onSlideChange(swiper) {
 
   setTimeout(function () {
-    //swiper.params.mousewheel.releaseOnEdges = false;
-    mousewheelOptions.value.releaseOnEdges = false;
+    swiper.params.mousewheel.releaseOnEdges = false;
+
   }, 500);
 
 }
 
-function reachEnd() {
+function reachEdge(swiper) {
   setTimeout(function () {
-    console.log("reachEnd");
-    mousewheelOptions.value.releaseOnEdges = true;
+    swiper.params.mousewheel.releaseOnEdges = true;
   }, 1000);
 }
+
+
+
+
 
 </script>
 
