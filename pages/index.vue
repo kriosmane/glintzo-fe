@@ -260,8 +260,6 @@ section {
 
       <LazyLayoutLandingSlider></LazyLayoutLandingSlider>
 
-
-
       <div class="bg-gradient-to-t from-[#DEE1FE] to-white to-50%">
 
         <LazyLayoutLandingTimeline></LazyLayoutLandingTimeline>
@@ -278,8 +276,6 @@ section {
               Clicca su "Registrati " e compila il Form per accedere alla community<br> di
               Glintzo e diventa uno dei primi creator!
             </p>
-
-
 
             <div class="mt-10 flex items-center justify-center gap-x-6">
               <NuxtLink to="/register"
