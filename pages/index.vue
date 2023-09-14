@@ -189,7 +189,7 @@ section {
                     class="rounded-lg object-cover lg:min-h-[30%] lg:min-w-[250px]" />
                 </div>
                 <div class="flex flex-col ms-5 justify-center  ">
-                  <img src="~/assets/images/hero_3.png" alt=""
+                  <img src="~/assets/images/hero_4.png" alt=""
                     class="rounded-lg object-cover lg:min-h-[30%] lg:min-w-[250px]" />
                 </div>
               </div>
@@ -204,9 +204,9 @@ section {
                   <img src="~/assets/images/hero_3.png" class="rounded-lg object-cover  w-full   min-h[33%]" />
                 </div>
                 <div class="flex flex-col items-center justify-center px-3">
-                  <img src="~/assets/images/hero_1.png" class="rounded-lg object-cover  w-full mb-3  min-h[33%]" />
-                  <img src="~/assets/images/hero_2.png" class="rounded-lg object-cover   w-full mb-3  min-h[33%]" />
-                  <img src="~/assets/images/hero_3.png" class="rounded-lg object-cover   w-full  min-h[33%]" />
+                  <img src="~/assets/images/hero_4.png" class="rounded-lg object-cover  w-full mb-3  min-h[33%]" />
+                  <img src="~/assets/images/hero_5.png" class="rounded-lg object-cover   w-full mb-3  min-h[33%]" />
+                  <img src="~/assets/images/hero_6.png" class="rounded-lg object-cover   w-full  min-h[33%]" />
                 </div>
               </div>
 
