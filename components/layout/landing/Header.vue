@@ -16,6 +16,17 @@
 
 <script setup>
 
+import image_1 from "~/assets/images/glintzo.png";
+
+useSeoMeta({
+    title: 'Glintzo',
+    ogTitle: 'La piattaforma di matching amica dei visual creator',
+    description: 'Mettiamo in contatto aziende e privati con i migliori fotografi e videomaker sul panorama italiano in modo semplice e innovativo',
+    ogDescription: 'Mettiamo in contatto aziende e privati con i migliori fotografi e videomaker sul panorama italiano in modo semplice e innovativo',
+    ogImage: image_1,
+    twitterCard: 'summary_large_image',
+})
+
 import { ref } from "@vue/reactivity";
 import { onMounted } from "@vue/runtime-core";
 
