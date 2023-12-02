@@ -14,9 +14,9 @@ label.city.active .border-2 {
       <div class="w-full flex flex-col lg:flex-row py-10 md:py-10 2xl:py-32 relative">
         <div
           class="lg:basis-1/2 pr-0 sm:pr-4 lg:h-screen lg:flex lg:items-center lg:sticky  lg:top-0 lg:mt-[-130px] 2xl:mt-[-228px]">
-          <div class="lg:relative  ">
+          <div class="lg:relative">
             <h2
-              class="text-[35px] leading-[normal] font-gopher   font-bold tracking-tight text-primary sm:text-[40px] sm:leading-[60px]">
+              class="text-[35px] leading-[normal] font-gopher   font-bold tracking-tight text-primary sm:text-[56px] sm:leading-[53px]">
               <template v-if="!state.registered">
                 Entra nella<br />
                 community di<br />
@@ -29,7 +29,7 @@ label.city.active .border-2 {
               </template>
             </h2>
 
-            <p class="mt-6 font-bold text-[20px] leading-[38px] text-black">
+            <p class="mt-6 font-bold text-[20px] leading-[25px] text-black">
               <template v-if="!state.registered">
                 Iscriviti e scopri come ottenere Sparkz<br />
                 gratuiti da usare nella piattaforma
@@ -178,12 +178,12 @@ label.city.active .border-2 {
                       <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
                         <div class="flex items-center">
                           <input value="si" name="call" type="radio" v-model="state.call" @change="v$.call.$touch"
-                            class="h-4 w-4 border-[#02145A] text-[#02145A] focus:ring-0 focus:ring-offset-0" />
-                          <label class="ml-3 block text-[14px] font-normal text-[#02145A]">Si</label>
+                            class="h-4 w-4 focus:ring-0 focus:ring-offset-0" />
+                          <label class="ml-3 block text-[14px] font-normal text-black">Si</label>
                         </div>
                         <div class="flex items-center">
                           <input value="no" name="call" type="radio" v-model="state.call" @change="v$.call.$touch"
-                            class="h-4 w-4 border-[#02145A] text-[#02145A] focus:ring-0 focus:ring-offset-0" />
+                            class="h-4 w-4  focus:ring-0 focus:ring-offset-0" />
                           <label class="ml-3 block text-[14px] font-normal text-black">No</label>
                         </div>
                       </div>

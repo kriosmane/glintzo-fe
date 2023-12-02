@@ -1,6 +1,6 @@
 <template>
     <div>
-        <label :for="name" class="block text-sm font-medium leading-6 text-[#02145A]">{{ label }}</label>
+        <label :for="name" class="block text-sm font-medium leading-6 text-black">{{ label }}</label>
 
         <div :class="prependIcon ? 'relative rounded-md shadow-sm' : ''" class="mt-1">
 
