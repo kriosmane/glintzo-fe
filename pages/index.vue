@@ -7,18 +7,33 @@ definePageMeta({
   layout: "landing",
 });
 
+import middle_1 from "~/assets/images/middle-1.png";
+import middle_2 from "~/assets/images/middle-2.png";
+
+let style_1 = 'background-image: url(' + middle_1 + ')';
+let style_2 = 'background-image: url(' + middle_2 + ')';
+
 </script>
 
 <template>
   <LazyLayoutLandingHero></LazyLayoutLandingHero>
-  <div class="bg-[#BECAEF]">
-    <div class="flex justify-center h-screen items-center">
-      <img class="w-[325px] h-[235px] lg:w-[900px] lg:h-[650px]" src="~/assets/images/middle-1.png">
+
+
+
+  <div class="bg-[#BECAEF] h-screen">
+    <div class="flex justify-center items-center h-full px-5">
+      <img class="max-h-[600px]" src="~/assets/images/middle-1.png">
+
     </div>
   </div>
-  <div class="bg-white">
-    <div class="flex h-screen"></div>
+
+
+  <div class="bg-white h-screen ">
+    <div class="flex justify-center items-center h-full  px-5">
+      <img class="max-h-[600px]" src="~/assets/images/middle-2.png">
+    </div>
   </div>
+
   <LazyLayoutLandingSlider></LazyLayoutLandingSlider>
 
   <LazyLayoutLandingTimeline></LazyLayoutLandingTimeline>
