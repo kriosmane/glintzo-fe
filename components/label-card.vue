@@ -15,11 +15,11 @@
 
             </div>
 
-            <span class="block text-sm font-normal text-[14px] text-[#02145A] text-center"> {{ title }}</span>
+            <span class="block text-sm font-normal text-[14px] text-black text-center"> {{ title }}</span>
 
         </div>
 
-        <span class="pointer-events-none absolute -inset-px rounded-lg border" aria-hidden="true"></span>
+        <span class="pointer-events-none absolute -inset-px rounded-lg border-2" aria-hidden="true"></span>
 
     </label>
 </template>

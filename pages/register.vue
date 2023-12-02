@@ -1,25 +1,22 @@
 <style>
-label.city.active .border {
-  border: 1px solid #02145A;
+label.city.active .border-2 {
+  border-color: #9C9BEC;
 }
 
-[type='checkbox']:checked {
-  background-image: url("assets/images/checked.png");
-}
 
 [type='radio']:checked {
   background-image: url("assets/images/radio_selected.png");
 }
 </style>
 <template>
-  <div class="w-full h-full min-h-screen lg:bg-gradient-to-r lg:from-[#DEE1FE] lg:to-white lg:to-50%">
+  <div class="w-full h-full min-h-screen  ">
     <div class="max-w-8xl mx-auto px-10 sm:py-4 sm:px-20 xl:px-40">
       <div class="w-full flex flex-col lg:flex-row py-10 md:py-10 2xl:py-32 relative">
         <div
           class="lg:basis-1/2 pr-0 sm:pr-4 lg:h-screen lg:flex lg:items-center lg:sticky  lg:top-0 lg:mt-[-130px] 2xl:mt-[-228px]">
           <div class="lg:relative  ">
             <h2
-              class="text-[35px] leading-[normal]   font-bold tracking-tight text-[#FB2283] sm:text-[40px] sm:leading-[60px]">
+              class="text-[35px] leading-[normal] font-gopher   font-bold tracking-tight text-primary sm:text-[40px] sm:leading-[60px]">
               <template v-if="!state.registered">
                 Entra nella<br />
                 community di<br />
@@ -32,7 +29,7 @@ label.city.active .border {
               </template>
             </h2>
 
-            <p class="mt-6 font-bold text-[20px] leading-[38px] text-dark-blue">
+            <p class="mt-6 font-bold text-[20px] leading-[38px] text-black">
               <template v-if="!state.registered">
                 Iscriviti e scopri come ottenere Sparkz<br />
                 gratuiti da usare nella piattaforma
@@ -44,7 +41,7 @@ label.city.active .border {
               </template>
             </p>
 
-            <p class="text-base mt-4 leading-6 text-dark-blue">
+            <p class="text-base mt-4 leading-6 text-black">
               <template v-if="!state.registered">
                 Incontrare e conoscere i visual creator della nostra <br />community non
                 solo è un <span class="font-bold">piacere</span> ma anche una<br />
@@ -94,7 +91,7 @@ label.city.active .border {
 
                 <div class="sm:col-span-2">
                   <fieldset>
-                    <legend class="text-[14px] font-medium leading-6 text-[#02145A]">
+                    <legend class="text-[14px] font-medium leading-6 text-black">
                       Area geografica di lavoro
                     </legend>
 
@@ -126,7 +123,7 @@ label.city.active .border {
 
                 <div class="sm:col-span-2">
                   <fieldset>
-                    <legend class="text-[14px] font-medium leading-6 text-[#02145A]">
+                    <legend class="text-[14px] font-medium leading-6 text-black">
                       Visual creator
                     </legend>
 
@@ -152,33 +149,30 @@ label.city.active .border {
 
                 <div class="sm:col-span-2">
                   <div>
-                    <label class="text-[14px] font-medium leading-6 text-[#02145A]">Svolgo questa attività perchè</label>
+                    <label class="text-[14px] font-medium leading-6 text-black">Svolgo questa attività perchè</label>
 
                     <fieldset class="mt-4">
                       <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
                         <div class="flex items-center">
                           <input value="business" name="userType" type="radio" v-model="state.userType"
-                            @change="v$.userType.$touch"
-                            class="h-4 w-4 focus:ring-0 focus:ring-offset-0 border-[#02145A] text-[#02145A]" />
-                          <label class="ml-3 block text-[14px] font-normal text-[#02145A]">É la mia professione</label>
+                            @change="v$.userType.$touch" class="h-4 w-4 focus:ring-0 focus:ring-offset-0 " />
+                          <label class="ml-3 block text-[14px] font-normal text-black">É la mia professione</label>
                         </div>
                         <div class="flex items-center">
                           <input value="personal" name="userType" type="radio" v-model="state.userType"
-                            @change="v$.userType.$touch"
-                            class="h-4 w-4 focus:ring-0 focus:ring-offset-0 border-[#02145A] text-[#02145A]" />
-                          <label class="ml-3 block text-[14px] font-normal text-[#02145A]">É il mio hobby</label>
+                            @change="v$.userType.$touch" class="h-4 w-4 focus:ring-0 focus:ring-offset-0" />
+                          <label class=" ml-3 block text-[14px] font-normal text-black">É il mio hobby</label>
                         </div>
                       </div>
                     </fieldset>
-                    <span class="text-xs text-red-500" v-if="v$.userType.$error">{{
-                      v$.userType.$errors[0].$message
-                    }}</span>
+                    <span class="text-xs text-red-500" v-if="v$.userType.$error">
+                      {{ v$.userType.$errors[0].$message }}</span>
                   </div>
                 </div>
 
                 <div class="sm:col-span-2">
                   <div>
-                    <label class="text-[14px] font-medium leading-6 text-[#02145A]">Sono disponibile per una call</label>
+                    <label class="text-[14px] font-medium leading-6 text-black">Sono disponibile per una call</label>
 
                     <fieldset class="mt-4">
                       <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
@@ -190,7 +184,7 @@ label.city.active .border {
                         <div class="flex items-center">
                           <input value="no" name="call" type="radio" v-model="state.call" @change="v$.call.$touch"
                             class="h-4 w-4 border-[#02145A] text-[#02145A] focus:ring-0 focus:ring-offset-0" />
-                          <label class="ml-3 block text-[14px] font-normal text-[#02145A]">No</label>
+                          <label class="ml-3 block text-[14px] font-normal text-black">No</label>
                         </div>
                       </div>
                       <span class="text-xs text-red-500" v-if="v$.call.$error">{{
@@ -201,7 +195,8 @@ label.city.active .border {
                 </div>
               </div>
               <div class="mt-8 flex justify-start">
-                <btn :disabled="buttonDisabled" bg-color="bg-[#1E16FE] w-[100px]" @click="register">Invia</btn>
+                <btn :disabled="buttonDisabled" bg-color="bg-lime" class="w-[100px]" color="black" @click="register">Invia
+                </btn>
               </div>
 
             </div>
