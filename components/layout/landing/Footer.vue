@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-[#02145A] ">
+    <footer class="bg-black">
 
         <div class="mx-auto text-[#FFFFFF] max-w-7xl overflow-hidden px-6 pt-10 pb-4  lg:px-8 space-y-5">
 
@@ -41,16 +41,10 @@
                     <span class="mr-10 text-xs sm:text-sm">
                         <NuxtLink to="/privacy-policy">Privacy policy</NuxtLink>
                     </span>
-
                     <span class="text-xs  sm:text-sm">
                         <NuxtLink to="/cookie-policy">Cookie policy</NuxtLink>
                     </span>
-
-
                 </div>
-
-
-
             </div>
 
         </div>

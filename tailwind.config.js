@@ -20,13 +20,15 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Poppins"],
+        gopher: ["gopher", "sans-serif"],
       },
       colors: {
-        primary: "#1683FE",
+        primary: "#7E7CEB",
         secondary: "#FE9216",
         "dark-blue": "#02145A",
         pink: "#FB2283",
         "pink-light": "#FED9EA",
+        lime : "#D0FF78"
       },
       backgroundImage: {
         "slide-1" : "linear-gradient(270deg, rgba(34, 134, 251, 0.6) 0.13%, rgba(34, 134, 251, 0.4) 50.52%, rgba(34, 134, 251, 0.6) 100%)",
