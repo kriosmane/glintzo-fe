@@ -4,10 +4,10 @@
  */
 import image_1 from "~/assets/images/glintzo.png";
 useSeoMeta({
-    title: 'Glintzo',
-    ogTitle: 'La piattaforma di matching amica dei visual creator',
-    description: 'Mettiamo in contatto aziende e privati con i migliori fotografi e videomaker sul panorama italiano in modo semplice e innovativo',
-    ogDescription: 'Mettiamo in contatto aziende e privati con i migliori fotografi e videomaker sul panorama italiano in modo semplice e innovativo',
+    title: 'Glintzo - Trova i migliori fotografi e videomaker per il tuo evento',
+    ogTitle: 'Glintzo - Trova i migliori fotografi e videomaker per il tuo evento',
+    description: 'Cerca e trova fotografi e videomaker per il tuo evento con Glintzo. Connessioni più facili e veloci tra visual creator e aziende. Scopri come Glintzo può migliorare la tua esperienza di ricerca',
+    ogDescription: 'Cerca e trova fotografi e videomaker per il tuo evento con Glintzo. Connessioni più facili e veloci tra visual creator e aziende. Scopri come Glintzo può migliorare la tua esperienza di ricerca',
     ogImage: image_1,
     twitterCard: 'summary_large_image',
 })
