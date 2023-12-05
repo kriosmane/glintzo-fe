@@ -17,10 +17,10 @@
     <swiper :speed="1500" class="overflow-initial" :modules="modules" :mousewheel="mousewheelOptions"
       :pagination="paginationOptions" :slides-per-view="1" :space-between="0" @swiper="onSwiper"
       @slideChange="onSlideChange" @reachEnd="reachEdge" @toEdge="reachEdge">
-      <swiper-slide class="h-auto-imp" v-for="(slide, index) in slides" :key="index">
+      <swiper-slide class="" v-for="(slide, index) in slides" :key="index">
         <div class="bg-[#BECAEF] pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
 
-          <div class="pb-20 sm:pb-24 xl:pb-0" :class="slide.bg">
+          <div class="pb-20 sm:pb-24 xl:pb-0 h-[550px] md:h-auto" :class="slide.bg">
             <div
               class="mx-auto flex w-full max-w-8xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch xl:h-[400px]">
               <div class="-mt-16 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
@@ -31,7 +31,7 @@
                 </div>
               </div>
               <div class="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24">
-                <h2 class="font-gopher text-[40px] text-black font-bold">{{ slide.title }}</h2>
+                <h2 class="font-gopher text-[40px] text-black font-bold leading-[normal]">{{ slide.title }}</h2>
                 <p class=" lg:text-[18px] leading-[27px]">{{ slide.text }}</p>
               </div>
             </div>
