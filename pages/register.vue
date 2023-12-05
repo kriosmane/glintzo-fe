@@ -218,9 +218,9 @@ label.city.active .border-2 {
             </div>
           </form>
 
-          <div class="flex items-center h-full justify-center" v-else>
+          <div class="flex items-start h-full justify-center" v-else>
 
-            <img src="~/assets/images/hello_white.png" />
+            <img src="~/assets/images/hello.png" />
 
           </div>
         </div>
