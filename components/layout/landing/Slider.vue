@@ -13,7 +13,7 @@
 }
 </style>
 <template>
-  <div class="pb-24 pt-24 sm:pt-32 xl:pb-32 overflow-hidden bg-white">
+  <div class="pb-24 pt-24 sm:pt-32  overflow-hidden bg-white">
     <swiper :speed="1500" class="overflow-initial" :modules="modules" :mousewheel="mousewheelOptions"
       :pagination="paginationOptions" :slides-per-view="1" :space-between="0" @swiper="onSwiper"
       @slideChange="onSlideChange" @reachEnd="reachEdge" @toEdge="reachEdge">
@@ -31,7 +31,7 @@
                 </div>
               </div>
               <div class="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24">
-                <h2 class="font-gopher text-[40px] text-black">{{ slide.title }}</h2>
+                <h2 class="font-gopher text-[40px] text-black font-bold">{{ slide.title }}</h2>
                 <p class=" lg:text-[18px] leading-[27px]">{{ slide.text }}</p>
               </div>
             </div>
