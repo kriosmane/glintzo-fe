@@ -13,7 +13,7 @@
 }
 </style>
 <template>
-  <div class="pb-24    overflow-hidden bg-white">
+  <div class="pb-24  overflow-hidden bg-white">
     <swiper :speed="1500" class="overflow-initial" :modules="modules" :mousewheel="mousewheelOptions"
       :pagination="paginationOptions" :slides-per-view="1" :space-between="0" @swiper="onSwiper"
       @slideChange="onSlideChange" @reachEnd="reachEdge" @toEdge="reachEdge">

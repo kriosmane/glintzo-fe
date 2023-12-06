@@ -22,7 +22,7 @@ let style_2 = 'background-image: url(' + middle_2 + ')';
 
   <div class="bg-[#BECAEF] h-auto lg:h-screen">
     <div class="flex justify-center items-center h-full px-10 py-10">
-      <img class="h-[659px]" src="~/assets/images/middle-1.png">
+      <img class="md:h-[659px]" src="~/assets/images/middle-1.png">
 
     </div>
   </div>
@@ -30,7 +30,7 @@ let style_2 = 'background-image: url(' + middle_2 + ')';
 
   <div class="bg-white h-auto lg:h-screen">
     <div class="flex justify-center items-center h-full px-10 py-10">
-      <img class="h-[659px]" src="~/assets/images/middle-2.png">
+      <img class="md:h-[659px]" src="~/assets/images/middle-2.png">
     </div>
   </div>
 
@@ -47,7 +47,7 @@ let style_2 = 'background-image: url(' + middle_2 + ')';
       </h2>
       <div class="mx-auto mt-4 max-w-xl text-lg leading-8 text-black">
         Clicca su "Registrati " e compila il Form per accedere alla community<br>
-        di Glintzo e diventa uno dei primi creator!
+        di Glintzo e diventa uno <br class="block sm:hidden">dei primi creator!
       </div>
 
       <div class="mt-10 flex items-center justify-center gap-x-6">
