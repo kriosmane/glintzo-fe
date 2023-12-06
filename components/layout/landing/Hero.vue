@@ -6,7 +6,7 @@
         <div class="relative isolate ">
 
             <div
-                class="w-full h-screen flex lg:flex-row flex-col items-center px-8 pt-24 lg:pt-40 lg:pb-28 space-y-10 lg:space-y-[none]">
+                class="w-full h-auto lg:h-screen flex lg:flex-row flex-col items-center px-8 pt-10 pb-10 lg:pt-40 lg:pb-28 space-y-5 lg:space-y-[none]">
 
                 <div class="basis-2/3 space-y-6 lg:px-24">
 
