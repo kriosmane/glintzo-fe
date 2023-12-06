@@ -20,16 +20,16 @@ let style_2 = 'background-image: url(' + middle_2 + ')';
 
 
 
-  <div class="bg-[#BECAEF] h-screen">
-    <div class="flex justify-center items-center h-full px-5">
+  <div class="bg-[#BECAEF] h-auto lg:h-screen">
+    <div class="flex justify-center items-center h-full px-20 py-20">
       <img class="max-h-[600px]" src="~/assets/images/middle-1.png">
 
     </div>
   </div>
 
 
-  <div class="bg-white h-screen ">
-    <div class="flex justify-center items-center h-full  px-5">
+  <div class="bg-white h-auto lg:h-screen ">
+    <div class="flex justify-center items-center h-full  px-20 py-20">
       <img class="max-h-[600px]" src="~/assets/images/middle-2.png">
     </div>
   </div>
