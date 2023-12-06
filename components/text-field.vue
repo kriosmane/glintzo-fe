@@ -16,9 +16,7 @@
         </div>
 
 
-        <span class="text-xs text-red-500" v-if="validator.$error">{{
-            validator.$errors[0].$message
-        }}</span>
+        <span class="text-xs text-red-500" v-if="validator.$error">{{ validator.$errors[0].$message }}</span>
 
 
     </div>
@@ -82,13 +80,9 @@ const inputClass = computed(() => {
     return {
         'block w-full rounded-md border-0 py-2.5 shadow-sm ring-1 ring-inset  sm:text-sm sm:leading-6': true,
         'pl-10': props.prependIcon,
-        'ring-gray-300  placeholder:text-gray-400 focus:ring-dark-blue': !props.validator.$error,
+        'ring-gray-300  placeholder:text-gray-400 focus:ring-primary': !props.validator.$error,
         'ring-red-500 focus:ring-red-500': props.validator.$error
     }
 });
-
-const test = () => {
-    console.log('test');
-}
 
 </script>

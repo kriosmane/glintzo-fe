@@ -11,7 +11,7 @@
                 <div class="basis-2/3 space-y-6 lg:px-24">
 
                     <h1
-                        class="max-w-lg text-[35px] lg:text-[56px] text-center lg:text-left leading-[normal] lg:leading-[53px] font-gopher font-bold tracking-tight text-black lg:text-primary">
+                        class="max-w-lg text-[35px] lg:text-[56px] text-center lg:text-left leading-[normal] lg:leading-[53px] font-gopher font-bold tracking-tight text-primary">
                         La
                         piattaforma <br>di matching
                         amica <br>dei

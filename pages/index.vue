@@ -41,7 +41,7 @@ let style_2 = 'background-image: url(' + middle_2 + ')';
   <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8 bg-[#BECAEF]">
     <div class="mx-auto max-w-2xl text-center ">
       <h2
-        class="text-[35px] leading-[normal] text-center font-gopher  font-bold tracking-tight text-black sm:text-[40px] sm:leading-[60px]">
+        class="text-[35px] leading-[normal] text-center font-gopher  font-bold tracking-tight text-black sm:text-[40px] lg:leading-[60px]">
         Sei un visual creator e<br />
         vuoi saperne di più?
       </h2>
