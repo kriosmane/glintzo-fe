@@ -42,13 +42,13 @@ let style_2 = 'background-image: url(' + middle_2 + ')';
     <div class="mx-auto max-w-2xl text-center ">
       <h2
         class="text-[35px] leading-[normal] text-center font-gopher  font-bold tracking-tight text-black sm:text-[40px] lg:leading-[60px]">
-        Sei un visual creator e<br />
+        Sei un visual creator e<br class="hidden sm:block">
         vuoi saperne di più?
       </h2>
-      <p class="mx-auto mt-4 max-w-xl text-lg leading-8 text-black">
-        Clicca su "Registrati " e compila il Form per accedere alla community<br> di
-        Glintzo e diventa uno dei primi creator!
-      </p>
+      <div class="mx-auto mt-4 max-w-xl text-lg leading-8 text-black">
+        Clicca su "Registrati " e compila il Form per accedere alla community<br>
+        di Glintzo e diventa uno dei primi creator!
+      </div>
 
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <NuxtLink to="/register" class="rounded-[20px]  bg-lime px-5 py-4 text-normal  font-bold text-black">
