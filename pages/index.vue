@@ -39,15 +39,20 @@ let style_2 = 'background-image: url(' + middle_2 + ')';
   <LazyLayoutLandingTimeline></LazyLayoutLandingTimeline>
 
   <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8 bg-[#BECAEF]">
-    <div class="mx-auto max-w-2xl text-center ">
-      <h2
-        class="text-[35px] leading-[normal] text-center font-gopher  font-bold tracking-tight text-black sm:text-[40px] lg:leading-[60px]">
-        Sei un visual creator e<br class="hidden sm:block">
-        vuoi saperne di più?
-      </h2>
-      <div class="mx-auto mt-4 max-w-xl text-lg leading-8 text-black">
-        Clicca su "Registrati " e compila il Form per accedere alla community<br>
-        di Glintzo e diventa uno <br class="block sm:hidden">dei primi creator!
+    <div class=" flex flex-col ">
+
+      <div class="flex justify-center">
+        <h2
+          class="text-[35px] leading-[normal] text-center font-gopher  font-bold tracking-tight text-black sm:text-[40px] lg:leading-[60px] max-w-[475px]">
+          Sei un visual creator e
+          vuoi saperne di più?
+        </h2>
+      </div>
+      <div class="flex justify-center text-lg mt-5 leading-8 text-black">
+        <p class="max-w-[620px] text-center">
+          Clicca su "Registrati " e compila il Form per accedere alla community
+          di Glintzo e diventa uno dei primi creator!
+        </p>
       </div>
 
       <div class="mt-10 flex items-center justify-center gap-x-6">

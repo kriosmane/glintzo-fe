@@ -17,7 +17,8 @@
                         amica <br>dei
                         visual creator </h1>
 
-                    <p class="text-[22px] lg:text-[25px] font-normal leading-[normal] text-black text-center lg:text-left">
+                    <p
+                        class="max-w-[620px] text-[22px] lg:text-[25px] font-normal leading-[normal] text-black text-center lg:text-left">
                         Mettiamo in contatto <span class="font-bold">aziende</span> e
                         <span class="font-bold">privati</span> con i migliori
                         <span class="font-bold">fotografi</span> e

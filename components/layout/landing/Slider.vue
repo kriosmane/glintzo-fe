@@ -1,4 +1,5 @@
 <style>
+/*
 .swiper-pagination {
   position: absolute !important;
   bottom: -40px !important;
@@ -10,11 +11,11 @@
   .swiper-pagination {
     display: block;
   }
-}
+}*/
 </style>
 <template>
   <div class="pb-24  overflow-hidden bg-white">
-    <swiper :speed="1500" class="overflow-initial" :modules="modules" :mousewheel="mousewheelOptions"
+    <swiper ref="swiper" :speed="1500" class="overflow-initial" :modules="modules" :mousewheel="mousewheelOptions"
       :pagination="paginationOptions" :slides-per-view="1" :space-between="0" @swiper="onSwiper"
       @slideChange="onSlideChange" @reachEnd="reachEdge" @toEdge="reachEdge">
       <swiper-slide class="" v-for="(slide, index) in slides" :key="index">
@@ -46,6 +47,7 @@
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Mousewheel, Pagination } from "swiper";
+import { useMediaQuery } from '@vueuse/core'
 
 
 // Import Swiper styles
@@ -58,7 +60,7 @@ import image_4 from "~/assets/images/slide_4.png";
 
 const modules = [Mousewheel, Pagination];
 
-const slides = [
+const slides = ref([
   {
     id: 1,
     title: "Cattura le migliori opportunità",
@@ -66,6 +68,7 @@ const slides = [
     text:
       "Glintzo ti permette di trovare maggiori opportunità lavorative, nuovi clienti,mettendoti in contatto con aziende e privati non necessariamente locali, ampliando il tuo portfolio e affrontando sempre nuove sfide. Su Glintzo puoi lavorare: con chi vuoi, quando vuoi e da dove vuoi.",
     bg: "bg-lime",
+    bulletColor: '#D0FF78'
   },
   {
     id: 2,
@@ -73,7 +76,8 @@ const slides = [
     image: image_2,
     text:
       "Glintzo valorizza le tue competenze distintive, ancora prima di chi sei, della tua età, genere ed etnia. Crediamo che il tuo portfolio debba essere l'informazione più importante che viene data su di te come Visual Creator per presentarti ad aziende e privati.",
-    bg: "bg-[#9C9BEC]"
+    bg: "bg-[#9C9BEC]",
+    bulletColor: '#9C9BEC'
   },
   {
     id: 3,
@@ -82,6 +86,7 @@ const slides = [
     text:
       "Grazie a un'interfaccia user friendly Glintzo permette una comunicazione semplice ed efficace con i clienti. Stiamo lavorando allo sviluppo delle Glintzo Guidelines per garantire processi trasparenti e contratti chiari, tutelando i creators da un lato e garantendo lavori di qualità dall'altro.",
     bg: "bg-lime",
+    bulletColor: '#D0FF78'
   },
   {
     id: 4,
@@ -89,9 +94,10 @@ const slides = [
     image: image_4,
     text:
       "Non è mai stato così facile salvaguardare i tuoi interessi come su Glintzo. Non dovrai più preoccuparti di come promuovere i tuoi lavori e di gestire le tue vendite. Glintzo lo farà per te, permettendoti di concentrarti sul tuo talento e di guadgnare senza alcuna preoccupazione.",
-    bg: "bg-[#9C9BEC]"
+    bg: "bg-[#9C9BEC]",
+    bulletColor: '#9C9BEC'
   },
-];
+]);
 
 /**
  * 
@@ -104,17 +110,35 @@ const mousewheelOptions = ref({
 
 const paginationOptions = ref({
   clickable: true,
+  enabled: true
 });
+
+const color = ref('#D0FF78');
 
 /**
  *
  */
 function onSwiper(swiper) { }
 
+
+
+const isLargeScreen = useMediaQuery('(min-width: 1280px)')
+
+
+const paginationStyle = computed(() => {
+
+  if (isLargeScreen.value) return 'none';
+
+  return 'inline-group';
+
+});
+
 /**
  *
  */
 function onSlideChange(swiper) {
+
+  color.value = slides.value[swiper.activeIndex].bulletColor;
 
   setTimeout(function () {
     swiper.params.mousewheel.releaseOnEdges = false;
@@ -132,7 +156,6 @@ function reachEdge(swiper) {
 
 
 
-
 </script>
 
 <style scoped>
@@ -144,7 +167,11 @@ function reachEdge(swiper) {
   border-radius: 8px;
 }
 
+:deep(.swiper-pagination) {
+  display: v-bind('paginationStyle') !important;
+}
+
 :deep(.swiper-pagination-bullet-active) {
-  background: #1e16fe !important;
+  background: v-bind('color') !important;
 }
 </style>

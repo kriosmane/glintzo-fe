@@ -29,32 +29,32 @@ label.city.active .border-2 {
               </template>
             </h2>
 
-            <p class="mt-6 font-bold text-[20px] leading-[25px] text-black">
+            <p class="mt-6 font-bold text-[20px] leading-[25px] text-black max-w-[436px]">
               <template v-if="!state.registered">
-                Iscriviti e scopri come ottenere Sparkz<br />
+                Iscriviti e scopri come ottenere Sparkz
                 gratuiti da usare nella piattaforma
               </template>
 
               <template v-else>
-                La tua iscrizione nella community di<br />
+                La tua iscrizione nella community di
                 Glintzo è avvenuta correttamente
               </template>
             </p>
 
-            <p class="text-base mt-4 leading-6 text-black">
+            <p class="text-base mt-4 leading-6 text-black  max-w-[436px]">
               <template v-if="!state.registered">
-                Incontrare e conoscere i visual creator della nostra <br />community non
-                solo è un <span class="font-bold">piacere</span> ma anche una<br />
-                <span class="font-bold">necessità</span> per il nostro lavoro: il tuo
-                feedback per noi è<br />
-                molto importante.<br />
-                Ti chiediamo quindi di indicarci se sei disponibile ad<br />
-                essere contattato da uno dei co-founder di Glintzo e<br />
+                Incontrare e conoscere i visual creator della nostra community non
+                solo è un <span class="font-bold">piacere</span> ma anche una <span class="font-bold">necessità</span>
+                per il nostro lavoro: il tuo
+                feedback per noi è
+                molto importante.<br>
+                Ti chiediamo quindi di indicarci se sei disponibile ad
+                essere contattato da uno dei co-founder di Glintzo e
                 approfondire il funzionamento della piattaforma.
               </template>
 
               <template v-else>
-                Ti abbiamo appena inviato un’ <span class="font-bold">email di conferma</span><br />
+                Ti abbiamo appena inviato un’ <span class="font-bold">email di conferma</span>
                 all’indirizzo da te indicato.<br />
                 Provvederemo ad aggiornarti sulla piattaforma quanto prima
               </template>
