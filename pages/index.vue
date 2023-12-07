@@ -50,7 +50,7 @@ let style_2 = 'background-image: url(' + middle_2 + ')';
       </div>
       <div class="flex justify-center text-lg mt-5 leading-8 text-black">
         <p class="max-w-[620px] text-center">
-          Unisciti alla community di Glintzo e diventa tu stesso un creator! Clicca subito su "Registrati", completa il
+          Unisciti alla community di Glintzo e diventa uno dei nostri!<br>Clicca subito su "Registrati", completa il
           Form e inizia a condividere la tua arte con il mondo!
         </p>
       </div>
