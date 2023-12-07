@@ -51,7 +51,7 @@ let style_2 = 'background-image: url(' + middle_2 + ')';
       <div class="flex justify-center text-lg mt-5 leading-8 text-black">
         <p class="max-w-[620px] text-center">
           Clicca su "Registrati " e compila il Form per accedere alla community
-          di Glintzo e<br class="block sm:hidden">
+          di Glintzo e
           diventa uno dei primi creator!
         </p>
       </div>

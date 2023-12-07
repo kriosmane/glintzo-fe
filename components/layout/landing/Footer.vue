@@ -15,7 +15,7 @@
             </div>
 
             <div class="flex justify-center space-x-5">
-                <a href="#" class="">
+                <a href="https://www.facebook.com/people/Glintzo/61554281404032" class="">
                     <span class="sr-only">Facebook</span>
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill-rule="evenodd"
