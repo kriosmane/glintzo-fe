@@ -22,7 +22,7 @@ let style_2 = 'background-image: url(' + middle_2 + ')';
 
   <div class="bg-[#BECAEF] h-auto lg:h-screen">
     <div class="flex justify-center items-center h-full">
-      <img class="lg:h-[600px]" src="~/assets/images/middle-2-new.png">
+      <img class="lg:h-[600px] object-fill" src="~/assets/images/middle-2-new.png">
 
     </div>
   </div>
@@ -30,7 +30,7 @@ let style_2 = 'background-image: url(' + middle_2 + ')';
 
   <div class="bg-white h-auto lg:h-screen">
     <div class="flex justify-center items-center h-full py-10">
-      <img class="lg:h-[600px]" src="~/assets/images/middle-1-new.png">
+      <img class="lg:h-[600px] object-fill" src="~/assets/images/middle-1-new.png">
     </div>
   </div>
 
