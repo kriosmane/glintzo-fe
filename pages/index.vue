@@ -1,5 +1,4 @@
 <script setup>
-
 /**
  * 
  */
@@ -7,38 +6,67 @@ definePageMeta({
   layout: "landing",
 });
 
-import middle_1 from "~/assets/images/middle-1.png";
-import middle_2 from "~/assets/images/middle-2.png";
+import SvgIcon from '@jamescoyle/vue-icon'
+import { mdiArrowDown } from '@mdi/js';
 
-let style_1 = 'background-image: url(' + middle_1 + ')';
-let style_2 = 'background-image: url(' + middle_2 + ')';
+
+const sections = ref(['first', 'second', 'third', 'fourth', 'fifth', 'sixth']); // Assicurati che questi siano gli ID delle tue sezioni
+
 
 </script>
 
 <template>
-  <LazyLayoutLandingHero></LazyLayoutLandingHero>
+  <LazyLayoutLandingHero ref="first"> </LazyLayoutLandingHero>
 
 
 
-  <div class="bg-[#BECAEF] h-auto lg:h-screen">
-    <div class="flex justify-center items-center h-full">
-      <img class="lg:h-[600px] object-fill" src="~/assets/images/middle-2-new.png">
+  <div class="bg-[#BECAEF] h-screen" ref="second">
+    <div class="flex  justify-center items-center h-full">
+      <!-- <img class="lg:h-[600px] object-fill" src="~/assets/images/middle-2-new.png">-->
+      <img class="md:hidden h-[564px]" src="~/assets/images/middle_1_375.png">
+      <img class="hidden md:block lg:hidden h-[692px]" src="~/assets/images/middle_1_768.png">
+      <img class="hidden lg:block 3xl:hidden h-[730px]" src="~/assets/images/middle_1_1024.png">
 
+      <div class="hidden 3xl:block 4xl:hidden ">
+        <img class="h-[745px]" src="~/assets/images/middle_1_1440.png">
+      </div>
+
+      <div class="hidden 4xl:block">
+        <img class="h-[835px]" src="~/assets/images/middle_1_1920.png">
+      </div>
     </div>
   </div>
 
 
-  <div class="bg-white h-auto lg:h-screen">
-    <div class="flex justify-center items-center h-full py-10">
-      <img class="lg:h-[600px] object-fill" src="~/assets/images/middle-1-new.png">
+
+  <div class="bg-white h-screen" ref="third">
+    <div class="flex  justify-center items-center h-full">
+      <!-- <img class="lg:h-[600px] object-fill" src="~/assets/images/middle-2-new.png">-->
+      <img class="md:hidden h-[564px]" src="~/assets/images/middle_2_375.png">
+      <img class="hidden md:block lg:hidden h-[692px]" src="~/assets/images/middle_2_768.png">
+      <img class="hidden lg:block 3xl:hidden h-[730px]" src="~/assets/images/middle_2_1024.png">
+
+      <div class="hidden 3xl:block 4xl:hidden ">
+        <img class="h-[745px]" src="~/assets/images/middle_2_1440.png">
+      </div>
+
+      <div class="hidden 4xl:block">
+        <img class="h-[835px]" src="~/assets/images/middle_2_1920.png">
+      </div>
     </div>
   </div>
 
-  <LazyLayoutLandingSlider></LazyLayoutLandingSlider>
 
-  <LazyLayoutLandingTimeline></LazyLayoutLandingTimeline>
 
-  <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8 bg-[#BECAEF]">
+  <LazyLayoutLandingSlider ref="fourth"></LazyLayoutLandingSlider>
+
+
+
+  <LazyLayoutLandingTimeline ref="fifth"></LazyLayoutLandingTimeline>
+
+
+
+  <div ref="sixth" class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8 bg-[#BECAEF]">
     <div class=" flex flex-col ">
 
       <div class="flex justify-center">
@@ -62,4 +90,8 @@ let style_2 = 'background-image: url(' + middle_2 + ')';
       </div>
     </div>
   </div>
+  <!-- 
+  <button @click="scrollToNextSection" type="button" class=" fixed bottom-10 right-10 w-16 h-16 bg-lime rounded-full text-center flex items-center
+    justify-center"><svg-icon size="36" type="mdi" :path="mdiArrowDown"></svg-icon></button>
+    -->
 </template>

@@ -36,7 +36,11 @@ module.exports = {
         "slide-3" : "linear-gradient(90deg, rgba(252, 146, 46, 0.6) 0%, rgba(252, 146, 46, 0.4) 46.25%, rgba(252, 146, 46, 0.6) 100%)",
         "slide-4" : "linear-gradient(90deg, rgba(50, 246, 253, 0.6) 2.47%, rgba(50, 246, 253, 0.4) 47.68%, rgba(50, 246, 253, 0.6) 96.44%)"
 
-      }
+      },
+      screens: {
+        '3xl' : '1440px',
+        '4xl': '1920px',
+      },
     },
     maxWidth: {
       "8xl": "90rem",
