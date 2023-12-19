@@ -381,6 +381,16 @@ async function register() {
           last_name: state.last_name,
           email: state.email,
           mobile_phone: state.mobile_phone,
+          geo: {
+            milano: state.milano,
+            roma: state.roma,
+            torino: state.torino,
+          },
+          creator: {
+            fotografo: state.fotografo,
+            videomaker: state.videomaker,
+          },
+          call: state.call == 'si' ? true : false,
         },
       });
 
