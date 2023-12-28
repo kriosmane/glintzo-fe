@@ -9,8 +9,10 @@ definePageMeta({
 import SvgIcon from '@jamescoyle/vue-icon'
 import { mdiArrowDown } from '@mdi/js';
 
+import { useElementVisibility } from '@vueuse/core'
 
-const sections = ref(['first', 'second', 'third', 'fourth', 'fifth', 'sixth']); // Assicurati che questi siano gli ID delle tue sezioni
+const registerButton = ref(null)
+const targetIsVisible = useElementVisibility(registerButton)
 
 
 </script>
@@ -83,15 +85,14 @@ const sections = ref(['first', 'second', 'third', 'fourth', 'fifth', 'sixth']); 
         </p>
       </div>
 
-      <div class="mt-10 flex items-center justify-center gap-x-6">
+      <div ref="registerButton" class="mt-10 flex items-center justify-center gap-x-6">
         <NuxtLink to="/register" class="rounded-[20px]  bg-lime px-5 py-4 text-normal  font-bold text-black">
           Registrati
         </NuxtLink>
       </div>
     </div>
   </div>
-  <!-- 
-  <button @click="scrollToNextSection" type="button" class=" fixed bottom-10 right-10 w-16 h-16 bg-lime rounded-full text-center flex items-center
+
+  <button v-show="!targetIsVisible" type="button" class=" fixed bottom-10 right-10 w-16 h-16 bg-lime rounded-full text-center flex items-center animate-bounce
     justify-center"><svg-icon size="36" type="mdi" :path="mdiArrowDown"></svg-icon></button>
-    -->
 </template>
