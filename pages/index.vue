@@ -93,6 +93,6 @@ const targetIsVisible = useElementVisibility(registerButton)
     </div>
   </div>
 
-  <button v-show="!targetIsVisible" type="button" class=" fixed bottom-5 right-5 md:bottom-10 md:right-10 w-8 h-8 bg-lime rounded-full text-center flex items-center animate-bounce
+  <button v-show="!targetIsVisible" type="button" class=" fixed bottom-5 right-5 md:bottom-10 md:right-10 w-16 h-16 bg-lime rounded-full text-center flex items-center animate-bounce
     justify-center"><svg-icon size="36" type="mdi" :path="mdiArrowDown"></svg-icon></button>
 </template>
