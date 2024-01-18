@@ -62,9 +62,9 @@ label.city.active .border-2 {
           </div>
         </div>
 
-        <div class="md:basis-1/2 mt-6 sm:mt-10 md:mt-0">
+        <div class="md:basis-1/2 mt-6 sm:mt-10 md:mt-0" ref="formContainer">
           <form v-if="!state.registered" id="form" ref="form" action="#" method="POST"
-            class="lg:max-h-[70vh] overflow-auto no-scrollbar lg:px-8">
+            class="lg:max-h-[80vh] overflow-auto no-scrollbar lg:px-8">
             <div class="">
               <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div>
@@ -201,7 +201,8 @@ label.city.active .border-2 {
 
             </div>
 
-            <div class="rounded-md bg-red-50 p-4 mt-4" v-if="errorMessage.length > 0">
+            <div class="rounded-md bg-red-50 p-4 mt-4" ref="erroMessageContainer" id="erroMessageContainer"
+              v-show="errorMessage.length > 0">
               <div class="flex">
                 <div class="flex-shrink-0">
                   <svg class="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -237,9 +238,12 @@ import { mdiEmailOutline } from "@mdi/js";
 import { required, email, helpers } from '@vuelidate/validators';
 import { useVuelidate } from '@vuelidate/core';
 
+import VueScrollTo from 'vue-scrollto';
+
 
 definePageMeta({
   layout: "landing",
+  scrollToTop: false
 });
 
 /**
@@ -288,6 +292,11 @@ const state = reactive({
 });
 
 const { $apiFetch } = useNuxtApp();
+
+const erroMessageContainer = ref(null);
+
+import { toast } from "vue3-toastify";
+import "vue3-toastify/dist/index.css";
 
 
 
@@ -340,7 +349,9 @@ const form = ref(null);
  *
  */
 function csrf() {
-  return $apiFetch("/sanctum/csrf-cookie");
+  let val = $apiFetch("/sanctum/csrf-cookie");
+
+  console.log(val);
 }
 
 /**
@@ -358,13 +369,13 @@ async function register() {
 
   if (!v$.value.$error) {
 
-    if (csrfRetrieved.value == false) {
+    // if (csrfRetrieved.value == false) {
 
-      await csrf();
+    //   await csrf();
 
-      csrfRetrieved.value = true;
+    //   csrfRetrieved.value = true;
 
-    }
+    // }
 
 
 
@@ -409,10 +420,33 @@ async function register() {
       buttonDisabled.value = false;
 
       /*
-      var element = document.querySelector('#form');
-
+      //var element = document.querySelector('#form');
+      var element = document.getElementById("form");
       element.scrollTop = element.scrollHeight;
       */
+
+      /*
+      erroMessageContainer.value.scrollIntoView({
+        behavior: 'smooth',
+      });
+
+      VueScrollTo.scrollTo('body', 500, {
+        offset: document.body.scrollHeight
+      });
+
+      VueScrollTo.scrollTo('#form', 500, {
+        offset: document.body.scrollHeight
+      });
+      */
+
+      toast.error(error.response._data.message, {
+        "theme": "light",
+        "type": "default",
+        "position": "top-center",
+        "dangerouslyHTMLString": true
+      })
+
+
 
 
     }
@@ -420,10 +454,10 @@ async function register() {
 
   buttonDisabled.value = false;
 
-
-
-
-
-
 }
+
+onMounted(() => {
+  //csrf();
+});
+
 </script>
