@@ -147,6 +147,7 @@ label.city.active .border-2 {
                   </fieldset>
                 </div>
 
+                <!-- 
                 <div class="sm:col-span-2">
                   <div>
                     <label class="text-[14px] font-medium leading-6 text-black">Svolgo questa attività perchè</label>
@@ -169,6 +170,7 @@ label.city.active .border-2 {
                       {{ v$.userType.$errors[0].$message }}</span>
                   </div>
                 </div>
+                -->
 
                 <div class="sm:col-span-2">
                   <div>
@@ -318,9 +320,11 @@ const rules = computed(() => {
       required: helpers.withMessage('Campo obbligatorio', required),
     },
 
+    /*
     userType: {
       required: helpers.withMessage('Campo obbligatorio', required),
     },
+    */
 
     call: {
       required: helpers.withMessage('Campo obbligatorio', required),
@@ -387,7 +391,7 @@ async function register() {
         method: "POST",
 
         body: {
-          type: state.userType,
+          type: "business",
           first_name: state.first_name,
           last_name: state.last_name,
           email: state.email,
